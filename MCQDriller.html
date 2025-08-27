@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MCQ Notes Driller</title>
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121823; --muted:#8aa0b3; --text:#e7eef6; --accent:#68b2ff; --good:#37d399; --bad:#ff6b6b;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+      background:linear-gradient(180deg,#0a0e13,#0b1219 40%, #0a0e13); color:var(--text);
+      display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    .app{width:min(1100px,100%);} 
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.25); overflow:hidden}
+    header{display:flex; gap:12px; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid rgba(255,255,255,.06); flex-wrap:wrap}
+    header h1{font-size:18px; margin:0; letter-spacing:.2px}
+    header .meta{display:flex; gap:14px; align-items:center; color:var(--muted); font-size:13px}
+    header .pill{background:rgba(255,255,255,.06); padding:6px 10px; border-radius:999px}
+
+    /* Tabs */
+    .tabs{display:flex; gap:8px; align-items:center; flex-wrap:wrap}
+    .tab{background:transparent; color:var(--muted); border:1px solid rgba(255,255,255,.08); padding:8px 12px; border-radius:10px; cursor:pointer; font-weight:700}
+    .tab.active{background:var(--accent); color:#08121b; border-color:transparent}
+    .ghost{background:transparent; color:var(--muted)}
+    .soft{background:rgba(255,255,255,.08); color:var(--text)}
+    .primary{background:var(--accent); color:#08121b}
+    .danger{background:var(--bad); color:#120808}
+    .ok{background:var(--good); color:#08120d}
+    .disabled{opacity:.6; cursor:not-allowed}
+    button{appearance:none; border:0; padding:10px 14px; border-radius:12px; font-weight:600; cursor:pointer; transition:.15s transform,.15s background,.15s opacity}
+    button:active{transform:translateY(1px)}
+
+    /* Views */
+    .view{display:none; padding:20px}
+    .view.active{display:block}
+    .panel{border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:16px; margin-bottom:14px}
+    .panel h2{font-size:16px; margin:0 0 10px 0; color:#cfe6ff}
+    .muted{color:var(--muted)}
+    .small{font-size:12px}
+    .kbd{font-family:ui-monospace,Consolas,monospace; background:#0d1420; border:1px solid rgba(255,255,255,.1); padding:2px 6px; border-radius:6px}
+    .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .stack{display:grid; gap:8px}
+
+    input[type="text"], input[type="search"], input[type="file"], select{
+      width:100%; background:#0e141d; color:var(--text); border:1px solid rgba(255,255,255,.08); border-radius:10px; padding:10px 12px; font-family:inherit;
+    }
+    label{font-size:12px; color:var(--muted)}
+
+    textarea{width:100%; min-height:260px; resize:vertical; background:#0e141d; color:var(--text); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:12px; font-family:ui-monospace,Consolas,monospace}
+
+    /* Drill Layout */
+    .quizWrap{max-width:900px; margin:0 auto}
+    .question{font-size:20px; line-height:1.4; margin-bottom:14px}
+    .options{display:grid; gap:10px}
+    .opt{background:#101722; border:1px solid rgba(255,255,255,.08); padding:14px 14px; border-radius:12px; text-align:left; font-weight:700; color:white; min-height:48px}
+    .opt.correct{border-color:rgba(55,211,153,.8); box-shadow:0 0 0 2px rgba(55,211,153,.25) inset}
+    .opt.wrong{border-color:rgba(255,107,107,.8); box-shadow:0 0 0 2px rgba(255,107,107,.25) inset}
+    .notes{margin-top:14px; background:#0e141d; border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:12px; color:#c9d7e5; white-space:pre-wrap}
+    .footer{display:flex; justify-content:space-between; align-items:center; margin-top:14px; gap:12px; flex-wrap:wrap}
+    .progress{height:10px; background:#0f1722; border:1px solid rgba(255,255,255,.06); border-radius:999px; overflow:hidden}
+    .bar{height:100%; background:linear-gradient(90deg,#68b2ff,#b8f1ff)}
+    .center{display:flex; align-items:center; justify-content:center}
+    .hidden{display:none !important}
+
+    /* Lists */
+    .list{display:grid; gap:8px}
+    .list-item{display:flex; justify-content:space-between; align-items:center; gap:10px; background:#0f1621; border:1px solid rgba(255,255,255,.06); border-radius:10px; padding:10px 12px}
+    .list-item .meta{font-size:12px; color:var(--muted)}
+
+    /* Mobile tweaks */
+    @media (max-width: 640px){
+      body{padding:10px}
+      header{gap:8px}
+      header h1{font-size:16px}
+      .opt{padding:16px; font-size:15px}
+      .question{font-size:18px}
+      .panel{padding:14px}
+      .row button{flex:1}
+      .meta{width:100%; justify-content:space-between}
+    }
+  </style>
+</head>
+<body>
+  <div class="app card">
+    <header>
+      <h1>MCQ Notes Driller</h1>
+      <div class="tabs">
+        <button id="tab-import" class="tab active" title="Go to Import (I)">Import</button>
+        <button id="tab-drill" class="tab" title="Go to Drill (D)">Drill</button>
+      </div>
+      <div class="meta">
+        <span class="pill" id="progressPill">0 / 0</span>
+        <span class="pill">Wrong: <span id="wrongCount">0</span> / 2</span>
+        <button class="soft" id="resetBtn" title="Restart the current set (R)">Restart</button>
+      </div>
+    </header>
+
+    <!-- IMPORT VIEW -->
+    <section id="view-import" class="view active">
+      <div class="panel">
+        <h2>Import Questions</h2>
+        <p class="muted small">Schema per item: { "id": "unique", "stem": "question text", "options": ["A","B","C","D"], "answer": 0, "notes": "your source notes here" }</p>
+        <textarea id="inputArea" placeholder='[
+  {
+    "id": "ex-1",
+    "stem": "Which vitamin deficiency causes night blindness?",
+    "options": ["Vitamin A","Vitamin B12","Vitamin C","Vitamin K"],
+    "answer": 0,
+    "notes": "Vitamin A (retinol) is critical for rhodopsin in rods. Deficiency → nyctalopia."
+  }
+]'></textarea>
+        <div class="row">
+          <button class="primary" id="loadBtn">Load Questions</button>
+          <button class="soft" id="demoBtn">Load Demo Set</button>
+          <button class="ghost" id="downloadTemplateBtn">Download JSON Template</button>
+          <button class="ok" id="goDrillBtn" title="Go to Drill (D)">Go to Drill</button>
+        </div>
+      </div>
+
+      <!-- Library (IndexedDB) -->
+      <div class="panel">
+        <h2>Library (Save / Load)</h2>
+        <div class="stack">
+          <div class="row" style="align-items:flex-end">
+            <div style="flex:2">
+              <label for="setName">Set name</label>
+              <input id="setName" type="text" placeholder="e.g., NBME 11" />
+            </div>
+            <div class="row" style="flex:3">
+              <button class="ok" id="saveToLibraryBtn">Save to Library</button>
+              <button class="soft" id="exportBtn">Export to File (.json)</button>
+              <input id="filePicker" type="file" accept="application/json,.json" class="hidden" />
+              <button class="soft" id="importFileBtn">Import from File</button>
+            </div>
+          </div>
+          <div class="row" style="align-items:center">
+            <input id="searchLibrary" type="search" placeholder="Search saved sets..." style="flex:1" />
+            <button class="ghost" id="refreshLibraryBtn">Refresh</button>
+          </div>
+          <div class="list" id="libraryList"></div>
+          <p class="muted small">Saved sets live in your browser (IndexedDB). Export/import to move between devices.</p>
+        </div>
+      </div>
+
+      <!-- Optional: Local Folder (File System Access API) -->
+      <div class="panel">
+        <h2>Local Folder (Optional)</h2>
+        <p class="muted small">Connect a folder (Chromium browsers) to list and open <span class="kbd">*.json</span> files directly. iOS Safari/Firefox may not support this yet.</p>
+        <div class="row">
+          <button id="connectFolderBtn" class="soft">Connect Folder</button>
+          <button id="refreshFolderBtn" class="ghost">Refresh Folder</button>
+          <span id="folderStatus" class="muted small">No folder connected</span>
+        </div>
+        <div class="stack" style="margin-top:10px">
+          <div class="list" id="folderList"></div>
+          <div class="row" style="align-items:flex-end">
+            <div style="flex:2">
+              <label for="fileName">Save current set as file</label>
+              <input id="fileName" type="text" placeholder="NBME 11.json" />
+            </div>
+            <button id="saveToFolderBtn" class="ok">Save to Connected Folder</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="muted small">Tips: Paste JSON from ChatGPT → <span class="kbd">Load Questions</span>. Options must be exactly 4. If you get 3 wrong at any time, the set auto‑restarts.</p>
+    </section>
+
+    <!-- DRILL VIEW -->
+    <section id="view-drill" class="view">
+      <div class="quizWrap">
+        <div class="panel">
+          <h2>Drill</h2>
+          <div id="quizBox" class="hidden">
+            <div class="question" id="stem"></div>
+            <div class="options" id="options"></div>
+            <div class="notes hidden" id="notes"></div>
+            <div class="footer">
+              <div style="flex:1; margin-right:12px; min-width:220px">
+                <div class="progress"><div class="bar" id="bar" style="width:0%"></div></div>
+                <div class="small muted" id="statusText" style="margin-top:6px"></div>
+              </div>
+              <div class="row">
+                <button class="soft" id="prevBtn" disabled>Prev</button>
+                <button class="ok disabled" id="nextBtn">Next</button>
+              </div>
+            </div>
+          </div>
+          <div id="emptyState" class="center" style="min-height:200px">
+            <div class="muted">No questions loaded yet. Go to <span class="kbd">Import</span> to load a set.</div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Deploy (GitHub Pages)</h2>
+          <ol class="small muted" style="margin:0 0 6px 14px; line-height:1.5">
+            <li>Create a new GitHub repository (public or private).</li>
+            <li>Name this file <span class="kbd">index.html</span> and commit it to the repo root.</li>
+            <li>In repo Settings → Pages → Source: select <span class="kbd">Deploy from a branch</span>, branch <span class="kbd">main</span>, folder <span class="kbd">/root</span>. Save.</li>
+            <li>Wait for the green Pages deploy check, then open the provided URL. That’s it.</li>
+          </ol>
+          <p class="small muted" style="margin:0">Your Library uses browser storage; use Export/Import or the optional Folder to move between devices.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+  // ==========================
+  // State
+  // ==========================
+  let QUESTIONS = [];
+  let order = [];
+  let idx = 0;          // index into order
+  let answered = new Map(); // id -> {chosen, correct}
+  let wrong = 0;
+
+  // IndexedDB constants
+  const DB_NAME = 'mcq-driller';
+  const DB_VERSION = 1;
+  const STORE_SETS = 'sets';
+  const STORE_FS = 'fs'; // to keep a directory handle
+
+  // ==========================
+  // Elements
+  // ==========================
+  const els = {
+    // tabs/views
+    tabImport: document.getElementById('tab-import'),
+    tabDrill: document.getElementById('tab-drill'),
+    viewImport: document.getElementById('view-import'),
+    viewDrill: document.getElementById('view-drill'),
+    goDrillBtn: document.getElementById('goDrillBtn'),
+
+    // import
+    inputArea: document.getElementById('inputArea'),
+    loadBtn: document.getElementById('loadBtn'),
+    demoBtn: document.getElementById('demoBtn'),
+    downloadTemplateBtn: document.getElementById('downloadTemplateBtn'),
+
+    // library
+    setName: document.getElementById('setName'),
+    saveToLibraryBtn: document.getElementById('saveToLibraryBtn'),
+    exportBtn: document.getElementById('exportBtn'),
+    importFileBtn: document.getElementById('importFileBtn'),
+    filePicker: document.getElementById('filePicker'),
+    searchLibrary: document.getElementById('searchLibrary'),
+    refreshLibraryBtn: document.getElementById('refreshLibraryBtn'),
+    libraryList: document.getElementById('libraryList'),
+
+    // folder
+    connectFolderBtn: document.getElementById('connectFolderBtn'),
+    refreshFolderBtn: document.getElementById('refreshFolderBtn'),
+    folderStatus: document.getElementById('folderStatus'),
+    folderList: document.getElementById('folderList'),
+    fileName: document.getElementById('fileName'),
+    saveToFolderBtn: document.getElementById('saveToFolderBtn'),
+
+    // drill
+    quizBox: document.getElementById('quizBox'),
+    emptyState: document.getElementById('emptyState'),
+    stem: document.getElementById('stem'),
+    options: document.getElementById('options'),
+    notes: document.getElementById('notes'),
+    nextBtn: document.getElementById('nextBtn'),
+    prevBtn: document.getElementById('prevBtn'),
+    progressPill: document.getElementById('progressPill'),
+    wrongCount: document.getElementById('wrongCount'),
+    bar: document.getElementById('bar'),
+    statusText: document.getElementById('statusText'),
+    resetBtn: document.getElementById('resetBtn'),
+  };
+
+  // ==========================
+  // View helpers
+  // ==========================
+  function setActiveView(name){
+    const isImport = name === 'import';
+    els.viewImport.classList.toggle('active', isImport);
+    els.viewDrill.classList.toggle('active', !isImport);
+    els.tabImport.classList.toggle('active', isImport);
+    els.tabDrill.classList.toggle('active', !isImport);
+  }
+
+  function shuffle(a){
+    for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}
+    return a;
+  }
+
+  function syncNextState() {
+    const current = QUESTIONS[order[idx]];
+    const seen = answered.get(current.id);
+    setNextBtnState(!seen);
+  }
+
+  // ==========================
+  // JSON Parse/Load
+  // ==========================
+  function parseInput(text){
+    try{
+      const data = JSON.parse(text);
+      if(!Array.isArray(data)) throw new Error('Top-level JSON must be an array');
+      data.forEach((q, i)=>{
+        if(typeof q.stem!== 'string') throw new Error(`Item ${i+1} missing "stem"`);
+        if(!Array.isArray(q.options) || q.options.length!==4) throw new Error(`Item ${i+1} must have 4 options`);
+        if(!('answer' in q)) throw new Error(`Item ${i+1} missing "answer" (0-3 or matching option text)`);
+        if(typeof q.notes !== 'string') throw new Error(`Item ${i+1} missing "notes" (string)`);
+        if(typeof q.answer === 'number'){
+          if(q.answer<0 || q.answer>3) throw new Error(`Item ${i+1} answer index must be 0-3`);
+        } else if(typeof q.answer === 'string'){
+          const ai = q.options.findIndex(o=>o.trim().toLowerCase()===q.answer.trim().toLowerCase());
+          if(ai<0) throw new Error(`Item ${i+1} answer text not found in options`);
+          q.answer = ai;
+        } else {
+          throw new Error(`Item ${i+1} answer must be number or string`);
+        }
+        if(!q.id) q.id = `q-${i+1}`;
+      });
+      return data;
+    }catch(e){
+      alert('Import error: '+e.message);
+      return null;
+    }
+  }
+
+  function loadQuestions(jsonText){
+    const data = parseInput(jsonText);
+    if(!data) return;
+    QUESTIONS = data.map(q=>({...q}));
+    order = [...Array(QUESTIONS.length).keys()];
+    shuffle(order);
+    idx = 0; answered.clear(); wrong = 0;
+    els.wrongCount.textContent = wrong;
+    els.emptyState.classList.add('hidden');
+    els.quizBox.classList.remove('hidden');
+    render();
+    setActiveView('drill');
+  }
+
+  function render(){
+    const current = QUESTIONS[order[idx]];
+    const total = QUESTIONS.length;
+    els.progressPill.textContent = `${idx+1} / ${total}`;
+    els.bar.style.width = `${((idx)/total)*100}%`;
+    els.statusText.textContent = `Question ${idx+1} of ${total}`;
+
+    els.stem.textContent = current.stem;
+    els.options.innerHTML = '';
+    els.notes.classList.add('hidden');
+    els.notes.textContent = '';
+
+    const seen = answered.get(current.id);
+
+    current.options.forEach((opt, i)=>{
+      const b = document.createElement('button');
+      b.className = 'opt'; b.textContent = opt;
+      if(seen){
+        b.classList.add(i===current.answer ? 'correct' : (i===seen.chosen ? 'wrong' : ''));
+        b.disabled = true;
+      }
+      b.addEventListener('click', ()=> choose(i));
+      els.options.appendChild(b);
+    });
+
+    els.prevBtn.disabled = idx===0;
+    setNextState();
+
+    if(seen){ showNotes(current); }
+  }
+
+  function setNextBtnState(disabled){
+    els.nextBtn.classList.toggle('disabled', disabled);
+    els.nextBtn.disabled = disabled;
+  }
+
+  function choose(i){
+    const current = QUESTIONS[order[idx]];
+    if(answered.has(current.id)) return; // already answered
+    const correct = i===current.answer;
+    answered.set(current.id,{chosen:i, correct});
+
+    if(!correct){
+      wrong += 1; els.wrongCount.textContent = wrong;
+      if(wrong>=3){
+        alert('❌ You missed 3 or more. Restarting the set.');
+        restart();
+        return;
+      }
+    }
+
+    // decorate buttons
+    [...els.options.children].forEach((b, k)=>{
+      b.disabled = true;
+      b.classList.toggle('correct', k===current.answer);
+      if(k===i && !correct) b.classList.add('wrong');
+    });
+
+    showNotes(current);
+    setNextBtnState(false);
+  }
+
+  function showNotes(q){
+    els.notes.classList.remove('hidden');
+    els.notes.textContent = q.notes || '(No notes provided)';
+  }
+
+  function next(){
+    if(idx < order.length-1){
+      idx += 1; render();
+    } else {
+      // finished
+      els.bar.style.width = '100%';
+      const total = QUESTIONS.length;
+      const correctCount = [...answered.values()].filter(v=>v.correct).length;
+      const msg = wrong>=3
+        ? '❌ Failed (auto-restart triggered earlier)'
+        : (wrong>2 ? '❌ Failed' : '✅ Passed');
+      alert(`${msg}\nCorrect: ${correctCount}/${total}\nWrong: ${wrong}`);
+      if(wrong>2){ restart(); } else {
+        if(confirm('Run the set again (reshuffle)?')){ restart(true); }
+      }
+    }
+  }
+
+  function prev(){ if(idx>0){ idx -= 1; render(); } }
+
+  function restart(reshuffle=false){
+    idx = 0; answered.clear(); wrong = 0; els.wrongCount.textContent = wrong;
+    if(reshuffle){ shuffle(order); }
+    render();
+  }
+
+  // ==========================
+  // IndexedDB Helpers (tiny)
+  // ==========================
+  function idb(){
+    return new Promise((resolve, reject)=>{
+      const open = indexedDB.open(DB_NAME, DB_VERSION);
+      open.onupgradeneeded = ()=>{
+        const db = open.result;
+        if(!db.objectStoreNames.contains(STORE_SETS)){
+          db.createObjectStore(STORE_SETS, { keyPath: 'name' });
+        }
+        if(!db.objectStoreNames.contains(STORE_FS)){
+          db.createObjectStore(STORE_FS, { keyPath: 'key' });
+        }
+      };
+      open.onsuccess = ()=> resolve(open.result);
+      open.onerror = ()=> reject(open.error);
+    });
+  }
+
+  function tx(store, mode='readonly'){ return idb().then(db=>db.transaction(store, mode)); }
+
+  async function idbPut(store, value){
+    const t = await tx(store, 'readwrite');
+    await new Promise((res,rej)=>{ const r = t.objectStore(store).put(value); r.onsuccess=()=>res(); r.onerror=()=>rej(r.error); });
+    await new Promise((res,rej)=>{ t.oncomplete=()=>res(); t.onerror=()=>rej(t.error); });
+  }
+  async function idbGet(store, key){
+    const t = await tx(store, 'readonly');
+    return await new Promise((res,rej)=>{ const r = t.objectStore(store).get(key); r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); });
+  }
+  async function idbDelete(store, key){
+    const t = await tx(store, 'readwrite');
+    await new Promise((res,rej)=>{ const r = t.objectStore(store).delete(key); r.onsuccess=()=>res(); r.onerror=()=>rej(r.error); });
+    await new Promise((res,rej)=>{ t.oncomplete=()=>res(); t.onerror=()=>rej(t.error); });
+  }
+  async function idbAll(store){
+    const t = await tx(store, 'readonly');
+    return await new Promise((res,rej)=>{ const r = t.objectStore(store).getAll(); r.onsuccess=()=>res(r.result||[]); r.onerror=()=>rej(r.error); });
+  }
+
+  // ==========================
+  // Library (IndexedDB)
+  // ==========================
+  async function refreshLibrary(filter=''){
+    const sets = await idbAll(STORE_SETS);
+    const q = filter.trim().toLowerCase();
+    const list = (q? sets.filter(s=>s.name.toLowerCase().includes(q)) : sets)
+      .sort((a,b)=> (b.updatedAt||0)-(a.updatedAt||0));
+    els.libraryList.innerHTML = '';
+    if(list.length===0){
+      const empty = document.createElement('div'); empty.className='muted small'; empty.textContent='No saved sets yet.'; els.libraryList.appendChild(empty); return;
+    }
+    list.forEach(s=>{
+      const item = document.createElement('div'); item.className='list-item';
+      const left = document.createElement('div');
+      const title = document.createElement('div'); title.style.fontWeight='700'; title.textContent=s.name;
+      const meta = document.createElement('div'); meta.className='meta'; meta.textContent=`${(s.questions||[]).length} items • ${new Date(s.updatedAt||Date.now()).toLocaleString()}`;
+      left.appendChild(title); left.appendChild(meta);
+
+      const row = document.createElement('div'); row.className='row';
+      const loadBtn = document.createElement('button'); loadBtn.className='ok'; loadBtn.textContent='Load';
+      loadBtn.addEventListener('click', ()=> loadFromLibrary(s.name));
+
+      const renameBtn = document.createElement('button'); renameBtn.className='soft'; renameBtn.textContent='Rename';
+      renameBtn.addEventListener('click', async ()=>{
+        const nn = prompt('Rename set to:', s.name);
+        if(!nn || nn===s.name) return;
+        const exists = await idbGet(STORE_SETS, nn);
+        if(exists){ alert('A set with that name already exists.'); return; }
+        await idbDelete(STORE_SETS, s.name);
+        await idbPut(STORE_SETS, {name: nn, questions: s.questions, updatedAt: s.updatedAt});
+        refreshLibrary(els.searchLibrary.value);
+      });
+
+      const delBtn = document.createElement('button'); delBtn.className='danger'; delBtn.textContent='Delete';
+      delBtn.addEventListener('click', async ()=>{
+        if(confirm(`Delete "${s.name}"?`)){
+          await idbDelete(STORE_SETS, s.name); refreshLibrary(els.searchLibrary.value);
+        }
+      });
+
+      row.appendChild(loadBtn); row.appendChild(renameBtn); row.appendChild(delBtn);
+      item.appendChild(left); item.appendChild(row);
+      els.libraryList.appendChild(item);
+    });
+  }
+
+  async function saveToLibrary(){
+    const name = (els.setName.value||'').trim();
+    if(!name){ alert('Please enter a set name (e.g., NBME 11).'); return; }
+    if(!Array.isArray(QUESTIONS) || QUESTIONS.length===0){ alert('Load questions first before saving.'); return; }
+    await idbPut(STORE_SETS, { name, questions: QUESTIONS, updatedAt: Date.now() });
+    refreshLibrary(els.searchLibrary.value);
+    alert(`Saved "${name}" to Library.`);
+  }
+
+  async function loadFromLibrary(name){
+    const rec = await idbGet(STORE_SETS, name);
+    if(!rec){ alert('Set not found.'); return; }
+    QUESTIONS = rec.questions || [];
+    order = [...Array(QUESTIONS.length).keys()]; shuffle(order);
+    idx = 0; answered.clear(); wrong = 0; els.wrongCount.textContent = wrong;
+    els.emptyState.classList.add('hidden'); els.quizBox.classList.remove('hidden');
+    render(); setActiveView('drill');
+  }
+
+  // ==========================
+  // Export / Import Files
+  // ==========================
+  function exportToFile(){
+    if(!QUESTIONS.length){ alert('Nothing to export. Load questions first.'); return; }
+    const name = (els.setName.value||'MCQ_Set') + '.json';
+    const blob = new Blob([JSON.stringify(QUESTIONS, null, 2)], {type:'application/json'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; a.click();
+    setTimeout(()=> URL.revokeObjectURL(a.href), 2000);
+  }
+
+  function importFromFile(){ els.filePicker.click(); }
+  els.filePicker.addEventListener('change', async (e)=>{
+    const f = e.target.files && e.target.files[0]; if(!f) return;
+    const text = await f.text();
+    loadQuestions(text);
+    const base = f.name.replace(/\.json$/i,'');
+    if(base && !els.setName.value) els.setName.value = base;
+    e.target.value = '';
+  });
+
+  // ==========================
+  // Optional: Local Folder (File System Access API)
+  // ==========================
+  function fsSupported(){ return 'showDirectoryPicker' in window; }
+
+  async function connectFolder(){
+    if(!fsSupported()){ alert('Your browser does not support the File System Access API. Use Export/Import instead.'); return; }
+    try{
+      const dir = await window.showDirectoryPicker({ mode: 'readwrite' });
+      await idbPut(STORE_FS, { key: 'dir', handle: dir });
+      els.folderStatus.textContent = 'Folder connected';
+      await refreshFolderList();
+    }catch(err){ if(err?.name!=='AbortError') console.error(err); }
+  }
+
+  async function getDir(){ const rec = await idbGet(STORE_FS,'dir'); return rec?.handle; }
+
+  async function refreshFolderList(){
+    const dir = await getDir();
+    els.folderList.innerHTML = '';
+    if(!dir){ els.folderStatus.textContent = 'No folder connected'; return; }
+    els.folderStatus.textContent = 'Folder connected';
+    try{
+      for await (const [name, handle] of dir.entries()){
+        if(!name.toLowerCase().endsWith('.json')) continue;
+        const file = await handle.getFile();
+        const item = document.createElement('div'); item.className='list-item';
+        const left = document.createElement('div');
+        const title = document.createElement('div'); title.style.fontWeight='700'; title.textContent = name;
+        const meta = document.createElement('div'); meta.className='meta'; meta.textContent = `${(file.size/1024).toFixed(1)} KB • ${new Date(file.lastModified).toLocaleString()}`;
+        left.appendChild(title); left.appendChild(meta);
+        const row = document.createElement('div'); row.className='row';
+        const openBtn = document.createElement('button'); openBtn.className='ok'; openBtn.textContent='Open';
+        openBtn.addEventListener('click', async ()=>{
+          const t = await file.text();
+          loadQuestions(t);
+          const base = name.replace(/\.json$/i,''); if(base) els.setName.value = base;
+        });
+        row.appendChild(openBtn); item.appendChild(left); item.appendChild(row);
+        els.folderList.appendChild(item);
+      }
+    }catch(e){
+      console.error(e); els.folderStatus.textContent = 'Folder permission lost — click Connect Folder again.';
+    }
+  }
+
+  async function saveToFolder(){
+    if(!QUESTIONS.length){ alert('Load questions first.'); return; }
+    const dir = await getDir(); if(!dir){ alert('Connect a folder first.'); return; }
+    let fname = (els.fileName.value||'').trim(); if(!fname) fname = ((els.setName.value||'MCQ_Set') + '.json');
+    if(!/\.json$/i.test(fname)) fname += '.json';
+    const handle = await dir.getFileHandle(fname, { create:true });
+    const w = await handle.createWritable();
+    await w.write(JSON.stringify(QUESTIONS, null, 2));
+    await w.close();
+    els.folderStatus.textContent = `Saved ${fname}`;
+    await refreshFolderList();
+  }
+
+  // ==========================
+  // Events: Tabs / Nav
+  // ==========================
+  els.tabImport.addEventListener('click', ()=> setActiveView('import'));
+  els.tabDrill.addEventListener('click', ()=> setActiveView('drill'));
+  els.goDrillBtn.addEventListener('click', ()=> setActiveView('drill'));
+
+  // Import
+  els.loadBtn.addEventListener('click', ()=> loadQuestions(els.inputArea.value.trim()));
+  els.demoBtn.addEventListener('click', ()=>{
+    const demo = [
+      {id:'d1', stem:'Beta-blockers ↓ what cardiac parameter at rest and exercise?', options:['Contractility','Preload','Afterload','Heart rate'], answer:3, notes:'β-blockers primarily lower HR (negative chronotropy) and contractility (negative inotropy). Clinically, HR reduction is the most reliable exam answer.'},
+      {id:'d2', stem:'Which nerve is compressed in carpal tunnel syndrome?', options:['Ulnar','Radial','Median','Musculocutaneous'], answer:2, notes:'Median nerve compression under the flexor retinaculum. Thenar weakness, paresthesia of lateral 3½ digits, positive Phalen/Tinel.'},
+      {id:'d3', stem:'A newborn with delayed passage of meconium—most likely diagnosis?', options:['Hirschsprung disease','Intussusception','Pyloric stenosis','Necrotizing enterocolitis'], answer:0, notes:'Failure of neural crest cell migration → aganglionosis of distal colon. Explosive stool after DRE; transition zone on contrast enema; confirm with rectal suction biopsy.'},
+      {id:'d4', stem:'What organism causes pneumonia with “currant jelly” sputum in alcohol use disorder?', options:['Streptococcus pneumoniae','Klebsiella pneumoniae','Pseudomonas aeruginosa','Legionella pneumophila'], answer:1, notes:'Klebsiella → aspiration risk, upper-lobe abscesses, thick mucoid sputum; capsule produces bulging fissure sign.'},
+      {id:'d5', stem:'Best next step for suspected ectopic pregnancy with hemodynamic instability?', options:['Methotrexate','Expectant management','Serial β-hCG','Immediate surgical exploration'], answer:3, notes:'Unstable + suspected ectopic → urgent laparoscopy/laparotomy. Methotrexate only for stable, unruptured cases.'}
+    ];
+    els.inputArea.value = JSON.stringify(demo, null, 2);
+    loadQuestions(els.inputArea.value);
+  });
+  els.downloadTemplateBtn.addEventListener('click', ()=>{
+    const tmpl = [ {id:'unique-id-1', stem:'Your question here', options:['A','B','C','D'], answer:0, notes:'Paste the relevant notes/explanation here.'} ];
+    const blob = new Blob([JSON.stringify(tmpl,null,2)], {type:'application/json'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'mcq_template.json'; a.click();
+    setTimeout(()=> URL.revokeObjectURL(a.href), 2000);
+  });
+
+  // Library
+  els.saveToLibraryBtn.addEventListener('click', saveToLibrary);
+  els.refreshLibraryBtn.addEventListener('click', ()=> refreshLibrary(els.searchLibrary.value));
+  els.searchLibrary.addEventListener('input', (e)=> refreshLibrary(e.target.value));
+  els.exportBtn.addEventListener('click', exportToFile);
+  els.importFileBtn.addEventListener('click', importFromFile);
+
+  // Folder
+  els.connectFolderBtn.addEventListener('click', connectFolder);
+  els.refreshFolderBtn.addEventListener('click', refreshFolderList);
+  els.saveToFolderBtn.addEventListener('click', saveToFolder);
+
+  // Drill
+  els.nextBtn.addEventListener('click', next);
+  els.prevBtn.addEventListener('click', prev);
+  els.resetBtn.addEventListener('click', ()=> restart(true));
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e)=>{
+    if(e.key.toLowerCase()==='i') setActiveView && setActiveView('import');
+    if(e.key.toLowerCase()==='d') setActiveView && setActiveView('drill');
+
+    if(e.key==='ArrowRight'){ if(!els.nextBtn.disabled) next(); }
+    if(e.key==='ArrowLeft') prev();
+
+    if(['1','2','3','4'].includes(e.key)){
+      const n = parseInt(e.key,10)-1;
+      const current = QUESTIONS[order[idx]];
+      if(current && !answered.get(current.id)) choose(n);
+    }
+    if(e.key.toLowerCase()==='r') restart(true);
+  });
+
+  // Boot: populate library list & folder status
+  refreshLibrary();
+  (async ()=>{
+    if(fsSupported()){
+      const dir = await getDir();
+      els.folderStatus.textContent = dir ? 'Folder connected' : 'No folder connected';
+      if(dir) refreshFolderList();
+    } else {
+      els.connectFolderBtn.classList.add('disabled');
+      els.refreshFolderBtn.classList.add('disabled');
+      els.saveToFolderBtn.classList.add('disabled');
+      els.folderStatus.textContent = 'File System Access API not supported';
+    }
+  })();
+
+  </script>
+</body>
+</html>
