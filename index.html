@@ -11,10 +11,12 @@
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
-      background:linear-gradient(180deg,#0a0e13,#0b1219 40%, #0a0e13); color:var(--text);
-      display:flex; align-items:center; justify-content:center; padding:24px;
+    margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+    background:linear-gradient(180deg,#0a0e13,#0b1219 40%, #0a0e13); color:var(--text);
+    display:flex; align-items:center; justify-content:center; padding:24px;
+    overflow-y:auto; -webkit-overflow-scrolling:touch;
     }
+    
     .app{width:min(1100px,100%);} 
     .card{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.25); overflow:hidden}
     header{display:flex; gap:12px; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid rgba(255,255,255,.06); flex-wrap:wrap}
@@ -82,6 +84,7 @@
       .panel{padding:14px}
       .row button{flex:1}
       .meta{width:100%; justify-content:space-between}
+      body{padding:10px; display:block;}  /* ensures scroll on small screens */
     }
   </style>
 </head>
@@ -196,19 +199,7 @@
           </div>
         </div>
 
-        <div class="panel">
-          <h2>Deploy (GitHub Pages)</h2>
-          <ol class="small muted" style="margin:0 0 6px 14px; line-height:1.5">
-            <li>Create a new GitHub repository (public or private).</li>
-            <li>Name this file <span class="kbd">index.html</span> and commit it to the repo root.</li>
-            <li>In repo Settings → Pages → Source: select <span class="kbd">Deploy from a branch</span>, branch <span class="kbd">main</span>, folder <span class="kbd">/root</span>. Save.</li>
-            <li>Wait for the green Pages deploy check, then open the provided URL. That’s it.</li>
-          </ol>
-          <p class="small muted" style="margin:0">Your Library uses browser storage; use Export/Import or the optional Folder to move between devices.</p>
-        </div>
-      </div>
-    </section>
-  </div>
+      
 
   <script>
   // ==========================
