@@ -319,10 +319,25 @@
     }
   }
 
+
+// helper: shuffle options and remap answer for a list of questions
+  function shuffleOptionsOnLoad(list){
+    return list.map(q => {
+      const pairs = q.options.map((text, i) => ({ text, i }));
+      shuffle(pairs); // existing shuffle()
+      const options = pairs.map(p => p.text);
+      const answer = pairs.findIndex(p => p.i === q.answer);
+      return { ...q, options, answer };
+    });
+  }
+  // LOAD FROM JSON (Import)
   function loadQuestions(jsonText){
     const data = parseInput(jsonText);
     if(!data) return;
-    QUESTIONS = data.map(q=>({...q}));
+  
+    // shuffle options BEFORE anything renders
+    QUESTIONS = shuffleOptionsOnLoad(data.map(q => ({ ...q })));
+  
     order = [...Array(QUESTIONS.length).keys()];
     shuffle(order);
     idx = 0; answered.clear(); wrong = 0;
@@ -533,16 +548,23 @@
     alert(`Saved "${name}" to Library.`);
   }
 
+
+  // LOAD FROM LIBRARY
   async function loadFromLibrary(name){
     const rec = await idbGet(STORE_SETS, name);
     if(!rec){ alert('Set not found.'); return; }
-    QUESTIONS = rec.questions || [];
-    order = [...Array(QUESTIONS.length).keys()]; shuffle(order);
+  
+    // shuffle options even for saved sets
+    QUESTIONS = shuffleOptionsOnLoad(rec.questions || []);
+  
+    order = [...Array(QUESTIONS.length).keys()];
+    shuffle(order);
     idx = 0; answered.clear(); wrong = 0; els.wrongCount.textContent = wrong;
-    els.emptyState.classList.add('hidden'); els.quizBox.classList.remove('hidden');
-    render(); setActiveView('drill');
+    els.emptyState.classList.add('hidden');
+    els.quizBox.classList.remove('hidden');
+    render();
+    setActiveView('drill');
   }
-
   // ==========================
   // Export / Import Files
   // ==========================
