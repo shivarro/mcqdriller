@@ -333,6 +333,16 @@
     setActiveView('drill');
   }
 
+    // Shuffle options per question and remap answer
+  QUESTIONS = QUESTIONS.map(q => {
+    const pairs = q.options.map((text, i) => ({ text, i }));
+    shuffle(pairs); // your existing shuffle()
+    const newOptions = pairs.map(p => p.text);
+    const newAnswer = pairs.findIndex(p => p.i === q.answer);
+    return { ...q, options: newOptions, answer: newAnswer };
+  });
+
+
   function render(){
     const current = QUESTIONS[order[idx]];
     const total = QUESTIONS.length;
