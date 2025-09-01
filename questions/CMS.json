@@ -1,0 +1,806 @@
+[
+  {
+    "id": "q-147",
+    "stem": "In a patient with suspected rhabdomyolysis after prolonged immobilization, which laboratory abnormality is LEAST likely to be present?",
+    "options": [
+      "Hyponatremia",
+      "Hypocalcemia",
+      "Hyperphosphatemia",
+      "Hyperkalemia"
+    ],
+    "answer": 0,
+    "notes": "Rhabdomyolysis causes release of intracellular contents—myoglobin, potassium, and phosphorus into the bloodstream—leading to hyperkalemia, hyperphosphatemia, hypocalcemia (from calcium deposition), and elevated creatine kinase and creatinine. Sodium levels are regulated by RAAS/ADH and are typically normal."
+  },
+  {
+    "id": "q-148",
+    "stem": "Which laboratory marker is the most reliable indicator of muscle injury in rhabdomyolysis?",
+    "options": [
+      "Creatine kinase",
+      "Serum troponin",
+      "Serum myoglobin",
+      "Aspartate aminotransferase (AST)"
+    ],
+    "answer": 0,
+    "notes": "Creatine kinase (CK) is the best marker for muscle injury. Myoglobin is filtered and rapidly excreted, whereas CK reflects muscle breakdown and correlates with severity of rhabdomyolysis."
+  },
+  {
+    "id": "q-149",
+    "stem": "A homeless man with HIV and IV heroin use presents with fever and neck pain. Imaging shows destruction of the C5–C6 vertebrae and disc space collapse. What is the most likely mechanism of his vertebral osteomyelitis?",
+    "options": [
+      "Direct inoculation from trauma",
+      "Degenerative disc disease",
+      "Hematogenous dissemination from a distant infection",
+      "Contiguous spread from tuberculosis"
+    ],
+    "answer": 2,
+    "notes": "IV drug users commonly develop vertebral osteomyelitis via hematogenous spread of bacteria from a distant infection (often endocarditis). Staphylococcus aureus or Pseudomonas are typical. TB (Pott disease) causes chronic granulomatous disease; here the presentation is acute and not consistent with TB."
+  },
+  {
+    "id": "q-150",
+    "stem": "Which pathogen is most commonly associated with acute pyogenic vertebral osteomyelitis in intravenous drug users?",
+    "options": [
+      "Escherichia coli",
+      "Histoplasma capsulatum",
+      "Mycobacterium tuberculosis",
+      "Staphylococcus aureus"
+    ],
+    "answer": 3,
+    "notes": "Staphylococcus aureus is the most common cause of hematogenous pyogenic vertebral osteomyelitis, especially in IV drug users. Pseudomonas is also associated but less commonly than Staph aureus."
+  },
+  {
+    "id": "q-151",
+    "stem": "A dentist develops a painful vesicular lesion on his finger accompanied by axillary lymphadenopathy. What is the most likely diagnosis?",
+    "options": [
+      "Herpetic whitlow caused by HSV-1/2",
+      "Felon (bacterial abscess)",
+      "Erythema multiforme",
+      "Clenched-fist injury infection"
+    ],
+    "answer": 0,
+    "notes": "Herpetic whitlow is caused by HSV-1 or HSV-2. Painful grouped vesicles on the finger occur after direct contact with infectious oral secretions; common in healthcare workers such as dentists. Bacterial abscesses present with pus and throbbing pain, not vesicles."
+  },
+  {
+    "id": "q-152",
+    "stem": "What is the appropriate treatment for herpetic whitlow?",
+    "options": [
+      "Amoxicillin-clavulanate",
+      "Oral acyclovir",
+      "Incision and drainage with antibiotics",
+      "No treatment is necessary"
+    ],
+    "answer": 1,
+    "notes": "Herpetic whitlow is treated with oral acyclovir, which inhibits viral DNA polymerase. Incision and drainage are not recommended because the lesion is viral, not bacterial."
+  },
+  {
+    "id": "q-153",
+    "stem": "A 25-year-old man develops gross hematuria one day after a viral upper respiratory infection. Laboratory results show 4+ blood on urinalysis, normal creatinine, and normal complement levels. What is the most likely diagnosis?",
+    "options": [
+      "IgA nephropathy",
+      "Acute tubular necrosis",
+      "Hemolytic uremic syndrome",
+      "Post-streptococcal glomerulonephritis"
+    ],
+    "answer": 0,
+    "notes": "IgA nephropathy (Berger disease) presents with episodic gross hematuria within 1–2 days of a URI or GI infection. Complement levels are normal, creatinine may be normal, and there is minimal proteinuria. PSGN develops 2–6 weeks after infection and is associated with low C3, hypertension, and proteinuria."
+  },
+  {
+    "id": "q-154",
+    "stem": "Which finding differentiates post-streptococcal glomerulonephritis from IgA nephropathy?",
+    "options": [
+      "Normal complement levels",
+      "Absence of hypertension",
+      "Presentation within 1–2 days of infection",
+      "Low complement (C3) levels 2–6 weeks after infection"
+    ],
+    "answer": 3,
+    "notes": "PSGN typically occurs 2–6 weeks after group A streptococcal infection and is characterized by decreased C3 complement, edema, hypertension, and often proteinuria. IgA nephropathy occurs within 1–2 days and has normal complement."
+  },
+  {
+    "id": "q-155",
+    "stem": "During a transfusion of packed red blood cells, a patient develops fever and chills but no hypotension, rash, or respiratory symptoms. Direct Coombs test is negative. What is the most likely diagnosis?",
+    "options": [
+      "Febrile nonhemolytic transfusion reaction",
+      "Acute hemolytic transfusion reaction",
+      "Anaphylactic reaction",
+      "Transfusion-related acute lung injury"
+    ],
+    "answer": 0,
+    "notes": "Febrile nonhemolytic transfusion reaction is caused by cytokines from donor leukocytes accumulating in stored blood. Patients develop fever and chills within 1–6 hours of transfusion, but no hypotension, rash, or respiratory symptoms. Treatment includes stopping the transfusion and administering acetaminophen."
+  },
+  {
+    "id": "q-156",
+    "stem": "What is the recommended management for a febrile nonhemolytic transfusion reaction?",
+    "options": [
+      "Provide methylprednisolone",
+      "Stop transfusion and give acetaminophen",
+      "Transfuse compatible plasma",
+      "Administer epinephrine immediately"
+    ],
+    "answer": 1,
+    "notes": "Febrile nonhemolytic reactions are benign. The transfusion is stopped temporarily, and acetaminophen is given to treat fever. Epinephrine is used in anaphylaxis. Steroids are not needed for febrile reactions."
+  },
+  {
+    "id": "q-157",
+    "stem": "A 27-year-old woman has hyperthyroid symptoms and a firm 2 cm thyroid nodule. Her TSH is low. The nodule is solitary and functioning. What is the most likely diagnosis?",
+    "options": [
+      "Subacute thyroiditis",
+      "Toxic adenoma",
+      "Hashimoto thyroiditis",
+      "Papillary thyroid carcinoma"
+    ],
+    "answer": 1,
+    "notes": "A solitary hyperfunctioning (“toxic”) thyroid nodule produces excess T3/T4 and suppresses TSH. Thyroid cancers are usually nonfunctioning (cold) and do not cause hyperthyroidism."
+  },
+  {
+    "id": "q-158",
+    "stem": "Which feature suggests a thyroid carcinoma rather than a toxic adenoma?",
+    "options": [
+      "Suppressed uptake on technetium scan",
+      "Cold nodule on radioactive iodine scan",
+      "Low TSH with hyperthyroid symptoms",
+      "Young age with palpable nodule"
+    ],
+    "answer": 1,
+    "notes": "Thyroid carcinomas (e.g., papillary) are typically cold (nonfunctioning) nodules that do not suppress TSH. Toxic adenomas show focal uptake and cause suppressed TSH. Cancer usually presents as a firm fixed nodule with normal thyroid function."
+  },
+  {
+    "id": "q-159",
+    "stem": "An elderly woman with epigastric pain, pruritus, elevated alk phos, elevated total bilirubin, and ultrasound showing a dilated common bile duct and pancreatic duct (“double duct sign”) likely has:",
+    "options": [
+      "Pancreatic adenocarcinoma",
+      "Cholangiocarcinoma",
+      "Primary biliary cholangitis",
+      "Gallstone pancreatitis"
+    ],
+    "answer": 0,
+    "notes": "The double duct sign (dilation of both CBD and pancreatic duct) suggests obstruction at the pancreatic head, most commonly due to pancreatic adenocarcinoma. PBC involves intrahepatic ducts, usually in middle-aged women, and does not cause a double duct sign or extrahepatic bile duct dilation."
+  },
+  {
+    "id": "q-160",
+    "stem": "Which finding favors pancreatic cancer over primary biliary cholangitis?",
+    "options": [
+      "Pruritus in a middle-aged woman",
+      "Gradual onset without abdominal pain",
+      "Positive anti-mitochondrial antibodies (AMA)",
+      "Double duct sign on imaging"
+    ],
+    "answer": 3,
+    "notes": "Pancreatic head tumors cause obstruction of both the common bile duct and pancreatic duct, leading to the double duct sign and painless jaundice or vague pain. PBC affects intrahepatic ducts, is associated with AMA, occurs in middle-aged women, and causes chronic pruritus without extrahepatic duct dilation."
+  },
+  {
+    "id": "q-161",
+    "stem": "A woman with a history of prolonged intubation now presents with progressive shortness of breath and an end-expiratory wheeze that does not respond to bronchodilators. Oxygen saturation is normal. What is the most likely diagnosis?",
+    "options": [
+      "Asthma",
+      "Cardiac asthma",
+      "Chronic obstructive pulmonary disease",
+      "Tracheomalacia"
+    ],
+    "answer": 3,
+    "notes": "Tracheomalacia results from weakening of tracheal cartilage after prolonged intubation. The trachea collapses during expiration, causing expiratory wheezing or stridor. It often mimics asthma but does not respond to bronchodilators. Asthma is typically recurrent with triggers and responds to bronchodilators."
+  },
+  {
+    "id": "q-162",
+    "stem": "Which feature distinguishes tracheomalacia from asthma?",
+    "options": [
+      "Diffuse wheezing triggered by allergens",
+      "Lack of response to bronchodilators and expiratory wheeze after prolonged intubation",
+      "Presence of eosinophilia on sputum cytology",
+      "Childhood onset with exercise-induced symptoms"
+    ],
+    "answer": 1,
+    "notes": "Tracheomalacia presents with expiratory wheeze due to collapse of weak tracheal cartilage, especially after prolonged intubation, and does not improve with bronchodilators. Asthma shows diffuse bronchial hyperreactivity, is often triggered by allergens or exercise, and responds to bronchodilators."
+  },
+  {
+    "id": "q-163",
+    "stem": "A malnourished homeless IV drug user presents with fever, weight loss, hemoptysis, and cavitary lesions in the upper lobes on chest X-ray. The PPD test is negative. Which diagnosis is most likely?",
+    "options": [
+      "Tuberculous pleurisy",
+      "Cystic fibrosis exacerbation",
+      "Reactivation tuberculosis despite a negative PPD",
+      "Bronchiectasis"
+    ],
+    "answer": 2,
+    "notes": "Reactivation tuberculosis presents with upper lobe cavitary lesions, constitutional symptoms (weight loss, fever), and hemoptysis. PPD can be falsely negative in immunocompromised or malnourished individuals due to anergy. Bronchiectasis typically causes chronic productive cough with dilated bronchi on imaging."
+  },
+  {
+    "id": "q-164",
+    "stem": "Which condition is characterized by productive cough and bronchial wall thickening with signet-ring sign on CT?",
+    "options": [
+      "Bronchiectasis",
+      "Primary tuberculosis",
+      "Septic pulmonary emboli",
+      "Sarcoidosis"
+    ],
+    "answer": 0,
+    "notes": "Bronchiectasis is a chronic airway disease where dilated bronchi appear as signet-ring or tram-track patterns on CT. Patients have chronic productive cough and recurrent infections. Septic emboli cause nodular cavitations; TB shows upper lobe cavities; sarcoidosis has hilar adenopathy."
+  },
+  {
+    "id": "q-165",
+    "stem": "Which feature differentiates ulcerative colitis from Crohn’s disease?",
+    "options": [
+      "Continuous mucosal involvement starting at the rectum",
+      "Stricture formation and fistulas",
+      "Skip lesions and transmural inflammation",
+      "Involvement of the terminal ileum only"
+    ],
+    "answer": 0,
+    "notes": "Ulcerative colitis always involves the rectum and extends proximally in a continuous fashion, with inflammation limited to the mucosa. Crohn’s disease has skip lesions, transmural inflammation, can affect any part of the GI tract, and often leads to strictures and fistulas."
+  },
+  {
+    "id": "q-166",
+    "stem": "A woman presents with vaginal bleeding a few days after spontaneous abortion. β-hCG levels have plateaued. Ultrasound shows retained fetal tissue in the uterus. What is the most likely diagnosis?",
+    "options": [
+      "Retained products of conception (RPOC)",
+      "Placenta previa",
+      "Incomplete abortion requiring methotrexate",
+      "Gestational trophoblastic neoplasia (GTN)"
+    ],
+    "answer": 0,
+    "notes": "RPOC occurs days after an abortion, presenting with vaginal bleeding and cramping. β-hCG levels fall slowly or plateau. Treatment is dilation and curettage. GTN occurs weeks after molar pregnancy or abortion, with rising β-hCG and often no vaginal bleeding; treatment is methotrexate or chemotherapy."
+  },
+  {
+    "id": "q-167",
+    "stem": "Which of the following is NOT characteristic of multiple myeloma?",
+    "options": [
+      "RBCs in urine",
+      "Anemia and renal dysfunction",
+      "Bence Jones proteinuria",
+      "Hypercalcemia"
+    ],
+    "answer": 0,
+    "notes": "In multiple myeloma, kidney damage results from cast nephropathy or amyloidosis due to light chain deposition. Urinalysis typically shows protein (Bence Jones proteins), but hematuria is uncommon. CRAB features: hyperCalcemia, Renal failure, Anemia, Bone lesions."
+  },
+  {
+    "id": "q-168",
+    "stem": "Which presentation suggests cholesterol embolism rather than small-vessel vasculitis?",
+    "options": [
+      "Polymorphic purple lesions with palpable purpura",
+      "Fever, new murmur, positive blood cultures",
+      "Livedo reticularis, AKI, eosinophilia after angiography",
+      "Subcutaneous nodules and joint pain"
+    ],
+    "answer": 2,
+    "notes": "Cholesterol embolism occurs after vascular procedures, manifesting as livedo reticularis, blue toes, AKI, and eosinophilia. Vasculitis (like polyarteritis nodosa) presents with systemic symptoms and inflammation of multiple organs. APS or endocarditis cause thromboses with fever and murmurs."
+  },
+  {
+    "id": "q-169",
+    "stem": "Painful vesicles inside the mouth accompanied by fever and gingivostomatitis are most consistent with infection by:",
+    "options": [
+      "Epstein–Barr virus causing mono",
+      "HSV (gingivostomatitis)",
+      "Coxsackie virus (hand–foot–mouth disease)",
+      "Candida albicans"
+    ],
+    "answer": 1,
+    "notes": "HSV-1 causes painful vesicles and ulcers in the oral cavity (gingivostomatitis). EBV causes exudative tonsillitis, posterior cervical lymphadenopathy, and positive Monospot test. Coxsackie virus causes vesicles on hands and feet as well as oral ulcers. Oral candidiasis appears as white plaques that scrape off."
+  },
+  {
+    "id": "q-170",
+    "stem": "A 55-year-old diabetic woman with creatinine 2.0 mg/dL and eGFR 25 is taking metformin and has HbA1c of 9.2%. What is the appropriate change in therapy?",
+    "options": [
+      "Switch to SGLT2 inhibitor",
+      "Continue metformin and add sulfonylurea",
+      "Discontinue metformin and start insulin therapy",
+      "Add pioglitazone"
+    ],
+    "answer": 2,
+    "notes": "Metformin is contraindicated when eGFR <30 mL/min or serum creatinine >1.5 mg/dL due to risk of lactic acidosis. In patients with poor glycemic control (HbA1c >9%) and significant renal impairment, insulin is the preferred therapy. Sulfonylureas risk hypoglycemia; SGLT2 inhibitors and thiazolidinediones are also contraindicated in severe renal failure."
+  },
+  {
+    "id": "q-171",
+    "stem": "A patient presents with isolated thrombocytopenia and mucosal bleeding. Peripheral smear is normal. What is the most likely diagnosis and treatment?",
+    "options": [
+      "Disseminated intravascular coagulation (DIC); treat with heparin",
+      "Immune thrombocytopenic purpura (ITP); treat with steroids or IVIG",
+      "Aplastic anemia; treat with bone marrow transplant",
+      "Thrombotic thrombocytopenic purpura (TTP); treat with plasma exchange"
+    ],
+    "answer": 1,
+    "notes": "ITP is an autoimmune disorder causing isolated thrombocytopenia without systemic symptoms. Therapy includes steroids or IVIG. TTP presents with MAHA, neurologic and renal abnormalities, requiring plasma exchange. Aplastic anemia presents with pancytopenia. DIC shows decreased fibrinogen and prolonged PT/PTT."
+  },
+  {
+    "id": "q-172",
+    "stem": "Which finding suggests thrombotic thrombocytopenic purpura rather than immune thrombocytopenic purpura?",
+    "options": [
+      "Schistocytes and elevated LDH on peripheral smear",
+      "Isolated thrombocytopenia with normal smear",
+      "Normal renal function",
+      "Response to steroids and IVIG"
+    ],
+    "answer": 0,
+    "notes": "TTP is due to ADAMTS13 deficiency and presents with microangiopathic hemolytic anemia (schistocytes), thrombocytopenia, neurologic deficits, fever, and renal impairment. It requires emergent plasma exchange. ITP presents with isolated thrombocytopenia, no schistocytes, and responds to steroids or IVIG."
+  },
+  {
+    "id": "q-173",
+    "stem": "Pulmonary hypertension in COPD is primarily due to:",
+    "options": [
+      "Increased left atrial pressure from mitral regurgitation",
+      "Low cardiac output due to heart failure",
+      "Chronic hypoxia causing pulmonary vasoconstriction",
+      "Pulmonary embolism"
+    ],
+    "answer": 2,
+    "notes": "Chronic hypoxia leads to hypoxic vasoconstriction of pulmonary arteries, increasing vascular resistance and causing pulmonary hypertension. Decreased cardiac output does not cause PH directly. Other causes (PE, left heart disease) are different forms of pulmonary hypertension."
+  },
+  {
+    "id": "q-174",
+    "stem": "A patient with foul-smelling pleural fluid and a history of aspiration likely has empyema caused by which bacteria?",
+    "options": [
+      "Legionella",
+      "Chlamydia pneumoniae",
+      "Anaerobic bacteria (e.g., Bacteroides)",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 2,
+    "notes": "Foul odor suggests anaerobic infection from aspiration in patients with poor dentition or alcoholism. Pneumococcal empyema produces purulent but not fetid odor. Legionella causes atypical pneumonia, not foul-smelling empyema."
+  },
+  {
+    "id": "q-175",
+    "stem": "A patient with a history of lung cancer develops recurrent serosanguinous pleural effusion that is exudative with low pH and low glucose. What is the most likely diagnosis?",
+    "options": [
+      "Heart failure with transudative effusion",
+      "Tuberculosis pleuritis",
+      "Pneumonia with parapneumonic effusion",
+      "Malignant pleural effusion"
+    ],
+    "answer": 3,
+    "notes": "Malignant pleural effusions are exudative, often serosanguinous, with low pH and low glucose. They frequently recur and are associated with underlying malignancies such as lung or breast cancer. Transudative effusions (heart failure) have low protein and normal pH/glucose."
+  },
+  {
+    "id": "q-176",
+    "stem": "Which leukemia is associated with the Philadelphia chromosome (BCR-ABL fusion) and is treated with a tyrosine kinase inhibitor?",
+    "options": [
+      "Chronic myelogenous leukemia (CML)",
+      "Chronic lymphocytic leukemia (CLL)",
+      "Acute myeloid leukemia (AML)",
+      "Polycythemia vera"
+    ],
+    "answer": 0,
+    "notes": "CML is characterized by the t(9;22) translocation (Philadelphia chromosome) producing the BCR-ABL fusion gene. It is treated with imatinib, a tyrosine kinase inhibitor. AML and CLL are not associated with BCR-ABL."
+  },
+  {
+    "id": "q-177",
+    "stem": "Which finding is characteristic of chronic myelogenous leukemia?",
+    "options": [
+      "Lymphadenopathy and high lymphocyte count",
+      "Thrombocytosis with normal white blood cell count",
+      "Basophilia and very high white blood cell count",
+      "Hypercalcemia and lytic bone lesions"
+    ],
+    "answer": 2,
+    "notes": "CML often presents with markedly elevated WBC count and basophilia. CLL presents with lymphocytosis; multiple myeloma presents with bone lesions and hypercalcemia; polycythemia vera presents with elevated hematocrit and thrombocytosis."
+  },
+  {
+    "id": "q-178",
+    "stem": "A 25-year-old man presents with fever, sore throat, fatigue, and diffuse lymphadenopathy 10 days in duration. He had unprotected sex 6 weeks ago. His monospot and streptococcal tests are negative. What test is most appropriate to confirm the suspected diagnosis?",
+    "options": [
+      "Measurement of plasma HIV viral load by RT-PCR",
+      "Monospot test repeated in 2 weeks",
+      "Rapid influenza antigen test",
+      "HSV PCR from throat swab"
+    ],
+    "answer": 0,
+    "notes": "Acute retroviral syndrome (primary HIV infection) may present with mononucleosis-like illness 2–4 weeks after exposure. Fourth-generation HIV tests may be negative early; the plasma HIV RNA (viral load) is diagnostic. HSV typically causes painful vesicles; influenza is unlikely here."
+  },
+  {
+    "id": "q-179",
+    "stem": "Which factor is the most important risk factor for developing seborrheic keratosis?",
+    "options": [
+      "Controlled HIV infection",
+      "Increasing age",
+      "Gender",
+      "Outdoor occupation"
+    ],
+    "answer": 1,
+    "notes": "Seborrheic keratosis is a benign skin lesion associated with aging. It presents as 'stuck-on' pigmented plaques. It is not linked to gender, controlled HIV, medications, or farming occupation."
+  },
+  {
+    "id": "q-180",
+    "stem": "Which of the following defines hospital-acquired pneumonia (HAP)?",
+    "options": [
+      "Pneumonia due to Mycoplasma pneumoniae only",
+      "Pneumonia occurring within 24 hours of admission",
+      "Pneumonia occurring ≥48 hours after hospital admission",
+      "Pneumonia acquired from the community"
+    ],
+    "answer": 2,
+    "notes": "Hospital-acquired (nosocomial) pneumonia is defined as pneumonia developing 48 hours or more after admission and not incubating at admission. It frequently involves organisms such as MRSA and Pseudomonas, unlike community-acquired pneumonia."
+  },
+  {
+    "id": "q-181",
+    "stem": "Which empiric treatment regimen is appropriate for hospital-acquired pneumonia in a patient with risk factors for MRSA and Pseudomonas?",
+    "options": [
+      "Amoxicillin-clavulanate alone",
+      "Ceftriaxone plus azithromycin",
+      "Doxycycline alone",
+      "Vancomycin plus ceftazidime"
+    ],
+    "answer": 3,
+    "notes": "HAP requires coverage for MRSA and Pseudomonas. A typical regimen includes vancomycin plus an anti-pseudomonal β-lactam such as ceftazidime, cefepime, or piperacillin-tazobactam. CAP regimens (ceftriaxone + azithro) are insufficient."
+  },
+  {
+    "id": "q-182",
+    "stem": "Which mechanism explains fatty stools (steatorrhea) in Crohn’s disease with terminal ileum involvement?",
+    "options": [
+      "Increased secretin release",
+      "Pancreatic enzyme deficiency",
+      "Ineffective reabsorption of bile salts",
+      "Small intestinal bacterial overgrowth"
+    ],
+    "answer": 2,
+    "notes": "The terminal ileum reabsorbs bile salts; inflammation or resection in Crohn’s prevents reabsorption. Loss of bile salts impairs fat digestion, resulting in steatorrhea. SIBO may cause fat malabsorption but is less likely without anatomic stasis or surgery."
+  },
+  {
+    "id": "q-183",
+    "stem": "An 82-year-old man has frequency, weak stream, dribbling, and a post-void residual of 750 mL. What type of incontinence is most likely?",
+    "options": [
+      "Urge incontinence due to detrusor hyperactivity",
+      "Overflow incontinence due to bladder outlet obstruction",
+      "Stress incontinence due to urethral hypermobility",
+      "Functional incontinence"
+    ],
+    "answer": 1,
+    "notes": "Overflow incontinence results from chronic urinary retention due to bladder outlet obstruction (e.g., BPH). High residual volumes and weak stream are typical. Urge incontinence causes sudden urges but small residual volumes; stress incontinence occurs with increased intra-abdominal pressure; functional occurs from mobility/cognitive issues."
+  },
+  {
+    "id": "q-184",
+    "stem": "What is the immediate management of overflow incontinence due to bladder outlet obstruction with high post-void residual?",
+    "options": [
+      "Alpha-blocker therapy only",
+      "Behavioral modifications only",
+      "Pelvic floor muscle exercises",
+      "Bladder catheterization to decompress the bladder"
+    ],
+    "answer": 3,
+    "notes": "Overflow incontinence due to outlet obstruction should first be managed by catheterizing the bladder to decompress it and prevent renal damage. Alpha-blockers and 5-ARI can treat BPH; pelvic floor exercises help stress incontinence; behavioral modifications do not address retention."
+  },
+  {
+    "id": "q-185",
+    "stem": "Which effect does oral estrogen (OCPs, HRT) have on thyroid function tests in euthyroid women?",
+    "options": [
+      "High free T4 with suppressed TSH",
+      "Increased total T4 with normal free T4 and TSH",
+      "No changes in total or free thyroid hormones",
+      "Decreased total T4 with low free T4 and high TSH"
+    ],
+    "answer": 1,
+    "notes": "Estrogen increases hepatic production of thyroxine-binding globulin (TBG), increasing total T4 but leaving free T4 and TSH unchanged. Hypothyroidism (high TSH, low free T4) suggests thyroid gland failure, not estrogen effect."
+  },
+  {
+    "id": "q-186",
+    "stem": "A woman has fatigue, cold intolerance, and a bradycardia. Her TSH is elevated (23 µU/mL) and free T4 is low. She takes OCPs and has a brother with type 1 diabetes. What is the most likely cause of her hypothyroidism?",
+    "options": [
+      "Lithium therapy",
+      "Hashimoto (autoimmune) thyroiditis",
+      "Increased TBG from OCP use",
+      "Alcohol toxicity"
+    ],
+    "answer": 1,
+    "notes": "High TSH and low free T4 indicates primary hypothyroidism. In iodine-replete areas, Hashimoto thyroiditis is the most common cause, particularly with a family history of autoimmune disease. Estrogen-induced TBG elevation raises total but not free T4 or TSH."
+  },
+  {
+    "id": "q-187",
+    "stem": "Which hormone is most responsible for bone resorption in end-stage renal disease?",
+    "options": [
+      "Cortisol",
+      "Calcitonin",
+      "Epinephrine",
+      "Parathyroid hormone (PTH)"
+    ],
+    "answer": 3,
+    "notes": "In ESRD, phosphate retention and decreased active vitamin D result in hypocalcemia, stimulating the parathyroid glands to secrete PTH. Chronic high PTH levels cause secondary hyperparathyroidism and renal osteodystrophy, with subperiosteal bone resorption."
+  },
+  {
+    "id": "q-188",
+    "stem": "A 70-year-old woman presents with new temporal headache, scalp tenderness, jaw claudication, and ESR 110 mm/h. What is the most feared complication if this condition is untreated?",
+    "options": [
+      "Scleromalacia perforans",
+      "Ischemic optic neuropathy causing permanent vision loss",
+      "Dendritic corneal ulceration",
+      "Hyperviscosity retinopathy"
+    ],
+    "answer": 1,
+    "notes": "Giant cell arteritis causes granulomatous inflammation of medium-large arteries, including branches of the carotid. It leads to ischemic optic neuropathy via thrombosis of the posterior ciliary artery, resulting in sudden, painless, permanent vision loss if untreated."
+  },
+  {
+    "id": "q-189",
+    "stem": "Which term describes a medical error that is intercepted before it reaches the patient and causes no harm?",
+    "options": [
+      "Active failure",
+      "Adverse event",
+      "Sentinel event",
+      "Near miss"
+    ],
+    "answer": 3,
+    "notes": "A near miss is an error that is caught before it reaches the patient, resulting in no harm. An adverse event reaches the patient and causes temporary harm; a sentinel event causes permanent disability or death; active failure is a human error at the front line."
+  },
+  {
+    "id": "q-190",
+    "stem": "A nurse inadvertently gives the wrong medication dose to a patient; the error is discovered and corrected before the dose is administered. How would this event be classified?",
+    "options": [
+      "Near miss",
+      "Sentinel event",
+      "Latent condition",
+      "Adverse event"
+    ],
+    "answer": 0,
+    "notes": "An error intercepted before administration is a near miss. Adverse events and sentinel events reach the patient and cause harm; latent conditions are systemic flaws that create risk but do not directly result in an event unless combined with active failures."
+  },
+  {
+    "id": "q-191",
+    "stem": "Which situation describes a sentinel event?",
+    "options": [
+      "A latent system flaw discovered on chart review",
+      "Surgery performed on the wrong limb resulting in permanent disability",
+      "A minor allergic reaction successfully treated with antihistamines",
+      "A medication error that is intercepted before administration"
+    ],
+    "answer": 1,
+    "notes": "Sentinel events are serious errors that reach the patient and result in death or permanent disability (e.g., wrong-site surgery). Near misses are caught before reaching the patient; allergic reactions without permanent harm are adverse events; latent conditions are underlying system flaws."
+  },
+  {
+    "id": "q-192",
+    "stem": "A patient taking chronic aspirin for arthritis develops tinnitus. Which acid-base disorder is most consistent with chronic salicylate toxicity?",
+    "options": [
+      "Simple metabolic alkalosis",
+      "Metabolic acidosis with respiratory compensation leading to pH <7.0",
+      "Mixed respiratory alkalosis and anion-gap metabolic acidosis",
+      "Respiratory acidosis only"
+    ],
+    "answer": 2,
+    "notes": "Aspirin toxicity stimulates the respiratory center, causing respiratory alkalosis initially, and later produces anion-gap metabolic acidosis due to accumulation of lactate and ketoacids. The net effect is a mixed disorder with near-normal pH and low bicarbonate."
+  },
+  {
+    "id": "q-193",
+    "stem": "In chronic salicylate toxicity, which of the following laboratory patterns is most likely?",
+    "options": [
+      "Na 147, K 4.0, Cl 90, HCO3 18, pH 7.00",
+      "Na 132, K 4.6, Cl 94, HCO3 18, pH 7.38",
+      "Na 125, K 5.0, Cl 104, HCO3 25, pH 7.50",
+      "Na 140, K 3.0, Cl 110, HCO3 32, pH 7.10"
+    ],
+    "answer": 1,
+    "notes": "The pattern of low bicarbonate (~18 mEq/L) with near-normal pH (~7.38) and normal anion gap indicates a mixed acid-base disorder (respiratory alkalosis and metabolic acidosis) characteristic of chronic salicylate toxicity."
+  },
+  {
+    "id": "q-194",
+    "stem": "A 57-year-old man develops a bulging tender mass in his anterior upper arm after lifting heavy boxes and hears a popping sound. He has pain with elbow flexion but can still extend his arm normally. What is the most likely diagnosis?",
+    "options": [
+      "Rotator cuff tear",
+      "Humeral fracture",
+      "Arteriovenous malformation",
+      "Biceps tendon rupture"
+    ],
+    "answer": 3,
+    "notes": "Sudden anterior arm pain, a 'Popeye' bulge, and pain with elbow flexion and supination suggest biceps tendon rupture. AVMs are congenital, present with bruits and pulsation, and are not associated with trauma; rotator cuff tears affect shoulder abduction; humeral fractures present differently."
+  },
+  {
+    "id": "q-195",
+    "stem": "A patient is suspected of having infective endocarditis with fever, new murmur, and septic emboli. What is the best initial step in management?",
+    "options": [
+      "Perform transthoracic echocardiography first",
+      "Immediately start broad-spectrum antibiotics without cultures",
+      "Obtain blood cultures before starting antibiotics",
+      "Obtain surgery consult for valve replacement"
+    ],
+    "answer": 2,
+    "notes": "Diagnosis and management of infective endocarditis require multiple blood cultures prior to antibiotic administration. This allows identification of the pathogen. Echocardiography follows cultures. Empiric antibiotics can be started after cultures are drawn."
+  },
+  {
+    "id": "q-196",
+    "stem": "A 72-year-old woman with hypertension develops progressive dyspnea, crackles, and a third heart sound. Echocardiography shows preserved ejection fraction. What type of heart failure does she most likely have?",
+    "options": [
+      "High-output heart failure",
+      "Cardiorenal syndrome",
+      "Heart failure with reduced ejection fraction (HFrEF; systolic dysfunction)",
+      "Heart failure with preserved ejection fraction (HFpEF; diastolic dysfunction)"
+    ],
+    "answer": 3,
+    "notes": "HFpEF (diastolic dysfunction) occurs due to impaired relaxation of a stiff left ventricle. It is common in older hypertensive females. Symptoms include pulmonary congestion with a normal EF. High-output failure requires conditions like anemia or thyrotoxicosis; HFrEF has reduced EF; cardiorenal syndrome is a complication of severe heart failure."
+  },
+  {
+    "id": "q-197",
+    "stem": "Which condition is NOT a cause of high-output heart failure?",
+    "options": [
+      "Hypertension-induced left ventricular hypertrophy",
+      "Atriovenous fistula",
+      "Beriberi (thiamine deficiency)",
+      "Severe anemia"
+    ],
+    "answer": 0,
+    "notes": "High-output heart failure occurs when increased demand (e.g., severe anemia, thyrotoxicosis, AV fistula, Beriberi) leads to cardiac output exceeding normal supply. Hypertension causing left ventricular hypertrophy leads to HFpEF (diastolic dysfunction), not high-output failure."
+  },
+  {
+    "id": "q-198",
+    "stem": "A postoperative patient develops unilateral leg swelling and duplex ultrasound confirms proximal DVT. Which is the best initial management?",
+    "options": [
+      "Initiate intravenous heparin therapy",
+      "Observe without treatment",
+      "Schedule thrombectomy immediately",
+      "Start clopidogrel therapy"
+    ],
+    "answer": 0,
+    "notes": "The first-line treatment for acute proximal DVT is anticoagulation (e.g., heparin), which prevents clot propagation and PE. Thrombectomy or thrombolysis is reserved for massive iliofemoral DVT causing limb ischemia. Antiplatelet therapy alone is insufficient."
+  },
+  {
+    "id": "q-199",
+    "stem": "Trichomoniasis is diagnosed by identifying motile trichomonads in the discharge. Which statement about treatment is correct?",
+    "options": [
+      "Treat the symptomatic partner only with topical azoles",
+      "Treat both partners with oral metronidazole",
+      "No treatment is needed if asymptomatic",
+      "Treat with ceftriaxone and doxycycline"
+    ],
+    "answer": 1,
+    "notes": "Trichomonas vaginalis is a sexually transmitted infection. All sexual partners must be treated with a single dose of oral metronidazole or tinidazole, even if asymptomatic. Topical treatments are ineffective; ceftriaxone/doxycycline treat gonorrhea/chlamydia."
+  },
+  {
+    "id": "q-200",
+    "stem": "Which nephropathy is associated with heroin use and presents with nephrotic syndrome (proteinuria, hypoalbuminemia, edema, hyperlipidemia)?",
+    "options": [
+      "Focal segmental glomerulosclerosis (FSGS)",
+      "Crescentic glomerulonephritis",
+      "Membranous nephropathy",
+      "Minimal change disease"
+    ],
+    "answer": 0,
+    "notes": "Heroin use is strongly associated with FSGS, which is the most common cause of nephrotic syndrome in heroin users, HIV infection, obesity, and African-American populations. Minimal change disease is more common in children; membranous nephropathy occurs in lupus, hepatitis B, malignancy; crescentic GN presents as rapidly progressive GN."
+  },
+  {
+    "id": "q-201",
+    "stem": "A 24-year-old woman presents with migratory polyarthritis, pustular skin lesions, and tenosynovitis. What is the appropriate treatment?",
+    "options": [
+      "Ceftriaxone plus azithromycin",
+      "Acyclovir",
+      "Sulfamethoxazole-trimethoprim",
+      "Tetracycline only"
+    ],
+    "answer": 0,
+    "notes": "Disseminated gonococcal infection presents as arthritis-dermatitis syndrome (migratory arthritis, tenosynovitis, pustular rash) or purulent monoarthritis. Treatment is ceftriaxone for gonorrhea plus azithromycin or doxycycline for possible Chlamydia co-infection."
+  },
+  {
+    "id": "q-202",
+    "stem": "Which acute kidney injury (AKI) type is most likely when BUN/Creatinine ratio is >20, urine sodium <20 mEq/L, FENa <1%, and urine is highly concentrated?",
+    "options": [
+      "Acute tubular necrosis",
+      "Acute interstitial nephritis",
+      "Post-renal obstruction",
+      "Pre-renal azotemia"
+    ],
+    "answer": 3,
+    "notes": "Pre-renal AKI occurs due to decreased renal perfusion (hypovolemia, CHF, sepsis). It is characterized by high BUN/Cr ratio, low urine sodium and FENa (<1%), and concentrated urine with low fractional excretion of sodium."
+  },
+  {
+    "id": "q-203",
+    "stem": "Muddy brown granular casts on urinalysis are most suggestive of:",
+    "options": [
+      "Post-renal obstruction",
+      "Acute interstitial nephritis",
+      "Glomerulonephritis",
+      "Acute tubular necrosis"
+    ],
+    "answer": 3,
+    "notes": "Muddy brown (granular) casts are characteristic of acute tubular necrosis, which is an intrinsic kidney injury often caused by ischemia or nephrotoxins. GN presents with RBC casts; AIN presents with WBC casts, eosinophils; post-renal obstruction lacks casts."
+  },
+  {
+    "id": "q-204",
+    "stem": "Which of the following is the recommended goal for HbA1c in most diabetic patients?",
+    "options": [
+      ">8%",
+      "1–2%",
+      "<7%",
+      "<5%"
+    ],
+    "answer": 2,
+    "notes": "Current guidelines recommend an HbA1c goal of <7% for most patients with diabetes to reduce microvascular complications while balancing risk of hypoglycemia."
+  },
+  {
+    "id": "q-205",
+    "stem": "In type 2 diabetes management, what is the target fasting blood glucose range to achieve HbA1c goals?",
+    "options": [
+      "<60 mg/dL",
+      "130–180 mg/dL",
+      "50–80 mg/dL",
+      "80–130 mg/dL"
+    ],
+    "answer": 3,
+    "notes": "The American Diabetes Association recommends a fasting blood glucose target of 80–130 mg/dL for most nonpregnant adults to achieve an HbA1c <7%."
+  },
+  {
+    "id": "q-206",
+    "stem": "At what age and cholesterol level should adults begin statin therapy regardless of LDL in primary prevention?",
+    "options": [
+      ">40 years old with total cholesterol >135 mg/dL",
+      ">30 years old with triglycerides >300 mg/dL",
+      ">60 years old with total cholesterol >200 mg/dL",
+      "Any age if HDL <40 mg/dL"
+    ],
+    "answer": 0,
+    "notes": "Adults over 40 with total cholesterol >135 mg/dL qualify for statin therapy for cardiovascular risk reduction even if LDL is <100 mg/dL. Guidelines also consider risk factors such as diabetes, hypertension, and family history."
+  },
+  {
+    "id": "q-207",
+    "stem": "In end-stage renal disease, which two electrolyte abnormalities primarily stimulate secondary hyperparathyroidism?",
+    "options": [
+      "Hyperphosphatemia and hypocalcemia",
+      "Hypophosphatemia and hypernatremia",
+      "Hypercalcemia and hypermagnesemia",
+      "Hyperkalemia and hypomagnesemia"
+    ],
+    "answer": 0,
+    "notes": "Impaired phosphate excretion and failure to activate vitamin D result in high phosphate and low calcium. Low serum calcium stimulates parathyroid hormone release, causing secondary hyperparathyroidism and bone resorption."
+  },
+  {
+    "id": "q-208",
+    "stem": "A patient with nephrotic syndrome is treated with diuretics and develops orthostatic hypotension and oliguria. Urinalysis shows proteinuria but no active sediment or hematuria. What is the most likely cause of his weakness and decreased urine output?",
+    "options": [
+      "Renal vein thrombosis",
+      "Acute interstitial nephritis",
+      "Membranoproliferative glomerulonephritis",
+      "Intravascular volume depletion due to over-diuresis"
+    ],
+    "answer": 3,
+    "notes": "Nephrotic syndrome often predisposes to intravascular volume depletion when aggressive diuresis is used. Orthostatic hypotension and oliguria with bland urine sediment suggest pre-renal AKI due to volume depletion. AIN would present with eosinophils and WBC casts; renal vein thrombosis presents with flank pain and hematuria."
+  },
+  {
+    "id": "q-209",
+    "stem": "Sepsis is defined as infection with systemic inflammatory response. Which of the following is the correct initial management once sepsis is suspected?",
+    "options": [
+      "Delay treatment until culture results return",
+      "Administer broad-spectrum IV antibiotics and IV fluids immediately",
+      "Treat with oral antibiotics only",
+      "Restrict fluids to avoid volume overload"
+    ],
+    "answer": 1,
+    "notes": "Sepsis requires immediate administration of IV fluids and broad-spectrum antibiotics after obtaining cultures. Delaying therapy increases mortality. Adequate fluid resuscitation is critical; restricting fluids can worsen shock."
+  },
+  {
+    "id": "q-210",
+    "stem": "What is the most common cause of sudden death within the first 24 hours after acute myocardial infarction?",
+    "options": [
+      "Left ventricular aneurysm",
+      "Ventricular fibrillation",
+      "Free wall rupture",
+      "Papillary muscle rupture"
+    ],
+    "answer": 1,
+    "notes": "Ventricular arrhythmias (ventricular fibrillation or pulseless ventricular tachycardia) are the most common cause of death within the first 24 hours after MI. Mechanical complications (papillary muscle rupture, septal rupture, free wall rupture) occur several days later."
+  },
+  {
+    "id": "q-211",
+    "stem": "Which mechanical complication of MI occurs 3–5 days after infarction and is associated with acute severe mitral regurgitation?",
+    "options": [
+      "Interventricular septal rupture",
+      "Free wall rupture",
+      "Papillary muscle rupture",
+      "Left ventricular aneurysm"
+    ],
+    "answer": 2,
+    "notes": "Papillary muscle rupture (often after inferior MI) occurs 3–5 days post-MI and leads to acute severe mitral regurgitation, causing sudden pulmonary edema and hemodynamic collapse. Septal rupture also occurs 3–5 days; free wall rupture occurs 5–14 days."
+  },
+  {
+    "id": "q-212",
+    "stem": "Which mechanical complication of myocardial infarction typically occurs 5–14 days after the event and leads to hemopericardium and cardiac tamponade?",
+    "options": [
+      "Free wall rupture",
+      "Left ventricular aneurysm",
+      "Papillary muscle rupture",
+      "Interventricular septal rupture"
+    ],
+    "answer": 0,
+    "notes": "Left ventricular free wall rupture usually occurs within 5–14 days post-MI and results in sudden cardiac tamponade with pulseless electrical activity. It is often fatal. Papillary muscle or septal rupture occur earlier; aneurysm develops weeks after MI."
+  },
+  {
+    "id": "q-213",
+    "stem": "A patient with chronic BCR-ABL positive leukemia is treated with imatinib. Which statement about imatinib is TRUE?",
+    "options": [
+      "It is a tyrosine kinase inhibitor targeting the fusion protein in CML",
+      "It prevents polymerization of microtubules",
+      "It is used to treat hairy cell leukemia",
+      "It functions as a folate antagonist"
+    ],
+    "answer": 0,
+    "notes": "Imatinib is a tyrosine kinase inhibitor that targets the BCR-ABL fusion protein produced by the Philadelphia chromosome in CML. It revolutionized treatment of CML. Folate antagonists (e.g., methotrexate) and microtubule inhibitors (e.g., paclitaxel) have other indications."
+  }
+]
