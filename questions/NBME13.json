@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "q-1",
+    "stem": "A patient has a blood pH of 7.16.  Which of the following best describes their acid–base status?",
+    "options": [
+      "Respiratory acidosis",
+      "Acidemia",
+      "Normal pH",
+      "Alkalemia"
+    ],
+    "answer": 1,
+    "notes": "In the notes, pH 7.16 is interpreted as acidemia. The first step in acid–base questions is to look at the pH to determine if it is acidic or alkaline."
+  },
+  {
+    "id": "q-2",
+    "stem": "After identifying a pH of 7.16, you find that the patient’s serum HCO₃⁻ is 7 mEq/L and their PCO₂ is 20 mm Hg.  Which primary disorder does this data indicate?",
+    "options": [
+      "Metabolic acidosis",
+      "Respiratory alkalosis",
+      "Respiratory acidosis",
+      "Metabolic alkalosis"
+    ],
+    "answer": 0,
+    "notes": "The notes emphasize that a very low bicarbonate with a low PCO₂ indicates a primary metabolic acidosis.  The low HCO₃⁻ is the main problem."
+  },
+  {
+    "id": "q-3",
+    "stem": "Using Na⁺ = 130 mEq/L, Cl⁻ = 98 mEq/L and HCO₃⁻ = 7 mEq/L, calculate the anion gap and determine the type of metabolic acidosis.",
+    "options": [
+      "Anion gap 10 – normal anion gap metabolic acidosis",
+      "Anion gap 25 – high anion gap metabolic acidosis",
+      "Anion gap 25 – normal anion gap metabolic acidosis",
+      "Anion gap 10 – high anion gap metabolic acidosis"
+    ],
+    "answer": 1,
+    "notes": "Anion gap = Na − (Cl + HCO₃) = 130 − (98 + 7) = 25.  The notes classify this as a high anion gap metabolic acidosis."
+  },
+  {
+    "id": "q-4",
+    "stem": "For a patient with metabolic acidosis (HCO₃⁻ = 7 mEq/L), what would the expected PCO₂ be according to Winter’s formula (1.5 × HCO₃ + 8 ± 2)?",
+    "options": [
+      "Approximately 28 mm Hg (26–30 range)",
+      "Approximately 18 mm Hg (16–21 range)",
+      "Approximately 10 mm Hg (8–12 range)",
+      "Approximately 40 mm Hg (38–42 range)"
+    ],
+    "answer": 1,
+    "notes": "Winter’s formula is 1.5 × HCO₃ + 8 ± 2.  With HCO₃ = 7, the expected PCO₂ is roughly 18.5 (16–21) mm Hg, as stated in the notes."
+  },
+  {
+    "id": "q-5",
+    "stem": "A patient’s laboratory results show pH 7.16, low bicarbonate, high anion gap and appropriate respiratory compensation.  Glucose is 700 mg/dL with ketones and Kussmaul breathing.  What is the likely diagnosis?",
+    "options": [
+      "Renal tubular acidosis causing non–anion gap metabolic acidosis",
+      "Salicylate poisoning causing mixed disorder",
+      "Hyperventilation causing respiratory alkalosis",
+      "Diabetic ketoacidosis causing high anion gap metabolic acidosis"
+    ],
+    "answer": 3,
+    "notes": "The notes tie together acidemia, high anion gap, appropriate compensation and high glucose with ketones to diagnose diabetic ketoacidosis.  There is no second disorder in this scenario."
+  },
+  {
+    "id": "q-6",
+    "stem": "On lung biopsy from an immunosuppressed transplant patient with hemoptysis, broad ribbon‑like, non‑septate hyphae with 90° branching are seen.  This finding is characteristic of which organism?",
+    "options": [
+      "Mucor or Rhizopus species",
+      "Aspergillus species",
+      "Candida albicans",
+      "Histoplasma capsulatum"
+    ],
+    "answer": 0,
+    "notes": "The notes describe pulmonary mucormycosis: on biopsy there are broad, ribbon‑like, non‑septate hyphae branching at right angles.  This distinguishes Mucor/Rhizopus from thin, septate, acute‑angle Aspergillus."
+  },
+  {
+    "id": "q-7",
+    "stem": "What is the first‑line treatment for pulmonary mucormycosis in an immunocompromised patient?",
+    "options": [
+      "Oral nystatin swish and swallow",
+      "Intravenous amphotericin B plus surgical debridement",
+      "Intravenous voriconazole alone",
+      "Oral fluconazole alone"
+    ],
+    "answer": 1,
+    "notes": "The notes state that the first‑line therapy for mucormycosis is IV amphotericin B, often with surgical debridement and reduction of immunosuppression.  Voriconazole is used for Aspergillus, and nystatin is topical only."
+  },
+  {
+    "id": "q-8",
+    "stem": "For which of the following infections is intravenous amphotericin B most appropriately used as first‑line therapy?",
+    "options": [
+      "Ringworm caused by dermatophytes",
+      "Oral candidiasis",
+      "Tinea capitis",
+      "Cryptococcus meningitis induction"
+    ],
+    "answer": 3,
+    "notes": "Amphotericin B is reserved for severe, life‑threatening systemic infections such as mucormycosis and Cryptococcus meningitis (induction therapy with flucytosine).  Mild Candida thrush is treated with fluconazole or nystatin, and dermatophyte infections are treated with griseofulvin."
+  },
+  {
+    "id": "q-9",
+    "stem": "Which antifungal is the preferred treatment for invasive Aspergillus infection?",
+    "options": [
+      "Fluconazole",
+      "Echinocandin (e.g., caspofungin)",
+      "Voriconazole",
+      "Posaconazole"
+    ],
+    "answer": 2,
+    "notes": "Voriconazole is listed as the drug of choice for invasive Aspergillus on Step 2.  Fluconazole is for Candida, echinocandins are second‑line for Aspergillus or invasive Candida, and posaconazole may be used for Mucor when amphotericin cannot be given."
+  },
+  {
+    "id": "q-10",
+    "stem": "Which antifungal is appropriate for superficial oral or vaginal candidiasis?",
+    "options": [
+      "Flucytosine",
+      "Nystatin (topical swish and swallow)",
+      "Amphotericin B",
+      "Itraconazole"
+    ],
+    "answer": 1,
+    "notes": "Nystatin is used topically for superficial Candida infections such as oral thrush, vaginal candidiasis and diaper rash.  Amphotericin B is reserved for systemic infections, while itraconazole treats histoplasmosis or blastomycosis.  Flucytosine is used only with amphotericin for cryptococcal meningitis."
+  },
+  {
+    "id": "q-11",
+    "stem": "Which antifungal is indicated for tinea capitis that has failed topical therapy?",
+    "options": [
+      "Nystatin",
+      "Fluconazole",
+      "Caspofungin",
+      "Griseofulvin"
+    ],
+    "answer": 3,
+    "notes": "The notes mention that griseofulvin is used to treat dermatophyte infections such as tinea capitis or onychomycosis when topical treatments have failed."
+  },
+  {
+    "id": "q-12",
+    "stem": "A newborn delivered with forceps has a well‑demarcated swelling over the parietal bone that does not cross suture lines and the overlying skin appears normal.  What is the most likely diagnosis?",
+    "options": [
+      "Scalp abscess",
+      "Subgaleal hemorrhage",
+      "Cephalohematoma",
+      "Caput succedaneum"
+    ],
+    "answer": 2,
+    "notes": "The notes explain that a cephalohematoma is a subperiosteal hemorrhage confined by suture lines, developing hours after a difficult (forceps) delivery without skin discoloration.  Caput succedaneum crosses sutures and is diffuse."
+  },
+  {
+    "id": "q-13",
+    "stem": "What is the primary complication associated with a neonatal cephalohematoma?",
+    "options": [
+      "Hypovolemic shock",
+      "Meningitis",
+      "Hyperbilirubinemia due to breakdown of the hematoma",
+      "Permanent skull deformity"
+    ],
+    "answer": 2,
+    "notes": "The notes highlight that blood in a cephalohematoma can break down into bilirubin.  Because neonatal bilirubin conjugation is immature, infants with cephalohematoma are at increased risk for jaundice and kernicterus."
+  },
+  {
+    "id": "q-14",
+    "stem": "A healthy newborn is found to have a cephalohematoma.  What is the best management?",
+    "options": [
+      "Obtain serum bilirubin level and monitor for jaundice",
+      "Initiate phototherapy immediately",
+      "Give prophylactic antibiotics",
+      "Drain the hematoma surgically"
+    ],
+    "answer": 0,
+    "notes": "The notes state that cephalohematomas generally resolve spontaneously.  The recommended next step is to measure the infant’s serum bilirubin concentration and monitor for hyperbilirubinemia.  Drainage or antibiotics are not indicated unless infection occurs."
+  },
+  {
+    "id": "q-15",
+    "stem": "A patient with a history of pituitary damage is being treated with levothyroxine.  Which laboratory value should be monitored to assess the adequacy of therapy?",
+    "options": [
+      "Serum TSH level",
+      "Free T4 concentration",
+      "Radioactive iodine uptake",
+      "Serum TRH level"
+    ],
+    "answer": 1,
+    "notes": "In patients with secondary (central) hypothyroidism due to pituitary disease, TSH cannot be used to monitor therapy.  The notes explain that free T4 should be measured directly because the pituitary may not respond to low thyroid hormone."
+  },
+  {
+    "id": "q-16",
+    "stem": "A 62‑year‑old man with a BMI of 28 has new‑onset hyperglycemia (glucose 328 mg/dL) and gradual weight loss despite increased appetite.  Which underlying mechanism most likely accounts for his diabetes?",
+    "options": [
+      "Defective glycogen storage enzymes",
+      "Insulin resistance in peripheral tissues",
+      "Autoimmune β‑cell destruction",
+      "Decreased insulin production due to pancreatitis"
+    ],
+    "answer": 1,
+    "notes": "The notes emphasize that the hallmark of type 2 diabetes is insulin resistance: muscles and adipose tissue have diminished glucose uptake and the liver continues to produce glucose.  β‑cell destruction characterizes type 1 diabetes, and glycogen storage diseases present in childhood."
+  },
+  {
+    "id": "q-17",
+    "stem": "A patient on sulfasalazine develops fever and a white blood cell count of 1,000/mm³.  Which mechanism explains this adverse effect?",
+    "options": [
+      "Bone marrow suppression due to infection",
+      "Cushing’s syndrome causing leukopenia",
+      "Autoimmune hemolysis",
+      "Drug‑induced neutropenia requiring immediate discontinuation of the medication"
+    ],
+    "answer": 3,
+    "notes": "Several medications including sulfasalazine, clozapine, methimazole, propylthiouracil and TMP–SMX can cause drug‑induced neutropenia.  Management requires stopping the offending agent and treating infections."
+  },
+  {
+    "id": "q-18",
+    "stem": "A 32‑year‑old man with viral myocarditis has dilated cardiomyopathy and an ejection fraction of 20%.  Which medication confers a mortality benefit for this condition?",
+    "options": [
+      "Digoxin",
+      "Nifedipine",
+      "Lisinopril",
+      "Sotalol"
+    ],
+    "answer": 2,
+    "notes": "The notes note that HFrEF (systolic heart failure) has multiple mortality‑reducing medications, including ACE inhibitors/ARBs, certain β‑blockers, mineralocorticoid receptor antagonists, SGLT2 inhibitors and hydralazine+nitrate.  Lisinopril is a cornerstone therapy.  Sotalol is an antiarrhythmic without mortality benefit in heart failure."
+  },
+  {
+    "id": "q-19",
+    "stem": "Which statement correctly contrasts HFrEF and HFpEF?",
+    "options": [
+      "HFpEF patients require immediate inotropes",
+      "Only HFrEF has proven mortality‑reducing therapies such as ACE inhibitors and β‑blockers",
+      "Diuretics are contraindicated in HFrEF",
+      "Both HFrEF and HFpEF respond equally well to digoxin"
+    ],
+    "answer": 1,
+    "notes": "The notes emphasize that multiple drugs reduce mortality in HFrEF (ACE/ARB, ARNI, select β‑blockers, mineralocorticoid receptor antagonists, SGLT2 inhibitors, hydralazine/nitrate), whereas no therapy has been shown to reduce mortality in HFpEF.  HFpEF management is symptomatic."
+  },
+  {
+    "id": "q-20",
+    "stem": "Lithium may precipitate serotonin syndrome when combined with other serotonergic drugs because it:",
+    "options": [
+      "Increases serotonin release and receptor sensitivity",
+      "Decreases GABA activity in the CNS",
+      "Blocks monoamine oxidase irreversibly",
+      "Inhibits serotonin reuptake directly"
+    ],
+    "answer": 0,
+    "notes": "According to the notes, lithium enhances serotonergic neurotransmission by increasing serotonin release and receptor sensitivity.  When combined with other serotonergic medications (SSRIs, MAOIs, etc.), it can precipitate serotonin syndrome."
+  },
+  {
+    "id": "q-21",
+    "stem": "A traveler to Mexico develops gradual abdominal pain, low‑grade fever and bloody diarrhea.  Which organism is most likely responsible?",
+    "options": [
+      "Clostridioides difficile",
+      "Entamoeba histolytica",
+      "Giardia lamblia",
+      "Shigella dysenteriae"
+    ],
+    "answer": 1,
+    "notes": "Entamoeba histolytica causes amebic dysentery with gradual abdominal pain, bloody diarrhea, low‑grade fever and weight loss, often in travelers.  Giardia produces foul‑smelling fatty diarrhea without blood.  Shigella causes acute severe bloody diarrhea with high fever; C. difficile occurs after antibiotics."
+  },
+  {
+    "id": "q-22",
+    "stem": "What is the classic diagnostic test to confirm Entamoeba histolytica infection?",
+    "options": [
+      "Stool ova and parasite exam showing trophozoites with ingested red blood cells",
+      "Duodenal biopsy",
+      "Serum antibody titers only",
+      "Blood cultures"
+    ],
+    "answer": 0,
+    "notes": "The notes state that stool ova and parasite examination revealing cysts or trophozoites containing ingested RBCs is a classic diagnostic test for E. histolytica.  Antigen testing is used as well, but stool O&P is the traditional Step‑2 answer."
+  },
+  {
+    "id": "q-23",
+    "stem": "How should invasive Entamoeba histolytica infection be treated?",
+    "options": [
+      "Metronidazole followed by a luminal agent such as paromomycin",
+      "Drain the liver abscess surgically",
+      "Oral vancomycin alone",
+      "Intravenous amphotericin B"
+    ],
+    "answer": 0,
+    "notes": "Treatment of E. histolytica consists of metronidazole (or tinidazole) to eradicate invasive trophozoites, followed by a luminal agent (paromomycin or iodoquinol) to eliminate intraluminal cysts.  Abscess drainage is not usually required unless rupture is imminent."
+  },
+  {
+    "id": "q-24",
+    "stem": "A patient with sharp chest pain worse when lying supine and better when leaning forward has low‑voltage QRS complexes on ECG and an echocardiogram showing a black rim of fluid around the heart.  What is the most likely diagnosis?",
+    "options": [
+      "Dressler syndrome",
+      "Dilated cardiomyopathy",
+      "Cardiac tamponade with hemodynamic instability",
+      "Pericardial effusion due to pericarditis"
+    ],
+    "answer": 3,
+    "notes": "The notes identify positional chest pain, low‑voltage QRS complexes and a black anechoic stripe around the heart on echo as classic signs of pericardial effusion secondary to pericarditis.  Tamponade would present with shock and chamber collapse."
+  },
+  {
+    "id": "q-25",
+    "stem": "In a patient with diffuse atherosclerosis, initiation of an ACE inhibitor results in a rise in serum creatinine from 1.5 to 3.6 mg/dL with otherwise bland urinalysis.  What is the most likely cause of this acute kidney injury?",
+    "options": [
+      "Acute interstitial nephritis",
+      "Bilateral renal artery stenosis causing loss of efferent arteriolar tone",
+      "Unilateral renal artery stenosis",
+      "Acute tubular necrosis"
+    ],
+    "answer": 1,
+    "notes": "According to the notes, an acute >30% increase in creatinine shortly after starting an ACE inhibitor in an atherosclerotic patient suggests bilateral renal artery stenosis.  ACE inhibition removes angiotensin II–mediated efferent arteriolar constriction, causing a sharp drop in glomerular filtration rate."
+  },
+  {
+    "id": "q-26",
+    "stem": "Which of the following findings is most characteristic of myotonic dystrophy?",
+    "options": [
+      "Dystrophin gene deletion with absent dystrophin protein",
+      "Muscle hypertrophy with increased reflexes",
+      "Optic neuritis and numbness",
+      "Delayed relaxation of grip and progressive muscle wasting"
+    ],
+    "answer": 3,
+    "notes": "Myotonic dystrophy is an autosomal dominant CTG repeat disorder characterized by myotonia (delayed relaxation after contraction) and progressive muscle weakness.  Associated features include cataracts, early balding, hypogonadism and cardiac conduction abnormalities.  It is distinct from Duchenne muscular dystrophy (dystrophin deletion)."
+  },
+  {
+    "id": "q-27",
+    "stem": "A patient with small‑cell lung cancer develops acute confusion and a generalized tonic–clonic seizure.  Serum sodium is 110 mEq/L and urine osmolality is 650 mOsm/kg.  Which immediate therapy is indicated?",
+    "options": [
+      "3% hypertonic saline bolus",
+      "Demeclocycline",
+      "0.9% isotonic saline",
+      "Water restriction alone"
+    ],
+    "answer": 0,
+    "notes": "Severe symptomatic hyponatremia (Na <120 mEq/L) with seizures requires emergent treatment with 3% hypertonic saline to raise serum sodium by 4–6 mEq/L.  The notes caution that isotonic or hypotonic fluids would not correct SIADH, and water restriction is for chronic, asymptomatic cases."
+  },
+  {
+    "id": "q-28",
+    "stem": "According to the hyponatremia algorithm in the notes, what is the first step after determining the serum sodium level?",
+    "options": [
+      "Assess symptoms (neurologic status)",
+      "Start fluid restriction immediately",
+      "Give 3% saline to all patients",
+      "Check urine osmolality"
+    ],
+    "answer": 0,
+    "notes": "The hyponatremia approach begins with determining the sodium level (mild, moderate or severe) and then evaluating symptoms.  Management differs based on whether symptoms are severe (seizures/coma), moderate or mild."
+  },
+  {
+    "id": "q-29",
+    "stem": "What is the appropriate management for a patient with a serum sodium of 118 mEq/L who is confused but not seizing?",
+    "options": [
+      "Administration of desmopressin",
+      "No therapy as long as sodium is >110 mEq/L",
+      "Careful infusion of hypertonic saline with slow correction",
+      "Immediate bolus of 3% saline and rapid correction to normal"
+    ],
+    "answer": 2,
+    "notes": "In moderate symptomatic hyponatremia (Na 120–129) the notes recommend starting hypertonic saline slowly to raise sodium while monitoring.  Rapid correction to normal or no therapy are incorrect.  Desmopressin is used for central diabetes insipidus, not hyponatremia."
+  },
+  {
+    "id": "q-30",
+    "stem": "How should mild asymptomatic hyponatremia (Na 125 mEq/L) be managed?",
+    "options": [
+      "3% hypertonic saline bolus",
+      "Fluid restriction with or without salt tablets",
+      "Administer 0.45% saline",
+      "Immediate vasopressin receptor antagonist"
+    ],
+    "answer": 1,
+    "notes": "The notes state that mild or asymptomatic hyponatremia (Na >120) is treated with fluid restriction and sometimes salt tablets.  Hypertonic saline is reserved for symptomatic or severe cases.  Vaptans are reserved for chronic SIADH not responding to restriction."
+  },
+  {
+    "id": "q-31",
+    "stem": "In hyponatremia, what key factors are used to identify the underlying cause once the severity and symptoms have been assessed?",
+    "options": [
+      "Thyroid function tests only",
+      "Echocardiogram and liver ultrasound",
+      "Volume status and urine studies (osmolality and sodium)",
+      "Serum potassium and chloride levels alone"
+    ],
+    "answer": 2,
+    "notes": "The notes describe that after assessing sodium level and symptoms, clinicians should evaluate volume status (hypovolemic, euvolemic, hypervolemic) and urine studies (osmolarity and sodium) to determine the etiology of hyponatremia (e.g., SIADH, diuretics, cirrhosis)."
+  },
+  {
+    "id": "q-32",
+    "stem": "Which of the following accurately defines hypernatremia and its major symptoms?",
+    "options": [
+      "Serum sodium >160 mEq/L causing only asymptomatic dehydration",
+      "Serum sodium >130 mEq/L causing hypothermia and bradycardia",
+      "Serum sodium >145 mEq/L causing irritability, lethargy and, when severe, seizures",
+      "Serum sodium <135 mEq/L causing peripheral edema"
+    ],
+    "answer": 2,
+    "notes": "Hypernatremia is defined as serum sodium >145 mEq/L.  The notes highlight symptoms such as irritability, lethargy and weakness; severe cases (>160 mEq/L) can lead to confusion, seizures and coma."
+  },
+  {
+    "id": "q-33",
+    "stem": "What is the first step in managing a patient with hypernatremia and hypovolemic shock?",
+    "options": [
+      "Infuse 5% dextrose in water (D5W) immediately",
+      "Give 0.45% saline only",
+      "Restore intravascular volume with 0.9% saline",
+      "Administer free water orally"
+    ],
+    "answer": 2,
+    "notes": "The notes stress that in hypernatremia, if the patient is hypotensive or in shock, the priority is to restore volume with isotonic (0.9%) saline.  Only after stabilization should free water (oral or IV D5W/0.45% saline) be given to correct the sodium gradually."
+  },
+  {
+    "id": "q-34",
+    "stem": "What is the recommended maximum rate for correcting chronic hypernatremia?",
+    "options": [
+      "10–12 mEq/L per 24 hours",
+      "No limit – correct as fast as possible",
+      "15–20 mEq/L per 24 hours",
+      "4–6 mEq/L per 24 hours"
+    ],
+    "answer": 0,
+    "notes": "The notes recommend correcting chronic hypernatremia slowly, at a rate no more than 10–12 mEq/L over 24 hours (about 0.5 mEq/L per hour) to prevent cerebral edema.  Acute hypernatremia can be corrected more quickly but still carefully."
+  },
+  {
+    "id": "q-35",
+    "stem": "Which cause of hypernatremia is most commonly due to loss of water exceeding loss of sodium and requires isotonic saline followed by free water?",
+    "options": [
+      "Hypovolemic hypernatremia due to diarrhea or diuretics",
+      "Euvolemic hypernatremia due to diabetes insipidus",
+      "Primary aldosteronism",
+      "Hypervolemic hypernatremia due to salt poisoning"
+    ],
+    "answer": 0,
+    "notes": "Hypovolemic hypernatremia occurs when water loss is greater than sodium loss (vomiting, diarrhea, sweating, diuretics).  Management is isotonic saline to correct hypovolemia, followed by free water replacement.  Euvolemic hypernatremia (DI) is treated with DDAVP, and hypervolemic hypernatremia is treated with diuretics and free water."
+  },
+  {
+    "id": "q-36",
+    "stem": "Polycythemia vera is most strongly associated with which laboratory finding?",
+    "options": [
+      "Iron deficiency and elevated transferrin",
+      "Elevated erythropoietin due to hypoxia",
+      "JAK2 mutation with decreased erythropoietin",
+      "Low red blood cell mass and high EPO"
+    ],
+    "answer": 2,
+    "notes": "Polycythemia vera is a myeloproliferative disorder characterized by JAK2 mutation, increased erythrocyte mass and low EPO levels due to autonomous bone marrow proliferation.  Pruritus after hot baths and increased thrombosis risk are classic features."
+  },
+  {
+    "id": "q-37",
+    "stem": "A young adult presents with a herald patch on the trunk followed by multiple oval lesions in a Christmas tree distribution.  Which of the following is the best management?",
+    "options": [
+      "Reassurance and no specific treatment",
+      "Topical antifungal therapy",
+      "Oral acyclovir",
+      "Penicillin G injection"
+    ],
+    "answer": 0,
+    "notes": "Pityriasis rosea typically begins with a herald patch and progresses to a self‑limited rash in a Christmas tree pattern on the trunk.  The notes advise that no treatment is necessary; reassurance is adequate."
+  },
+  {
+    "id": "q-38",
+    "stem": "An older male smoker has a right arm blood pressure of 160/100 mm Hg and a left arm blood pressure of 105/65 mm Hg.  Which condition best explains this finding?",
+    "options": [
+      "Coarctation of the aorta",
+      "Takayasu arteritis in a young woman",
+      "Essential hypertension",
+      "Atherosclerotic subclavian artery stenosis"
+    ],
+    "answer": 3,
+    "notes": "A difference >15 mm Hg between arms in an older patient with vascular risk factors suggests subclavian artery stenosis.  Coarctation classically causes arm‑leg pressure differences in younger patients."
+  },
+  {
+    "id": "q-39",
+    "stem": "Which finding is characteristic of coarctation of the aorta rather than subclavian artery stenosis?",
+    "options": [
+      "Dizziness and arm claudication during exercise",
+      "Higher blood pressure in the arms than the legs with weak femoral pulses",
+      "Elderly patient with diffuse atherosclerosis",
+      "Asymmetric blood pressure between the two arms"
+    ],
+    "answer": 1,
+    "notes": "Coarctation typically presents in young patients with hypertension in the upper extremities and low blood pressure in the lower extremities along with weak femoral pulses.  Subclavian stenosis gives an inter‑arm blood pressure difference.  Arm claudication and dizziness occur in subclavian steal."
+  },
+  {
+    "id": "q-40",
+    "stem": "Ten days after chemotherapy with carboplatin and etoposide, a patient develops pancytopenia with an absolute neutrophil count (ANC) of 60/mm³ but no fever.  Which intervention should be given to shorten the duration of neutropenia?",
+    "options": [
+      "Granulocyte colony‑stimulating factor (G‑CSF)",
+      "Platelet transfusion",
+      "Empiric broad‑spectrum antibiotics",
+      "Packed red blood cell transfusion"
+    ],
+    "answer": 0,
+    "notes": "The notes explain that G‑CSF stimulates marrow to proliferate neutrophils and is used to treat or prevent chemotherapy‑induced neutropenia, especially when there is severe neutropenia without fever.  Broad antibiotics are indicated for febrile neutropenia."
+  },
+  {
+    "id": "q-41",
+    "stem": "Which statement best distinguishes management of febrile neutropenia from afebrile neutropenia?",
+    "options": [
+      "Febrile neutropenia requires immediate broad‑spectrum antibiotics whereas afebrile neutropenia may be treated with G‑CSF alone",
+      "Both febrile and afebrile neutropenia always require hospital admission and IV antibiotics",
+      "Afebrile neutropenia can be managed with oral antibiotics at home",
+      "G‑CSF is contraindicated in febrile neutropenia"
+    ],
+    "answer": 0,
+    "notes": "The notes emphasize that an ANC <500 with fever is a medical emergency requiring immediate broad IV anti‑pseudomonal antibiotics.  In afebrile severe neutropenia, G‑CSF can be used to speed recovery.  G‑CSF is not contraindicated in febrile neutropenia but antibiotics come first."
+  },
+  {
+    "id": "q-42",
+    "stem": "A 47‑year‑old laborer develops aching, burning pain in both legs when walking, relieved by sitting or leaning forward, and worse when standing upright.  MRI shows narrowing of the lumbar canal.  What is the likely diagnosis?",
+    "options": [
+      "Lumbar spinal stenosis causing neurogenic claudication",
+      "Peripheral arterial disease causing vascular claudication",
+      "Lumbar disc herniation",
+      "Ankylosing spondylitis"
+    ],
+    "answer": 0,
+    "notes": "The notes describe lumbar spinal stenosis as causing neurogenic claudication: leg pain triggered by walking or standing and relieved by sitting/flexion (shopping cart sign).  Disc herniation causes unilateral radicular pain; PAD causes pain relieved simply by rest, not flexion."
+  },
+  {
+    "id": "q-43",
+    "stem": "A patient with worsening lumbar spinal stenosis and severe functional limitation despite NSAIDs and physical therapy is considering next steps.  What treatment provides the most durable symptom relief?",
+    "options": [
+      "Lumbar laminectomy to decompress the canal",
+      "Bed rest and analgesia",
+      "Somatosensory evoked potential testing",
+      "Epidural steroid injection"
+    ],
+    "answer": 0,
+    "notes": "According to the notes, severe or progressive lumbar spinal stenosis that interferes with function should be treated surgically with lumbar laminectomy to decompress the nerve roots.  Conservative therapy is reserved for milder cases."
+  },
+  {
+    "id": "q-44",
+    "stem": "Which of the following combinations correctly matches back pain patterns to the underlying cause?",
+    "options": [
+      "Relieved by lumbar flexion – spinal stenosis; pain worse at night with weight loss – malignancy/infection",
+      "Morning stiffness improved by rest – ankylosing spondylitis",
+      "Back pain with fever and neurologic deficits – compression fracture",
+      "Shooting unilateral pain relieved by exercise – herniated disc"
+    ],
+    "answer": 0,
+    "notes": "The notes provide a summary of spinal pathologies: lumbar stenosis is relieved by flexion, disc herniation causes acute shooting unilateral pain, back pain plus fever and neurologic deficits suggests epidural abscess, pain worse at night suggests malignancy or infection, compression fracture follows trauma/lifting, and ankylosing spondylitis causes morning stiffness improved with exercise (not rest)."
+  },
+  {
+    "id": "q-45",
+    "stem": "What is the first question to ask when evaluating a patient with suspected thyroiditis?",
+    "options": [
+      "Is the patient pregnant?",
+      "Is the thyroid tender or painless?",
+      "What is the patient’s iodine intake?",
+      "Is TSH elevated or suppressed?"
+    ],
+    "answer": 1,
+    "notes": "The notes highlight that the first step in thyroiditis questions is to determine whether the thyroid is painful (suggesting subacute viral or de Quervain thyroiditis) or painless (Hashimoto or silent).  This influences the differential and management."
+  },
+  {
+    "id": "q-46",
+    "stem": "A radioactive iodine uptake scan shows low uptake in a patient with thyrotoxicosis.  Which diagnosis does this finding support?",
+    "options": [
+      "Graves disease",
+      "Follicular carcinoma",
+      "Toxic multinodular goiter",
+      "Thyroiditis with release of preformed hormone"
+    ],
+    "answer": 3,
+    "notes": "Low uptake indicates that the thyroid is not synthesizing new hormone but rather releasing preformed hormone – consistent with thyroiditis.  Graves disease and toxic nodules show high uptake."
+  },
+  {
+    "id": "q-47",
+    "stem": "A 4‑month‑old infant develops fever, irritability and meningitis.  Gram stain shows Gram‑positive lancet‑shaped diplococci.  What is the most common cause?",
+    "options": [
+      "Listeria monocytogenes",
+      "Streptococcus pneumoniae",
+      "Group B Streptococcus",
+      "Neisseria meningitidis"
+    ],
+    "answer": 1,
+    "notes": "In the notes, Streptococcus pneumoniae is identified as the most common cause of meningitis in infants and children over one month of age; it appears as Gram‑positive diplococci.  Neonates are more likely to have GBS, E. coli and Listeria."
+  },
+  {
+    "id": "q-48",
+    "stem": "Which statement correctly matches the most common meningitis pathogens with the patient population?",
+    "options": [
+      "Infant – Neisseria meningitidis; elderly – Haemophilus influenzae",
+      "Neonate – Listeria; adults – HSV",
+      "Neonate – Group B Streptococcus and E. coli; adolescent – Neisseria meningitidis",
+      "Child – Salmonella; adolescent – Streptococcus pyogenes"
+    ],
+    "answer": 2,
+    "notes": "The notes summarise meningitis pathogens: in neonates, Group B Streptococcus, E. coli and Listeria are common; in infants/children, Streptococcus pneumoniae and Neisseria meningitidis; in adolescents/young adults, N. meningitidis; and in elderly/immunocompromised, S. pneumoniae and Listeria."
+  },
+  {
+    "id": "q-49",
+    "stem": "In chronic obstructive pulmonary disease (COPD), which clinical factor is most strongly associated with prognosis?",
+    "options": [
+      "Frequency of hospitalization for pneumonia",
+      "Progressive dyspnea on exertion",
+      "Smoking pack years only",
+      "Age at diagnosis"
+    ],
+    "answer": 1,
+    "notes": "The notes point out that in COPD, progressive dyspnea on exertion is the most important prognostic factor, reflecting worsening lung function and gas exchange failure."
+  },
+  {
+    "id": "q-50",
+    "stem": "A patient with long‑standing diabetes presents with a painless, swollen foot and normal labs.  X‑ray shows destructive joint changes.  What is the most likely diagnosis?",
+    "options": [
+      "Pseudogout",
+      "Gouty arthritis",
+      "Osteomyelitis",
+      "Charcot joint (neuropathic arthropathy)"
+    ],
+    "answer": 3,
+    "notes": "The notes define a Charcot joint as a painless, swollen joint with destructive changes on imaging due to diabetic neuropathy.  There is no systemic inflammatory response."
+  },
+  {
+    "id": "q-51",
+    "stem": "A 55‑year‑old man has a leukocyte count of 104,000/mm³ with neutrophils, myelocytes, metamyelocytes and basophils.  Hemoglobin is 7.2 g/dL and platelets are 93,000/mm³.  Splenomegaly is present.  Which test confirms the diagnosis?",
+    "options": [
+      "JAK2 mutation testing",
+      "Serum leukocyte alkaline phosphatase (LAP) level",
+      "BCR–ABL translocation analysis (Philadelphia chromosome)",
+      "Bone marrow biopsy showing blasts <10%"
+    ],
+    "answer": 2,
+    "notes": "The notes instruct to evaluate very high leukocyte counts by examining the differential.  Chronic myelogenous leukemia presents with a spectrum of myeloid precursors and basophilia, anemia, thrombocytopenia and splenomegaly.  The definitive test is detection of the BCR–ABL fusion gene (Philadelphia chromosome).  LAP is low in CML, high in leukemoid reactions."
+  },
+  {
+    "id": "q-52",
+    "stem": "Which finding helps distinguish a leukemoid reaction from chronic myelogenous leukemia?",
+    "options": [
+      "Splenomegaly in leukemoid reaction",
+      "Presence of blasts >20% in leukemoid reaction",
+      "High leukocyte alkaline phosphatase (LAP) level in leukemoid reaction",
+      "BCR–ABL translocation in leukemoid reaction"
+    ],
+    "answer": 2,
+    "notes": "Leukemoid reaction shows elevated LAP, whereas CML has low LAP.  Leukemoid reaction is a benign response to infection or stress and typically has no splenomegaly, Philadelphia chromosome or high blasts."
+  },
+  {
+    "id": "q-53",
+    "stem": "A pregnant woman is exposed to a child with erythema infectiosum (parvovirus B19).  What is the most appropriate initial step?",
+    "options": [
+      "Perform fetal blood transfusion immediately",
+      "Administer intravenous immunoglobulin immediately",
+      "Test maternal IgG and IgM levels for parvovirus",
+      "Reassure and do nothing"
+    ],
+    "answer": 2,
+    "notes": "The notes advise that pregnant women exposed to parvovirus B19 should have their IgG and IgM levels checked to determine if they have immunity or acute infection.  Fetal risks include anemia and hydrops."
+  },
+  {
+    "id": "q-54",
+    "stem": "A competent adult patient requests a specific medication that is safe and appropriate.  What should the clinician do?",
+    "options": [
+      "Refuse and choose an alternative regardless of the patient’s wishes",
+      "Respect patient autonomy and prescribe the medication",
+      "Ask family members for permission",
+      "Seek a court order to override the patient’s request"
+    ],
+    "answer": 1,
+    "notes": "The notes include a reminder that when a competent patient makes a safe request, autonomy should be respected.  Clinicians should not paternalistically refuse appropriate requests."
+  },
+  {
+    "id": "q-55",
+    "stem": "A patient experiences recurrent panic attacks characterized by sudden fear, palpitations and shortness of breath.  What is the recommended first‑line long‑term treatment?",
+    "options": [
+      "No pharmacologic treatment",
+      "Benzodiazepine monotherapy",
+      "Beta‑blocker only",
+      "Selective serotonin reuptake inhibitor (e.g., sertraline)"
+    ],
+    "answer": 3,
+    "notes": "For panic disorder, SSRIs (such as sertraline) are first‑line long‑term therapy.  Benzodiazepines may be used acutely but are not first‑line maintenance."
+  },
+  {
+    "id": "q-56",
+    "stem": "A young individual develops sudden neck and jaw pain followed by neurologic deficits after strenuous exercise.  Which diagnosis is most likely?",
+    "options": [
+      "Intracranial hemorrhage",
+      "Temporal arteritis",
+      "Embolic stroke due to atrial fibrillation",
+      "Carotid artery dissection"
+    ],
+    "answer": 3,
+    "notes": "The notes mention that sudden neck or jaw pain with neurologic deficits after exertion should prompt suspicion for carotid artery dissection rather than a typical embolic stroke."
+  },
+  {
+    "id": "q-57",
+    "stem": "During autumn, a healthy infant at six months of age is brought to clinic.  Which vaccine should they receive?",
+    "options": [
+      "Pneumococcal vaccine",
+      "Influenza vaccine",
+      "Rotavirus vaccine (catch‑up)",
+      "Varicella vaccine"
+    ],
+    "answer": 1,
+    "notes": "The notes indicate that healthy infants aged six months or older should receive the influenza vaccine.  Rotavirus vaccine must be completed by eight months and is not given beyond that age."
+  },
+  {
+    "id": "q-58",
+    "stem": "A patient with recent antibiotic‑associated colitis develops worsening abdominal distension and diarrhea after taking loperamide.  What serious complication is loperamide use associated with in this setting?",
+    "options": [
+      "Severe dehydration only",
+      "Ileal intussusception",
+      "Resolution of diarrhea",
+      "Toxic megacolon"
+    ],
+    "answer": 3,
+    "notes": "The notes warn that in the setting of C. difficile infection, antimotility agents such as loperamide are contraindicated because they can precipitate or worsen toxic megacolon."
+  },
+  {
+    "id": "q-59",
+    "stem": "An intravenous drug user develops fever and a new diastolic decrescendo murmur at the left sternal border.  Which valve lesion is most likely?",
+    "options": [
+      "Aortic regurgitation due to infective endocarditis",
+      "Tricuspid regurgitation due to endocarditis",
+      "Pulmonic stenosis",
+      "Mitral regurgitation due to endocarditis"
+    ],
+    "answer": 0,
+    "notes": "The notes note that IVDU with fever and a new diastolic decrescendo murmur suggests infective endocarditis leading to aortic insufficiency.  Tricuspid regurgitation is often systolic and holosystolic."
+  },
+  {
+    "id": "q-60",
+    "stem": "Which description correctly matches a heart murmur to its associated valve disorder?",
+    "options": [
+      "Crescendo–decrescendo systolic murmur radiating to the carotids – aortic stenosis",
+      "Holosystolic blowing murmur louder with inspiration – mitral regurgitation",
+      "Diastolic rumble with opening snap – aortic regurgitation",
+      "Mid‑systolic click followed by systolic murmur – aortic stenosis"
+    ],
+    "answer": 0,
+    "notes": "The notes provide quick buzzwords: aortic stenosis is a crescendo–decrescendo systolic murmur radiating to the carotids; mitral regurgitation is a holosystolic blowing murmur radiating to the axilla; tricuspid regurgitation is holosystolic louder with inspiration; mitral stenosis produces an opening snap and rumble; MVP has a mid‑systolic click."
+  },
+  {
+    "id": "q-61",
+    "stem": "An elderly patient has regurgitation of undigested food, halitosis and episodes of aspiration pneumonia.  There is no pain or foreign body sensation.  Which diagnosis is most likely?",
+    "options": [
+      "Esophageal carcinoma",
+      "Plummer–Vinson syndrome",
+      "Zenker diverticulum",
+      "Achalasia"
+    ],
+    "answer": 2,
+    "notes": "The notes remind that painless regurgitation of undigested food with foul breath and aspiration suggests Zenker diverticulum, even if the patient does not feel food stuck."
+  },
+  {
+    "id": "q-62",
+    "stem": "A patient newly diagnosed with HIV has a CD4 count of 250 cells/mm³.  Which preventive measure is appropriate at this time?",
+    "options": [
+      "Start PCP prophylaxis immediately",
+      "No vaccinations because the CD4 count is too low",
+      "Vaccinate against hepatitis A only",
+      "Pneumococcal vaccination"
+    ],
+    "answer": 3,
+    "notes": "The notes note that HIV patients with CD4 counts greater than 200 should receive pneumococcal vaccination.  PCP prophylaxis with TMP‑SMX begins when CD4 is <200."
+  },
+  {
+    "id": "q-63",
+    "stem": "A patient experiences four migraines per month with significant disability.  What therapy is recommended?",
+    "options": [
+      "Use sumatriptan at onset of headache only",
+      "Prophylactic therapy with a beta‑blocker or topiramate",
+      "No therapy is needed because the frequency is low",
+      "Opioid analgesics for each episode"
+    ],
+    "answer": 1,
+    "notes": "The notes advise that frequent migraines (≥4 per month or disabling) warrant prophylactic therapy such as propranolol, topiramate, amitriptyline or valproate.  Triptans are abortive therapy used during attacks."
+  },
+  {
+    "id": "q-64",
+    "stem": "A child falls and sustains a supracondylar humerus fracture.  Distal radial pulse is diminished.  What is the most likely injury?",
+    "options": [
+      "Compartment syndrome of the forearm",
+      "Brachial artery injury",
+      "Nonunion of the fracture",
+      "Radial nerve compression"
+    ],
+    "answer": 1,
+    "notes": "The notes mention that distal humeral fractures in children can injure the brachial artery, leading to diminished radial pulse.  Nonunion is not immediate, and nerve injury would cause sensory/motor deficits."
+  },
+  {
+    "id": "q-65",
+    "stem": "Which statement about smoking cessation and lung function is correct?",
+    "options": [
+      "Smoking cessation has no effect on COPD progression",
+      "Quitting smoking slows the decline in lung function compared with continuing smoking",
+      "Only complete abstinence for 10 years reduces risk",
+      "The risk of lung disease remains the same after quitting"
+    ],
+    "answer": 1,
+    "notes": "The notes state that smoking cessation slows the decline in lung function and reduces risk compared with continued smoking.  Risk does not remain the same forever after quitting, although it may not return to that of a never‑smoker."
+  },
+  {
+    "id": "q-66",
+    "stem": "A patient with myocardial infarction develops hypotension, pulmonary crackles and an ejection fraction of 10%.  Which therapy should be initiated?",
+    "options": [
+      "Norepinephrine infusion",
+      "Loop diuretics only",
+      "Immediate beta‑blocker administration",
+      "Dobutamine infusion"
+    ],
+    "answer": 3,
+    "notes": "The notes indicate that cardiogenic shock after MI (low BP, crackles, JVD, low EF) is treated with an inotrope such as dobutamine to improve contractility.  Norepinephrine is used for vasodilatory shock; beta‑blockers may worsen shock."
+  },
+  {
+    "id": "q-67",
+    "stem": "A young athlete develops acute unilateral arm swelling with prominent superficial veins after weightlifting.  What is the likely diagnosis?",
+    "options": [
+      "Chronic lymphedema",
+      "Thoracic outlet syndrome without thrombosis",
+      "Effort‑induced upper extremity deep vein thrombosis",
+      "Cellulitis"
+    ],
+    "answer": 2,
+    "notes": "The notes discuss that upper extremity venous thrombosis (Paget–Schroetter syndrome) occurs after strenuous arm exercise, causing acute swelling, cyanosis and collateral veins.  Lymphedema is chronic and painless."
+  },
+  {
+    "id": "q-68",
+    "stem": "An adult patient with end‑stage cystic fibrosis and repeated respiratory failure refuses lung transplant but family asks about extracorporeal membrane oxygenation (ECMO).  What is the appropriate response?",
+    "options": [
+      "Explain that ECMO is futile because the underlying disease is irreversible without transplant",
+      "Offer ECMO as a bridge to no therapy",
+      "Initiate ECMO immediately regardless of prognosis",
+      "Proceed with ECMO because the patient’s DNR applies only to CPR"
+    ],
+    "answer": 0,
+    "notes": "The notes clarify that ECMO is used for reversible causes of cardiac or respiratory failure or as a bridge to transplant.  In advanced cystic fibrosis where transplant is refused, ECMO will not change the outcome and is not indicated.  A DNR relates to CPR, not other interventions, but futility is the issue here."
+  },
+  {
+    "id": "q-69",
+    "stem": "A previously healthy patient presents with jaundice, right upper quadrant pain and extremely elevated AST/ALT (>1000 IU/L).  What is the most likely diagnosis?",
+    "options": [
+      "Gallstone pancreatitis",
+      "Acute cholangitis",
+      "Acute viral hepatitis",
+      "Primary sclerosing cholangitis"
+    ],
+    "answer": 2,
+    "notes": "The notes emphasize that very high aminotransferases (>1000 IU/L) with jaundice and RUQ pain in an otherwise healthy patient suggest acute viral hepatitis rather than cholangitis or other causes."
+  },
+  {
+    "id": "q-70",
+    "stem": "Unconjugated (indirect) hyperbilirubinemia with normal direct bilirubin most likely results from which condition?",
+    "options": [
+      "Acute viral hepatitis",
+      "Dubin–Johnson syndrome",
+      "Obstructive cholestasis",
+      "Hemolysis such as sickle cell disease"
+    ],
+    "answer": 3,
+    "notes": "The notes explain that indirect bilirubin elevation (with normal direct) indicates a pre‑liver problem such as hemolysis.  Direct hyperbilirubinemia suggests cholestasis or hepatocellular disease.  Mixed elevation indicates hepatocellular injury."
+  },
+  {
+    "id": "q-71",
+    "stem": "Both direct and indirect bilirubin levels are elevated.  Which condition most likely causes this mixed pattern?",
+    "options": [
+      "Physiologic jaundice of the newborn",
+      "Acute viral hepatitis",
+      "Gilbert syndrome",
+      "Bile duct obstruction"
+    ],
+    "answer": 1,
+    "notes": "The notes state that when both direct and indirect bilirubin are elevated, the pattern suggests hepatocellular injury such as acute viral hepatitis, ischemic hepatitis or toxic hepatitis."
+  },
+  {
+    "id": "q-72",
+    "stem": "How is hypertension without proteinuria at 18 weeks’ gestation classified?",
+    "options": [
+      "Eclampsia",
+      "Chronic (pre‑existing) hypertension",
+      "Preeclampsia",
+      "Gestational hypertension"
+    ],
+    "answer": 1,
+    "notes": "The notes delineate that hypertension before 20 weeks is considered chronic hypertension, whereas hypertension after 20 weeks without proteinuria is gestational hypertension and with proteinuria or organ damage is preeclampsia."
+  },
+  {
+    "id": "q-73",
+    "stem": "A patient with a kidney transplant develops hypercalcemia and very high parathyroid hormone levels.  What is the most likely cause?",
+    "options": [
+      "Metastatic bone disease",
+      "Tertiary hyperparathyroidism due to parathyroid hyperplasia",
+      "Hypocalcemia due to graft rejection",
+      "Vitamin D intoxication"
+    ],
+    "answer": 1,
+    "notes": "The notes note that after renal transplant, persistent high PTH and hypercalcemia suggest tertiary hyperparathyroidism from parathyroid hyperplasia rather than vitamin D excess."
+  },
+  {
+    "id": "q-74",
+    "stem": "Which individuals should receive chemoprophylaxis after exposure to Neisseria meningitidis?",
+    "options": [
+      "No one, because prophylaxis is not recommended",
+      "Close contacts of the patient only",
+      "All hospital healthcare workers",
+      "Everyone living in the same city"
+    ],
+    "answer": 1,
+    "notes": "The notes state that chemoprophylaxis (e.g., rifampin, ciprofloxacin, ceftriaxone) is given to close contacts of meningococcal patients but not to all healthcare workers or the general population."
+  },
+  {
+    "id": "q-75",
+    "stem": "A patient is suspected of having a pulmonary embolism.  If pre‑test probability is high and the patient is hemodynamically stable, what is the next step?",
+    "options": [
+      "CT pulmonary angiography (CTPA)",
+      "Immediate thrombolysis without imaging",
+      "D‑dimer testing to rule out PE",
+      "Ventilation–perfusion scan in every case"
+    ],
+    "answer": 0,
+    "notes": "The notes outline that in a stable patient with high suspicion for PE, the next step is CT pulmonary angiography.  In unstable patients, bedside echo or treatment may occur without CT.  Low suspicion can be evaluated with D‑dimer."
+  },
+  {
+    "id": "q-76",
+    "stem": "In a patient with shock not improving with fluids and vasopressors, what condition should be suspected and treated with corticosteroids?",
+    "options": [
+      "Hypocalcemia",
+      "Adrenal insufficiency",
+      "Pheochromocytoma",
+      "Hyperthyroidism"
+    ],
+    "answer": 1,
+    "notes": "The notes point out that shock unresponsive to fluids and pressors may be due to adrenal insufficiency; empiric corticosteroids should be administered."
+  },
+  {
+    "id": "q-77",
+    "stem": "A patient with inferior myocardial infarction has hypotension and clear lungs.  What is the appropriate initial management?",
+    "options": [
+      "Use nitrates to reduce preload",
+      "Administer intravenous fluids",
+      "Start beta‑blockers immediately",
+      "Initiate furosemide to reduce congestion"
+    ],
+    "answer": 1,
+    "notes": "The notes emphasize that inferior MI with hypotension and clear lungs suggests right ventricular infarction.  Treatment is to maintain preload by giving IV fluids; nitrates and beta‑blockers can worsen hypotension."
+  },
+  {
+    "id": "q-78",
+    "stem": "A patient experiences transient monocular blindness and fundus examination reveals yellow cholesterol plaques (Hollenhorst plaques).  What is the next best step?",
+    "options": [
+      "Transthoracic echocardiography",
+      "Coagulation studies only",
+      "MRI of the brain",
+      "Carotid duplex ultrasound"
+    ],
+    "answer": 3,
+    "notes": "The notes instruct that amaurosis fugax with Hollenhorst plaques indicates emboli from the carotid artery.  Carotid duplex ultrasound is the appropriate next test.  Echocardiography would evaluate cardiac sources but the ocular finding points to carotid disease."
+  },
+  {
+    "id": "q-79",
+    "stem": "A patient presents with painless jaundice and weight loss.  Which diagnostic study should be ordered first?",
+    "options": [
+      "Endoscopic retrograde cholangiopancreatography (ERCP) immediately",
+      "CT scan of the abdomen with contrast",
+      "Right upper quadrant ultrasound only",
+      "Liver biopsy"
+    ],
+    "answer": 1,
+    "notes": "The notes highlight that painless jaundice and weight loss suggest pancreatic cancer.  The appropriate evaluation is a contrast‑enhanced CT of the abdomen."
+  },
+  {
+    "id": "q-80",
+    "stem": "A patient with chronic low back pain and no red flag symptoms presents.  What is the recommended initial evaluation?",
+    "options": [
+      "CT scan of the spine",
+      "Bone scan",
+      "Plain radiograph (X‑ray) of the lumbar spine",
+      "MRI of the lumbar spine"
+    ],
+    "answer": 2,
+    "notes": "The notes advise that chronic back pain without red flags should be initially evaluated with an X‑ray rather than MRI or CT.  MRI is reserved for cases with concerning features (neurologic deficits, infection, malignancy)."
+  },
+  {
+    "id": "q-81",
+    "stem": "A child develops acute osteomyelitis of the femur.  Which intravenous antibiotic should be started empirically?",
+    "options": [
+      "Vancomycin",
+      "Erythromycin",
+      "Ceftriaxone alone",
+      "Amoxicillin"
+    ],
+    "answer": 0,
+    "notes": "The notes state that pediatric osteomyelitis should be treated with IV vancomycin to cover MRSA.  Broad Gram‑negative coverage may be added depending on risk factors."
+  },
+  {
+    "id": "q-82",
+    "stem": "In a randomized clinical trial, data analysis includes all participants in the groups to which they were assigned, regardless of the treatment actually received.  This analytical method is known as:",
+    "options": [
+      "Per protocol analysis",
+      "Factorial design",
+      "Intention to treat",
+      "Cross‑over design"
+    ],
+    "answer": 2,
+    "notes": "The notes remind that randomized trials are typically analyzed using the intention‑to‑treat principle, meaning participants are analyzed in their assigned groups regardless of adherence.  This preserves randomization and reduces bias."
+  },
+  {
+    "id": "q-83",
+    "stem": "A patient with chronic laxative abuse presents with metabolic acidosis.  Which acid–base abnormality is most consistent with this condition?",
+    "options": [
+      "Respiratory acidosis",
+      "High anion gap metabolic acidosis",
+      "Metabolic alkalosis with hyperkalemia",
+      "Non–anion gap metabolic acidosis with hypokalemia"
+    ],
+    "answer": 3,
+    "notes": "The notes mention that laxative abuse leads to a non–anion gap metabolic acidosis with hypokalemia because of bicarbonate loss in the stool."
+  },
+  {
+    "id": "q-84",
+    "stem": "A patient is receiving gentamicin for an infection.  What measure helps prevent nephrotoxicity?",
+    "options": [
+      "Giving the total dose as continuous infusion",
+      "Administering the drug intramuscularly instead of intravenously",
+      "Simultaneous use of loop diuretics",
+      "Monitoring trough levels to avoid accumulation"
+    ],
+    "answer": 3,
+    "notes": "Aminoglycosides such as gentamicin can cause nephrotoxicity and ototoxicity.  Monitoring trough serum levels and adjusting dosing helps prevent accumulation and toxicity.  Loop diuretics can worsen ototoxicity."
+  },
+  {
+    "id": "q-85",
+    "stem": "A patient complains of an urge to move the legs at night relieved by movement.  What initial laboratory test is indicated?",
+    "options": [
+      "Serum creatinine",
+      "Erythrocyte sedimentation rate",
+      "Thyroid‑stimulating hormone",
+      "Serum ferritin level"
+    ],
+    "answer": 3,
+    "notes": "The notes recommend checking ferritin because iron deficiency is a reversible cause of restless legs syndrome.  Treating iron deficiency may resolve symptoms."
+  },
+  {
+    "id": "q-86",
+    "stem": "A 16‑year‑old pregnant minor requests contraception counseling and prenatal care.  Can she consent to this care on her own?",
+    "options": [
+      "Only if she is emancipated",
+      "Yes, minors can consent to their own pregnancy‑related care",
+      "Only for contraception, not prenatal care",
+      "No, a parent must consent to pregnancy care"
+    ],
+    "answer": 1,
+    "notes": "The notes clarify that pregnant minors may consent to their own pregnancy‑related care, including contraception, STI testing and prenatal services, without parental permission."
+  },
+  {
+    "id": "q-87",
+    "stem": "A postpartum woman with a fourth‑degree perineal tear and Crohn’s disease on chronic steroids has a persistent fistula.  Which statement is most accurate?",
+    "options": [
+      "It will heal on its own within a few weeks",
+      "High‑dose estrogen therapy will promote closure",
+      "The fistula is unlikely to heal without surgical intervention due to Crohn’s and steroid use",
+      "Switching to oral antibiotics alone is curative"
+    ],
+    "answer": 2,
+    "notes": "The notes highlight that a fourth‑degree tear in a patient with Crohn’s disease and on steroids may result in a persistent fistula that requires surgical management; spontaneous closure is unlikely."
+  },
+  {
+    "id": "q-88",
+    "stem": "A teenager presents with sudden confusion, nystagmus and a negative toxicology screen.  What is the most likely cause?",
+    "options": [
+      "Alcohol withdrawal",
+      "Inhalant abuse",
+      "Opioid intoxication",
+      "Hypoglycemia"
+    ],
+    "answer": 1,
+    "notes": "The notes mention that abrupt confusion and neurologic signs in an adolescent with a negative tox screen suggests inhalant abuse.  Inhalant intoxication can cause dizziness, confusion and nystagmus."
+  },
+  {
+    "id": "q-89",
+    "stem": "A patient is diagnosed with a soft tissue sarcoma of the hand.  Which treatment is typically required?",
+    "options": [
+      "Observation only",
+      "Chemotherapy alone",
+      "Surgical amputation of the affected digit or limb",
+      "Radiation therapy alone"
+    ],
+    "answer": 2,
+    "notes": "The notes state that soft tissue sarcomas of the hand or extremity are treated definitively with amputation; radiation or chemotherapy may be adjunctive but not curative."
+  },
+  {
+    "id": "q-90",
+    "stem": "A patient presents with scrotal trauma resulting in swelling and ecchymosis.  Which diagnostic test should be obtained?",
+    "options": [
+      "Serum tumor markers only",
+      "CT scan of the abdomen",
+      "Digital rectal examination",
+      "Doppler ultrasound of the scrotum"
+    ],
+    "answer": 3,
+    "notes": "The notes suggest that scrotal trauma with swelling and discoloration should be evaluated with a Doppler ultrasound to assess testicular blood flow and rule out rupture.  Palpation alone is insufficient."
+  },
+  {
+    "id": "q-91",
+    "stem": "A patient with dyspnea on exertion, hypertension and left ventricular hypertrophy should be evaluated for heart failure with which test?",
+    "options": [
+      "Stress test",
+      "Echocardiogram",
+      "Chest X‑ray only",
+      "Electrophysiology study"
+    ],
+    "answer": 1,
+    "notes": "The notes indicate that dyspnea with hypertension and LVH may signify heart failure; the best test to confirm and characterize ventricular function is an echocardiogram.  Stress testing evaluates ischemia, not heart failure."
+  },
+  {
+    "id": "q-92",
+    "stem": "A patient on lisinopril develops swelling of the lips and tongue.  What is the appropriate management?",
+    "options": [
+      "Switch to another ACE inhibitor",
+      "Administer antihistamines only and continue the drug",
+      "Order C1 esterase inhibitor levels",
+      "Discontinue the ACE inhibitor immediately"
+    ],
+    "answer": 3,
+    "notes": "ACE inhibitors can cause bradykinin‑mediated angioedema.  The notes advise stopping the offending ACE inhibitor; antihistamines are often ineffective, and switching to another ACE is contraindicated."
+  },
+  {
+    "id": "q-93",
+    "stem": "A patient develops oral thrush after a course of antibiotics.  Which treatment is appropriate?",
+    "options": [
+      "Fluconazole",
+      "Griseofulvin",
+      "Voriconazole",
+      "Amphotericin B"
+    ],
+    "answer": 0,
+    "notes": "The notes note that oral candidiasis (thrush) is treated with fluconazole or nystatin.  Amphotericin B is for systemic infections, voriconazole is for Aspergillus, and griseofulvin is for dermatophytes."
+  },
+  {
+    "id": "q-94",
+    "stem": "A patient with chronic kidney disease and persistent proteinuria despite low‑dose ACE inhibitor therapy should have which management adjustment?",
+    "options": [
+      "Discontinue ACE inhibitor immediately",
+      "Start high‑dose corticosteroids",
+      "Switch to a loop diuretic instead",
+      "Increase the dose of the ACE inhibitor to reduce intraglomerular pressure"
+    ],
+    "answer": 3,
+    "notes": "The notes suggest that proteinuria in CKD should be treated by titrating up the ACE inhibitor (or ARB) dose to the maximal tolerated dose, as this reduces intraglomerular pressure and slows progression.  Discontinuation would worsen proteinuria."
+  },
+  {
+    "id": "q-95",
+    "stem": "An older adult exhibits early personality changes and disinhibition consistent with frontotemporal dementia.  What medication can help manage behavioral symptoms?",
+    "options": [
+      "Donepezil",
+      "Benztropine",
+      "Phenytoin",
+      "Risperidone (antipsychotic)"
+    ],
+    "answer": 3,
+    "notes": "The notes mention that antipsychotics such as risperidone may be used to manage severe behavioral problems in frontotemporal dementia.  Cholinesterase inhibitors are less effective in this variant."
+  },
+  {
+    "id": "q-96",
+    "stem": "Recurrent fasting hypoglycemia with inappropriately high insulin levels suggests insulinoma.  What is the diagnostic test?",
+    "options": [
+      "Random insulin level measurement only",
+      "Oral glucose tolerance test",
+      "C‑peptide suppression test",
+      "72‑hour fasting test with insulin and glucose measurements"
+    ],
+    "answer": 3,
+    "notes": "The notes instruct that recurrent fasting hypoglycemia should be evaluated with a supervised 72‑hour fast while measuring glucose, insulin, C‑peptide and sulfonylurea screen to diagnose insulinoma."
+  },
+  {
+    "id": "q-97",
+    "stem": "What prophylactic treatment should be started in newborns with sickle cell disease?",
+    "options": [
+      "Oral penicillin prophylaxis",
+      "Pneumococcal vaccine series only",
+      "No therapy until age two",
+      "Hydroxyurea immediately"
+    ],
+    "answer": 0,
+    "notes": "The notes note that infants with sickle cell disease should begin daily penicillin prophylaxis to prevent serious infections with encapsulated organisms.  Hydroxyurea is used later to reduce vaso‑occlusive crises."
+  },
+  {
+    "id": "q-98",
+    "stem": "Pernicious anemia is associated with an increased risk of which malignancy?",
+    "options": [
+      "Gastric carcinoma",
+      "Pancreatic adenocarcinoma",
+      "Lung adenocarcinoma",
+      "Colon cancer"
+    ],
+    "answer": 0,
+    "notes": "The notes state that pernicious anemia causes chronic atrophic gastritis, which is a risk factor for gastric carcinoma."
+  },
+  {
+    "id": "q-99",
+    "stem": "A young woman experiences intermittent severe unilateral pelvic pain.  Ultrasound shows a large heterogeneous ovarian cyst with decreased blood flow.  What is the appropriate management?",
+    "options": [
+      "Hormonal therapy only",
+      "Prompt surgical cystectomy to prevent torsion",
+      "Observation and repeat ultrasound in six months",
+      "Immediate biopsy of the mass to rule out cancer"
+    ],
+    "answer": 1,
+    "notes": "The notes explain that in a young woman with an ovarian cyst and symptoms suggestive of torsion (sharp unilateral pain, decreased blood flow on imaging), management is prompt surgical intervention (cystectomy or detorsion).  Biopsy is not indicated because malignancy is unlikely and surgery addresses the torsion risk."
+  },
+  {
+    "id": "q-100",
+    "stem": "A woman’s mother was diagnosed with breast cancer at age 65.  The patient asks about genetic testing for BRCA mutation.  What is the appropriate recommendation?",
+    "options": [
+      "Genetic testing should be performed immediately",
+      "Initiate prophylactic mastectomy",
+      "Routine screening is sufficient because a single older relative does not confer high risk",
+      "No breast cancer screening is needed"
+    ],
+    "answer": 2,
+    "notes": "The notes state that a family history of cancer occurring at older ages does not necessarily imply a BRCA mutation.  Routine screening is appropriate; early genetic testing is reserved for strong family history (multiple affected relatives or early onset)."
+  },
+  {
+    "id": "q-101",
+    "stem": "A patient with multiple myeloma develops kidney injury.  Which urinalysis finding is most characteristic?",
+    "options": [
+      "Heavy proteinuria with oval fat bodies",
+      "Neutrophils and WBC casts",
+      "Calcium oxalate crystals",
+      "RBC casts with hematuria"
+    ],
+    "answer": 0,
+    "notes": "The notes note that multiple myeloma kidney (myeloma cast nephropathy) presents with heavy proteinuria containing light chains and oval fat bodies.  Hematuria is less prominent."
+  },
+  {
+    "id": "q-102",
+    "stem": "A patient with symmetric morning stiffness and swollen joints is suspected of having rheumatoid arthritis.  Which test is most specific for the diagnosis?",
+    "options": [
+      "Antinuclear antibody",
+      "Anti‑cyclic citrullinated peptide (anti‑CCP) antibody",
+      "Erythrocyte sedimentation rate",
+      "Rheumatoid factor"
+    ],
+    "answer": 1,
+    "notes": "The notes state that anti‑CCP antibodies are highly specific for rheumatoid arthritis and should be ordered in a patient with morning stiffness and symmetric joint swelling."
+  },
+  {
+    "id": "q-103",
+    "stem": "A patient presents with classic signs of acute appendicitis.  What is the recommended management?",
+    "options": [
+      "Abdominal CT scan to confirm the diagnosis",
+      "Immediate surgical removal of the appendix",
+      "Antibiotics and discharge home",
+      "Observation and analgesia only"
+    ],
+    "answer": 1,
+    "notes": "The notes state that classic appendicitis should be managed by prompt appendectomy; imaging is not necessary when the diagnosis is clear.  Delaying surgery can risk perforation."
+  },
+  {
+    "id": "q-104",
+    "stem": "A child struggles with reading despite normal intelligence and has a family history of similar difficulties.  What is the most likely diagnosis?",
+    "options": [
+      "Attention‑deficit/hyperactivity disorder (ADHD)",
+      "Autism spectrum disorder",
+      "Oppositional defiant disorder",
+      "Dyslexia (specific learning disorder)"
+    ],
+    "answer": 3,
+    "notes": "The notes describe reading difficulties with normal intelligence and family history as dyslexia.  It is a specific learning disorder separate from ADHD."
+  },
+  {
+    "id": "q-105",
+    "stem": "A teenage girl has severe recurrent menstrual cramps that interfere with daily activities.  What is the recommended first‑line treatment?",
+    "options": [
+      "Nonsteroidal anti‑inflammatory drugs or hormonal contraceptives",
+      "Hysterectomy",
+      "Reassurance alone",
+      "Opioid analgesics"
+    ],
+    "answer": 0,
+    "notes": "The notes suggest that severe dysmenorrhea should be treated with NSAIDs and/or oral contraceptives.  Reassurance alone is insufficient, and hysterectomy is not appropriate."
+  },
+  {
+    "id": "q-106",
+    "stem": "A patient with a do‑not‑resuscitate (DNR) order is found in asystole.  What is the appropriate course of action?",
+    "options": [
+      "Initiate full ACLS including defibrillation",
+      "Do not initiate cardiopulmonary resuscitation and inform the family of the death",
+      "Start chest compressions but no defibrillation",
+      "Administer epinephrine only"
+    ],
+    "answer": 1,
+    "notes": "The notes remind that a DNR order directs providers not to perform CPR in the event of cardiac arrest.  Asystole in a DNR patient should not be treated with ACLS; the family should be informed."
+  },
+  {
+    "id": "q-107",
+    "stem": "A patient has an ankle–brachial index of 0.8 but no symptoms.  What is the recommended management?",
+    "options": [
+      "Surgical revascularization",
+      "Immediate angiography",
+      "No intervention",
+      "Medical therapy with aspirin and statin"
+    ],
+    "answer": 3,
+    "notes": "The notes state that an ABI <0.9 indicates peripheral artery disease.  In asymptomatic patients, management is medical (aspirin, statin, risk factor modification) rather than imaging or surgery."
+  }
+]
