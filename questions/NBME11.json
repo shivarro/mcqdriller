@@ -1,0 +1,590 @@
+[
+  {
+    "id": "q-1",
+    "stem": "Which combination of findings is most characteristic of opioid intoxication?",
+    "options": [
+      "Nystagmus, ataxia, and diplopia",
+      "Mydriasis, sweating, and agitation",
+      "Miosis, respiratory depression, and central nervous system depression",
+      "Hypertension, tachycardia, and tremor"
+    ],
+    "answer": 2,
+    "notes": "Opioid overdose presents with the classic triad of pinpoint pupils (miosis), respiratory depression and bradypnea, and central nervous system depression or coma. Naloxone is the antidote."
+  },
+  {
+    "id": "q-2",
+    "stem": "A research team interviews patients to explore their feelings and attitudes about living with chronic pain. What type of study design is this?",
+    "options": [
+      "Case series",
+      "Case report",
+      "Matched case–control study",
+      "Qualitative study"
+    ],
+    "answer": 3,
+    "notes": "Qualitative research focuses on non‑numerical data such as feelings, attitudes, and thoughts. It differs from case reports (single patient), case series (several patients without comparison group), matched case–control studies (retrospectively comparing exposure in diseased vs non‑diseased) and randomized trials (intervention vs control)."
+  },
+  {
+    "id": "q-3",
+    "stem": "Which presentation most strongly suggests intestinal malrotation with midgut volvulus in an infant?",
+    "options": [
+      "Intermittent jaundice and dark urine in a newborn",
+      "Bilious vomiting and abdominal distension in a neonate with minimal stool passage",
+      "Projectile non‑bilious vomiting beginning at 4 weeks of age with palpable olive in epigastrium",
+      "Bloody stools and abdominal pain after introduction of solid foods"
+    ],
+    "answer": 1,
+    "notes": "Incomplete rotation of the midgut can predispose to volvulus. Neonates often present with bilious emesis and abdominal distention. Upper GI series shows malposition of the duodenojejunal junction. This condition requires emergent Ladd procedure. Pyloric stenosis causes projectile non‑bilious vomiting around 3–6 weeks and an olive‑shaped mass."
+  },
+  {
+    "id": "q-4",
+    "stem": "An older patient has chronic knee pain that worsens after walking and has brief morning stiffness. Examination shows crepitus and bony tenderness, and inflammatory markers are normal. What is the appropriate initial management?",
+    "options": [
+      "High‑dose systemic corticosteroids",
+      "Non‑steroidal anti‑inflammatory drugs (NSAIDs) and physical therapy",
+      "Broad‑spectrum antibiotics",
+      "Disease‑modifying antirheumatic drugs (DMARDs) such as methotrexate"
+    ],
+    "answer": 1,
+    "notes": "Osteoarthritis typically affects older adults and presents with activity‑related joint pain, brief stiffness, crepitus and normal inflammatory markers. First‑line treatment includes NSAIDs and physical therapy; DMARDs are used for inflammatory arthritis, and corticosteroids or antibiotics are not indicated."
+  },
+  {
+    "id": "q-5",
+    "stem": "A patient with major depression wants to avoid sexual side effects from medication. Which antidepressant is most appropriate?",
+    "options": [
+      "Sertraline",
+      "Bupropion",
+      "Fluoxetine",
+      "Paroxetine"
+    ],
+    "answer": 1,
+    "notes": "Bupropion is a norepinephrine–dopamine reuptake inhibitor that is weight‑neutral and has minimal sexual dysfunction compared with selective serotonin reuptake inhibitors (SSRIs) such as paroxetine, sertraline, and fluoxetine."
+  },
+  {
+    "id": "q-6",
+    "stem": "Why does a patient with Epstein–Barr virus mononucleosis typically not require strict isolation from classmates or coworkers?",
+    "options": [
+      "The virus is not contagious in humans",
+      "Antibiotics eradicate the virus quickly",
+      "Transmission mainly occurs through saliva during close contact, so avoiding kissing and sharing utensils is sufficient",
+      "Airborne spread makes isolation ineffective"
+    ],
+    "answer": 2,
+    "notes": "Epstein–Barr virus is shed in saliva and is transmitted primarily by kissing or sharing utensils. Patients should avoid close saliva contact for several weeks and abstain from contact sports until splenomegaly resolves. Routine school or work attendance is allowed because casual contact rarely transmits the virus."
+  },
+  {
+    "id": "q-7",
+    "stem": "Which presentation is most consistent with posterior urethral valves rather than vesicoureteral reflux?",
+    "options": [
+      "An asymptomatic toddler with mild hydronephrosis on ultrasound and occasional urinary tract infections",
+      "A school‑aged child with nocturnal enuresis but no infections",
+      "A neonate with poor urinary stream, straining, failure to thrive, and bilateral hydronephrosis on ultrasound",
+      "A well‑appearing infant with febrile urinary tract infection and otherwise normal voiding"
+    ],
+    "answer": 2,
+    "notes": "Posterior urethral valves are a congenital obstruction of the posterior urethra that present neonatally or in early infancy with severe bladder outlet obstruction: poor stream, straining, failure to thrive, and bladder distention. Vesicoureteral reflux usually manifests as febrile UTIs in well‑appearing infants or children without voiding obstruction. VCUG in PUV shows a dilated posterior urethra (keyhole sign) and ultrasound shows bilateral hydronephrosis and thick bladder wall."
+  },
+  {
+    "id": "q-8",
+    "stem": "What is the typical management for mild vesicoureteral reflux (VUR) discovered after a febrile urinary tract infection?",
+    "options": [
+      "No treatment is needed because it always resolves",
+      "Daily prophylactic antibiotics and monitoring for spontaneous resolution",
+      "Immediate surgical correction with vesicostomy",
+      "Bladder catheterization and valve ablation"
+    ],
+    "answer": 1,
+    "notes": "Vesicoureteral reflux is retrograde flow of urine from the bladder to the ureters and kidneys. Mild VUR is often managed conservatively with daily prophylactic antibiotics to prevent recurrent UTIs while awaiting potential spontaneous resolution. Surgical interventions such as vesicostomy or valve ablation are reserved for obstructive lesions like posterior urethral valves or severe reflux."
+  },
+  {
+    "id": "q-9",
+    "stem": "A patient develops fever, urticarial rash, and arthralgia 10 days after receiving equine antitoxin. Which immune reaction best explains this syndrome?",
+    "options": [
+      "Type III hypersensitivity due to immune complex deposition (serum sickness)",
+      "Type II antibody‑mediated cytotoxic reaction",
+      "Delayed type IV T‑cell hypersensitivity",
+      "Type I hypersensitivity mediated by IgE"
+    ],
+    "answer": 0,
+    "notes": "Serum sickness is a type III hypersensitivity reaction that occurs 1–2 weeks after exposure to foreign proteins such as antitoxins or monoclonal antibodies. It is characterized by immune complex deposition causing fever, urticarial or variable rash, arthralgia or arthritis, and sometimes edema or abdominal pain."
+  },
+  {
+    "id": "q-10",
+    "stem": "What is the primary purpose of performing a cardiac stress test?",
+    "options": [
+      "To determine a patient’s maximal oxygen consumption",
+      "To detect myocardial ischemia from obstructive coronary artery disease",
+      "To induce myocardial infarction for therapy",
+      "To treat stable angina by exercise"
+    ],
+    "answer": 1,
+    "notes": "Stress testing simulates increased myocardial demand through exercise or pharmacologic agents to reveal ischemia from coronary artery stenosis. Clinicians look for ECG changes, wall motion abnormalities, or perfusion defects. It is not a treatment but a diagnostic tool for stable patients with intermediate pretest probability of coronary disease."
+  },
+  {
+    "id": "q-11",
+    "stem": "Which patient is an appropriate candidate for a stress test?",
+    "options": [
+      "A hemodynamically unstable patient with decompensated heart failure",
+      "A stable patient with atypical chest pain and moderate coronary risk factors",
+      "A patient with acute chest pain and ST‑elevation myocardial infarction",
+      "A patient with known severe aortic stenosis and resting angina"
+    ],
+    "answer": 1,
+    "notes": "Stress tests are performed on stable patients with intermediate pretest probability of coronary artery disease, such as those with stable or atypical chest pain and risk factors. They are contraindicated in unstable angina, recent myocardial infarction (<48 h), decompensated heart failure, severe aortic stenosis, or arrhythmias, where immediate management or angiography is required."
+  },
+  {
+    "id": "q-12",
+    "stem": "Which stress testing agent should be avoided in a patient with asthma?",
+    "options": [
+      "Dipyridamole (vasodilator)",
+      "Treadmill exercise",
+      "Dobutamine",
+      "Adenosine"
+    ],
+    "answer": 0,
+    "notes": "Pharmacologic vasodilators such as dipyridamole or adenosine cause bronchospasm and are relatively contraindicated in patients with asthma. Dobutamine is preferred when patients cannot exercise and have bronchospastic disease. Exercise testing is ideal when patients can walk and have a normal baseline ECG."
+  },
+  {
+    "id": "q-13",
+    "stem": "If a patient cannot undergo stress ECG because of a baseline left bundle branch block, which method is preferred to detect ischemia?",
+    "options": [
+      "Repeat stress ECG anyway",
+      "Use a Holter monitor during treadmill exercise",
+      "Stress echocardiography to look for wall motion abnormalities",
+      "Skip testing because stress testing is unnecessary"
+    ],
+    "answer": 2,
+    "notes": "When baseline ECG is uninterpretable due to left bundle branch block, paced rhythm, or pre‑existing ST changes, stress echocardiography or nuclear imaging is used. These modalities assess wall motion or perfusion rather than relying on ST‑segment changes."
+  },
+  {
+    "id": "q-14",
+    "stem": "Which clinical feature distinguishes smallpox from varicella (chickenpox)?",
+    "options": [
+      "Vesicles at different stages appearing on trunk and extremities",
+      "Ulcer with eschar formation",
+      "Vesicular lesions all in the same stage of development",
+      "Presence of postauricular lymphadenopathy"
+    ],
+    "answer": 2,
+    "notes": "Smallpox (variola virus) presents with a prodromal fever followed by a vesicular‑pustular rash beginning on the face/mouth and spreading to the extremities. All lesions are in the same stage, unlike varicella where lesions are in different stages. Same‑stage vesicles, facial distribution, and bioterror exposure are key clues."
+  },
+  {
+    "id": "q-15",
+    "stem": "In a suspected smallpox outbreak, what vaccine should be administered to close contacts to prevent transmission?",
+    "options": [
+      "Rubella vaccine",
+      "Varicella zoster vaccine",
+      "Anthrax vaccine",
+      "Live vaccinia vaccine"
+    ],
+    "answer": 3,
+    "notes": "Smallpox is caused by variola virus. The preventive strategy involves ring vaccination with a live attenuated vaccinia virus vaccine given to close contacts. It is distinct from the varicella (chickenpox) vaccine and other unrelated vaccines."
+  },
+  {
+    "id": "q-16",
+    "stem": "A 77‑year‑old multiparous woman reports urinary leakage when coughing and a bulge at the anterior vaginal wall below the urethra. Which diagnosis best fits this presentation?",
+    "options": [
+      "Cystocele",
+      "Rectocele",
+      "Uterine prolapse",
+      "Enterocele"
+    ],
+    "answer": 0,
+    "notes": "A cystocele is herniation of the bladder through the weakened anterior vaginal wall, often presenting with stress urinary incontinence and a soft bulge visible on speculum exam. Risk factors include multiparity and age. Rectoceles and enteroceles involve the posterior vaginal wall and uterine prolapse involves descent of the cervix and uterus."
+  },
+  {
+    "id": "q-17",
+    "stem": "Which of the following best characterizes hyperemesis gravidarum?",
+    "options": [
+      "Intermittent vomiting in the third trimester caused by gastric outlet obstruction",
+      "Post‑partum nausea associated with hypertension",
+      "Persistent nausea and vomiting during early pregnancy leading to weight loss, volume depletion, and electrolyte abnormalities",
+      "Mild morning sickness that resolves by 12 weeks without metabolic derangements"
+    ],
+    "answer": 2,
+    "notes": "Hyperemesis gravidarum is severe, persistent vomiting during the first trimester leading to weight loss (>5 % of pre‑pregnancy weight), dehydration, ketonuria, and electrolyte disturbances such as metabolic alkalosis. It is associated with high levels of β‑hCG and often requires antiemetics and IV fluids. Mild morning sickness is common and self‑limited."
+  },
+  {
+    "id": "q-18",
+    "stem": "Which factor is a major risk for developing cervical cancer?",
+    "options": [
+      "History of appendectomy",
+      "Late onset of sexual activity and few partners",
+      "Infection with high‑risk human papillomavirus (HPV) types 16 and 18",
+      "High intake of dietary fiber"
+    ],
+    "answer": 2,
+    "notes": "Cervical cancer arises from the transformation zone of the cervix and is strongly associated with persistent infection by high‑risk HPV types 16, 18, 31, and 33. Additional risk factors include early age at sexual debut, multiple sexual partners, smoking, long‑term oral contraceptive use, immunosuppression, and lack of screening."
+  },
+  {
+    "id": "q-19",
+    "stem": "A pregnant woman with no prenatal care presents with painless vaginal bleeding and a friable ulcerated cervical lesion on exam. Placental and uterine ultrasounds are normal. What is the most appropriate next step?",
+    "options": [
+      "Perform a speculum exam and evaluate for cervical cancer",
+      "Reassure and send home because bleeding is normal",
+      "Initiate magnesium sulfate for neuroprotection",
+      "Administer tocolytics and bed rest until labor"
+    ],
+    "answer": 0,
+    "notes": "Painless vaginal bleeding during pregnancy with a friable cervical lesion should raise suspicion for cervical cancer. Pregnancy does not cause cervical cancer but may reveal it. A speculum examination and appropriate diagnostic work‑up are warranted. Bleeding is not normal and treatment of preterm labor or neuroprotection is not indicated without evidence of labor."
+  },
+  {
+    "id": "q-20",
+    "stem": "A patient on haloperidol develops muscle rigidity. Which additional finding would favor neuroleptic malignant syndrome (NMS) over an acute dystonic reaction?",
+    "options": [
+      "Rapid onset of focal muscle spasms without fever",
+      "Oculogyric crisis relieved by diphenhydramine",
+      "Jaw clenching and neck stiffness within minutes of injection",
+      "High fever and altered mental status"
+    ],
+    "answer": 3,
+    "notes": "Neuroleptic malignant syndrome is a life‑threatening reaction to dopamine antagonists characterized by diffuse rigidity, hyperthermia, autonomic instability, elevated creatine kinase, and altered mental status. Acute dystonia presents quickly with focal muscle spasms such as oculogyric crisis or torticollis without fever or mental status changes."
+  },
+  {
+    "id": "q-21",
+    "stem": "How should an acute dystonic reaction to a dopamine‑blocking agent be treated?",
+    "options": [
+      "Administer an anticholinergic such as benztropine or diphenhydramine",
+      "Give dantrolene to relax skeletal muscle",
+      "Discontinue drug and provide bromocriptine",
+      "Start high‑dose benzodiazepines"
+    ],
+    "answer": 0,
+    "notes": "Acute dystonia is an extrapyramidal side effect of antipsychotics that manifests with muscle spasms and abnormal postures. Treatment is with anticholinergic agents such as benztropine or antihistamines like diphenhydramine. Dantrolene is used for NMS, bromocriptine treats Parkinsonism and hyperprolactinemia, and benzodiazepines are not first‑line."
+  },
+  {
+    "id": "q-22",
+    "stem": "Which hepatitis B serologic pattern is most consistent with the window period of acute infection?",
+    "options": [
+      "Positive Anti‑HBs only",
+      "Positive HBsAg and Anti‑HBs",
+      "Positive Anti‑HBc IgG and Anti‑HBs",
+      "Negative HBsAg and Anti‑HBs with positive Anti‑HBc IgM"
+    ],
+    "answer": 3,
+    "notes": "During the window period, hepatitis B surface antigen (HBsAg) has disappeared but antibodies to the surface antigen (Anti‑HBs) are not yet detectable. Anti‑HBc IgM is the only serologic marker positive. In acute infection HBsAg, Anti‑HBc IgM, and HBeAg are positive. Vaccination yields only Anti‑HBs, and recovery yields Anti‑HBs plus Anti‑HBc IgG."
+  },
+  {
+    "id": "q-23",
+    "stem": "In hepatitis B serology, which marker indicates high infectivity due to active viral replication?",
+    "options": [
+      "Anti‑HBs",
+      "HBeAg",
+      "Anti‑HBc IgG",
+      "HBsAg"
+    ],
+    "answer": 1,
+    "notes": "HBeAg is the hepatitis B “e” antigen and reflects high levels of viral replication and infectivity. HBsAg signifies current infection, Anti‑HBc IgG indicates past or chronic infection, and Anti‑HBs confers immunity."
+  },
+  {
+    "id": "q-24",
+    "stem": "Which electrolyte disturbance is most characteristic of refeeding syndrome in a severely malnourished patient?",
+    "options": [
+      "Hypercalcemia",
+      "Metabolic acidosis from lactic acidosis",
+      "Hypernatremia",
+      "Severe hypophosphatemia"
+    ],
+    "answer": 3,
+    "notes": "When nutrition is restarted in malnourished patients, insulin secretion drives glucose and electrolytes into cells. This causes profound hypophosphatemia, as well as hypokalemia and hypomagnesemia, leading to arrhythmias and cardiac failure. Management involves slow refeeding and careful electrolyte monitoring."
+  },
+  {
+    "id": "q-25",
+    "stem": "Which cerebrospinal fluid (CSF) profile is most consistent with viral (aseptic) meningitis?",
+    "options": [
+      "WBC <100/mm³ with lymphocyte or monocyte predominance, normal glucose, and mildly elevated protein",
+      "Very high neutrophils, low glucose, and markedly elevated protein",
+      "RBCs in CSF with xanthochromia",
+      "No cells, high glucose, and low protein"
+    ],
+    "answer": 0,
+    "notes": "Aseptic meningitis, usually viral, shows a mild pleocytosis (<100 cells/mm³) with lymphocyte or monocyte predominance, normal CSF glucose, and slightly elevated protein. Bacterial meningitis has high neutrophils and low glucose. RBCs with xanthochromia suggest subarachnoid hemorrhage."
+  },
+  {
+    "id": "q-26",
+    "stem": "Which clinical feature favors encephalitis over meningitis?",
+    "options": [
+      "Headache and nausea alone",
+      "Normal mental status and rash",
+      "Altered mental status with seizures and focal neurologic deficits",
+      "Neck stiffness and photophobia without confusion"
+    ],
+    "answer": 2,
+    "notes": "Meningitis refers to inflammation of the meninges and presents with headache, photophobia, neck stiffness, and normal mental status. Encephalitis is infection of brain parenchyma and causes confusion, seizures, or focal neurologic deficits. The presence of altered mental status points toward encephalitis rather than meningitis."
+  },
+  {
+    "id": "q-27",
+    "stem": "Why should patients with long‑standing rheumatoid arthritis undergo cervical spine imaging before surgical procedures requiring intubation?",
+    "options": [
+      "To look for osteophytes typical of osteoarthritis",
+      "To detect atlantoaxial subluxation that could cause spinal cord compression",
+      "To evaluate for osteoporosis of the cervical vertebrae",
+      "To screen for cervical disc herniation"
+    ],
+    "answer": 1,
+    "notes": "Rheumatoid arthritis can involve the cervical spine, leading to laxity of the atlantoaxial ligaments and subluxation of the C1–C2 joint. This instability can cause spinal cord compression during intubation or manipulation of the neck. Preoperative cervical spine radiographs help detect this complication. Osteophytes and disc herniation are not specific to RA."
+  },
+  {
+    "id": "q-28",
+    "stem": "A young woman develops bloody diarrhea followed by hemolytic anemia, thrombocytopenia, and acute kidney injury. Which pathogen is the most common cause?",
+    "options": [
+      "Shiga toxin–producing Escherichia coli (STEC)",
+      "Campylobacter jejuni",
+      "Shigella sonnei",
+      "Salmonella enterica"
+    ],
+    "answer": 0,
+    "notes": "Hemolytic uremic syndrome (HUS) classically occurs after infection with enterohemorrhagic E. coli O157:H7 (a Shiga toxin–producing strain). The toxin damages endothelial cells, causing microangiopathic hemolytic anemia, thrombocytopenia, and acute kidney injury. Shigella dysenteriae can also produce Shiga toxin but is a less common cause in developed countries."
+  },
+  {
+    "id": "q-29",
+    "stem": "A patient underwent splenectomy after trauma. Which vaccination should be administered promptly to reduce the risk of overwhelming sepsis?",
+    "options": [
+      "Hepatitis B vaccine",
+      "Quadrivalent meningococcal conjugate vaccine",
+      "Trivalent influenza vaccine",
+      "Tetanus toxoid booster"
+    ],
+    "answer": 1,
+    "notes": "Asplenic patients are susceptible to infections with encapsulated organisms such as Neisseria meningitidis, Streptococcus pneumoniae, and Haemophilus influenzae type b. Vaccination against these organisms should be given as soon as possible after splenectomy. Meningococcal conjugate vaccine is prioritized, along with pneumococcal and Hib vaccines. Influenza and tetanus boosters are recommended but less urgent."
+  },
+  {
+    "id": "q-30",
+    "stem": "A screening test has 99 % sensitivity and 90 % specificity. In a population where disease prevalence is 1 %, what is the approximate positive predictive value (chance that a positive result indicates disease)?",
+    "options": [
+      "About 80 %",
+      "About 50 %",
+      "About 99 %",
+      "About 9 %"
+    ],
+    "answer": 3,
+    "notes": "When prevalence is low (1 %) and specificity is imperfect (90 %), false positives will outnumber true positives. In 10,000 people, 100 truly have the disease; 99 test positive (true positives). Among 9,900 healthy, 990 (10 %) will falsely test positive. Positive predictive value = 99 ÷ (99 + 990) ≈ 9 %."
+  },
+  {
+    "id": "q-31",
+    "stem": "Which finding is most consistent with a Bartholin duct cyst?",
+    "options": [
+      "A mass near the urethra causing dysuria",
+      "A painless, fluctuant mass at the posterior vaginal introitus (6 o’clock position)",
+      "A firm nodule with a central punctum on the labia majora",
+      "A painful ulcer on the vulvar skin"
+    ],
+    "answer": 1,
+    "notes": "Bartholin glands are located at the posterior introitus (around the 5 and 7 o’clock positions). Obstruction of a duct leads to a painless, soft, fluctuant cyst at the back of the vaginal opening. Sebaceous cysts are firm with a punctum, ulcers are painful, and Skene (paraurethral) gland cysts occur near the urethra."
+  },
+  {
+    "id": "q-32",
+    "stem": "In a retrospective case–control study of hormone therapy and breast cancer, participants self‑report their past estrogen use. What bias most threatens the validity of the study?",
+    "options": [
+      "Attrition bias",
+      "Recall bias",
+      "Observer bias",
+      "Selection bias"
+    ],
+    "answer": 1,
+    "notes": "In case‑control studies, exposure information is often collected after the outcome is known. Cases may remember exposures differently than controls, leading to recall bias. Selection bias involves how participants are chosen, observer bias arises from researcher expectations, and attrition bias concerns loss to follow‑up in prospective studies."
+  },
+  {
+    "id": "q-33",
+    "stem": "A 31‑week pregnant woman has uterine contractions and cervical dilation. What interventions are indicated?",
+    "options": [
+      "High‑dose oxytocin and no antibiotics",
+      "Tocolytics, corticosteroids, magnesium sulfate, and group B streptococcus prophylaxis",
+      "Only reassurance and observation",
+      "Immediate induction of labor without medication"
+    ],
+    "answer": 1,
+    "notes": "Preterm labor is defined as contractions with cervical change between 20 and 37 weeks. Before 34 weeks, tocolytics (e.g., nifedipine) are used to delay delivery, corticosteroids enhance fetal lung maturity, and if <32 weeks, magnesium sulfate is added for neuroprotection. Group B streptococcus prophylaxis is given if GBS status is unknown or positive (<37 weeks)."
+  },
+  {
+    "id": "q-34",
+    "stem": "An elderly postoperative patient develops abdominal distension and nausea. Imaging shows diffuse colonic dilation from cecum to rectum without mechanical obstruction or bloody stool. What is the most likely diagnosis?",
+    "options": [
+      "Mechanical large‑bowel obstruction",
+      "Diverticulitis with abscess",
+      "Colonic pseudo‑obstruction (Ogilvie syndrome)",
+      "Ischemic colitis"
+    ],
+    "answer": 2,
+    "notes": "Ogilvie syndrome is acute colonic pseudo‑obstruction seen in elderly or postoperative patients, often precipitated by opioids or surgery. It causes functional obstruction with colonic dilation without mechanical blockage or hematochezia. Ischemic colitis typically presents with crampy pain and bloody diarrhea; mechanical obstruction shows an obstructing lesion; diverticulitis causes localized pain and fever."
+  },
+  {
+    "id": "q-35",
+    "stem": "A 27‑year‑old obese woman has headaches, vomiting, and papilledema. CT of the brain is normal. What is the next diagnostic step?",
+    "options": [
+      "MRI of the brain",
+      "Carotid Doppler ultrasound",
+      "Start acetazolamide without further testing",
+      "Lumbar puncture to measure opening pressure"
+    ],
+    "answer": 3,
+    "notes": "Idiopathic intracranial hypertension (pseudotumor cerebri) presents with headaches, papilledema, and normal imaging. After a normal CT/MRI excludes a mass, a lumbar puncture is performed to measure elevated opening pressure (>25 cm H₂O) and relieve symptoms. Treatment with acetazolamide follows confirmation."
+  },
+  {
+    "id": "q-36",
+    "stem": "A 15‑year‑old girl has primary amenorrhea, Tanner I breasts, high FSH and LH levels, and a small uterus on ultrasound. Which test confirms the most likely diagnosis?",
+    "options": [
+      "GnRH stimulation test",
+      "Serum cortisol level",
+      "MRI of the pituitary gland",
+      "Karyotype analysis"
+    ],
+    "answer": 3,
+    "notes": "Primary amenorrhea with lack of secondary sexual characteristics and hypergonadotropic hypogonadism suggests gonadal dysgenesis such as Turner syndrome (45,X0). Confirmation requires karyotype analysis. GnRH testing and pituitary MRI are for central causes; cortisol levels assess adrenal disorders."
+  },
+  {
+    "id": "q-37",
+    "stem": "In a postoperative patient with unilateral leg swelling, venous duplex ultrasound is performed. Which finding is most consistent with deep vein thrombosis?",
+    "options": [
+      "Obstruction of the great saphenous vein only",
+      "Reflux in superficial veins but patent deep veins",
+      "Normal flow in both superficial and deep veins",
+      "Normal superficial veins with obstruction in the deep venous system"
+    ],
+    "answer": 3,
+    "notes": "Deep vein thrombosis involves thrombus formation in the deep venous system (e.g., femoral, popliteal, iliac veins). Duplex ultrasound will show obstruction or lack of compressibility in deep veins while superficial veins remain normal. Superficial venous insufficiency causes reflux rather than obstruction and does not explain acute, extensive edema."
+  },
+  {
+    "id": "q-38",
+    "stem": "A woman develops fever, uterine tenderness, and leukocytosis 36 hours after an emergency cesarean delivery. What is the most likely diagnosis?",
+    "options": [
+      "Appendicitis",
+      "Endometritis",
+      "Acute cystitis",
+      "Normal postpartum state"
+    ],
+    "answer": 1,
+    "notes": "Postpartum endometritis presents with fever, uterine tenderness, and leukocytosis within a few days of delivery, particularly after cesarean section or prolonged labor with ruptured membranes. It results from ascending polymicrobial infection. Cystitis typically causes dysuria and lacks systemic signs; appendicitis is unrelated to delivery and normal postpartum patients should not have fever or uterine tenderness."
+  },
+  {
+    "id": "q-39",
+    "stem": "A patient with a prosthetic aortic valve and a history of penicillin allergy is scheduled for a dental procedure. Which antibiotic prophylaxis is appropriate?",
+    "options": [
+      "Amoxicillin",
+      "Levofloxacin",
+      "Clarithromycin",
+      "Vancomycin"
+    ],
+    "answer": 2,
+    "notes": "Patients with prosthetic heart valves undergoing dental procedures require prophylaxis against viridans streptococci. First‑line prophylaxis is amoxicillin, but in penicillin‑allergic patients macrolides such as clarithromycin or azithromycin are used. Fluoroquinolones and vancomycin are not indicated for routine dental prophylaxis."
+  },
+  {
+    "id": "q-40",
+    "stem": "Which presentation is characteristic of Pneumocystis jirovecii pneumonia (PCP) in an immunocompromised patient?",
+    "options": [
+      "High fever, productive cough, and lobar consolidation on radiograph",
+      "Progressive dyspnea with exertional desaturation and diffuse bilateral infiltrates on chest radiograph",
+      "Sore throat and mild cough with normal oxygenation in an otherwise healthy person",
+      "Rapid onset of hemoptysis and cavitary lesions on imaging"
+    ],
+    "answer": 1,
+    "notes": "PCP pneumonia typically affects patients with AIDS (CD4 <200) or other immunocompromised states. Symptoms include progressive exertional dyspnea, non‑productive cough, and hypoxia that worsens with exertion. Chest radiographs show bilateral diffuse infiltrates. Mycoplasma pneumonia presents with mild “walking pneumonia,” and bacterial pneumonias often cause focal consolidation."
+  },
+  {
+    "id": "q-41",
+    "stem": "In a case–control study, which formula correctly calculates the odds ratio?",
+    "options": [
+      "a ÷ b",
+      "(a × d) ÷ (b × c)",
+      "b ÷ c",
+      "(a + b) ÷ (c + d)"
+    ],
+    "answer": 1,
+    "notes": "For a 2×2 table with disease status (cases vs controls) and exposure (yes vs no), the odds ratio equals (a/c) ÷ (b/d) = (a × d)/(b × c). It compares the odds of exposure in cases to the odds of exposure in controls. (a + b)/(c + d) represents overall exposure proportion and is not the odds ratio."
+  },
+  {
+    "id": "q-42",
+    "stem": "A diabetic patient has a chronic foot ulcer probing to bone with surrounding erythema and foul odor. Which statement is true about the likely causative organisms?",
+    "options": [
+      "Pseudomonas aeruginosa is the sole organism in most cases",
+      "It is most commonly due to anaerobes alone",
+      "The infection is usually polymicrobial with both aerobic and anaerobic bacteria",
+      "Staphylococcus epidermidis is the typical single pathogen"
+    ],
+    "answer": 2,
+    "notes": "Chronic diabetic foot ulcers that reach bone suggest osteomyelitis. They are typically polymicrobial, involving aerobic organisms such as Staphylococcus aureus and gram‑negative bacilli, as well as anaerobes. Cultures often reveal mixed flora. Pure anaerobic infections, pseudomonas alone, or coagulase‑negative staphylococci alone are uncommon as sole pathogens."
+  },
+  {
+    "id": "q-43",
+    "stem": "A 67‑year‑old woman with pancytopenia has circulating myeloblasts eight years after treatment with alkylating chemotherapy for ovarian cancer. Which explanation best accounts for her current condition?",
+    "options": [
+      "Therapy‑related acute myeloid leukemia caused by prior alkylating agents",
+      "Estrogen replacement therapy inducing leukemia",
+      "Anesthetic exposure causing leukemogenesis",
+      "Recurrence of the primary ovarian cancer in the bone marrow"
+    ],
+    "answer": 0,
+    "notes": "Therapy‑related acute myeloid leukemia (AML) is a complication of prior alkylating agents or radiation. It typically manifests 5–10 years after exposure, presenting with pancytopenia and circulating myeloblasts. Solid tumor recurrences present as masses rather than leukemic blasts, and estrogen or anesthetics are not associated with AML development."
+  },
+  {
+    "id": "q-44",
+    "stem": "According to the Ottawa ankle rules, when is ankle radiography indicated after an inversion injury?",
+    "options": [
+      "After every sports‑related ankle injury",
+      "Only if swelling is present without tenderness",
+      "If there is tenderness over the posterior edge or tip of the lateral or medial malleolus, tenderness at the base of the fifth metatarsal or navicular, or inability to bear weight for four steps",
+      "For all ankle sprains regardless of symptoms"
+    ],
+    "answer": 2,
+    "notes": "The Ottawa ankle rules recommend ankle x‑rays only when there is bone tenderness at the posterior edge or tip of either malleolus, midfoot tenderness at the base of the fifth metatarsal or navicular, or inability to take four steps immediately and in the emergency department. Absence of these findings in a patient who can bear weight allows conservative management without imaging."
+  },
+  {
+    "id": "q-45",
+    "stem": "A woman with a recent deep vein thrombosis develops acute ischemia of her left arm. Which test confirms the suspected paradoxical embolism?",
+    "options": [
+      "Computed tomography angiography of the chest",
+      "Venous duplex ultrasound of the lower limb",
+      "Arch and subclavian arteriography",
+      "Transesophageal echocardiography with bubble study"
+    ],
+    "answer": 3,
+    "notes": "When a venous thrombus causes arterial embolism, a right‑to‑left shunt (e.g., patent foramen ovale) allows paradoxical embolization. A transesophageal echocardiogram with bubble study can detect intracardiac or pulmonary shunts. Duplex ultrasonography evaluates venous thrombosis but not arterial shunts; CT angiography or arteriography assess structural arterial disease, not paradoxical embolism."
+  },
+  {
+    "id": "q-46",
+    "stem": "An infant has frequent post‑feed regurgitation, back arching in discomfort, and poor weight gain. Which diagnosis is most likely?",
+    "options": [
+      "Pyloric stenosis",
+      "Cow‑milk protein intolerance",
+      "Foreign body ingestion",
+      "Reflux esophagitis (pathologic gastroesophageal reflux)"
+    ],
+    "answer": 3,
+    "notes": "Infants with pathologic gastroesophageal reflux (reflux esophagitis) exhibit post‑prandial regurgitation associated with pain behaviors such as back arching (Sandifer syndrome) and poor weight gain. Management includes smaller, frequent feeds, keeping the infant upright, thickened feeds, and sometimes proton pump inhibitors. Pyloric stenosis causes projectile non‑bilious vomiting and palpable olive; cow‑milk protein intolerance and foreign body ingestion have different presentations."
+  },
+  {
+    "id": "q-47",
+    "stem": "A woman with MEN1 has galactorrhea and elevated prolactin levels due to a prolactinoma. She also has hypercalcemia and elevated PTH levels. After starting a dopamine agonist for the prolactinoma, what is the next best management step?",
+    "options": [
+      "Pancreatic tumor resection",
+      "Subtotal parathyroidectomy to treat primary hyperparathyroidism",
+      "Observation without intervention",
+      "Transsphenoidal resection of the pituitary tumor"
+    ],
+    "answer": 1,
+    "notes": "In MEN1, hyperparathyroidism from multiglandular hyperplasia is often the earliest and most clinically significant manifestation. Prolactinomas are usually treated medically with dopamine agonists first (pills before drill). If the patient does not have mass effect, pituitary surgery is not indicated. Elevated calcium and PTH warrant subtotal parathyroidectomy (removal of 3 ½ glands)."
+  },
+  {
+    "id": "q-48",
+    "stem": "Which sign suggests orbital cellulitis rather than preseptal cellulitis?",
+    "options": [
+      "Mild conjunctival injection only",
+      "No pain with extraocular motion and normal ocular motility",
+      "Pain with eye movements and proptosis",
+      "Eyelid erythema and edema without vision changes"
+    ],
+    "answer": 2,
+    "notes": "Orbital cellulitis involves infection posterior to the orbital septum and presents with eye pain on movement, proptosis, ophthalmoplegia, and vision impairment. Preseptal (periorbital) cellulitis is an infection anterior to the septum causing eyelid erythema and edema without proptosis, ophthalmoplegia, or vision changes."
+  },
+  {
+    "id": "q-49",
+    "stem": "Which cervical spine abnormality is particularly associated with rheumatoid arthritis and requires evaluation before intubation?",
+    "options": [
+      "Spinal stenosis due to osteoarthritis",
+      "Atlantoaxial subluxation",
+      "Osteophyte formation at C5–C6",
+      "Cervical disc herniation"
+    ],
+    "answer": 1,
+    "notes": "Long‑standing rheumatoid arthritis can cause ligamentous laxity at the atlantoaxial joint leading to C1–C2 instability or subluxation. Excessive neck manipulation during intubation may result in spinal cord compression. Therefore, cervical spine imaging is recommended before surgery. Other degenerative changes are not specific to RA."
+  }
+]
