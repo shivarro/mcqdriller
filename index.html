@@ -6,7 +6,7 @@
   <title>MCQ Notes Driller</title>
   <style>
     :root{
-      --bg:#0b0f14; --card:#121823; --muted:#8aa0b3; --text:#e7eef6; --accent:#68b2ff; --good:#37d399; --bad:#ff6b6b;
+      --bg:#0b0f14; --card:#121823; --muted:#8aa0b3; --text:#e7eef6; --accent:#68b2ff; --good:#37d399;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -15,40 +15,30 @@
       background:linear-gradient(180deg,#0a0e13,#0b1219 40%, #0a0e13); color:var(--text);
       display:flex; align-items:center; justify-content:center; padding:24px;
     }
-    .app{width:min(1100px,100%);} 
+    .app{width:min(1100px,100%);}
     .card{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.25); overflow:hidden}
     header{display:flex; gap:12px; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid rgba(255,255,255,.06)}
     header h1{font-size:18px; margin:0; letter-spacing:.2px}
-    header .meta{display:flex; gap:14px; align-items:center; color:var(--muted); font-size:13px}
-    header .pill{background:rgba(255,255,255,.06); padding:6px 10px; border-radius:999px}
-
-    /* Tabs */
+    header .meta{display:flex; gap:14px; align-items:center; color:var(--muted); font-size:13px; flex-wrap:wrap}
+    header .pill{background:rgba(255,255,255,.06); padding:6px 10px; border-radius:999px; display:flex; align-items:center; gap:6px}
     .tabs{display:flex; gap:8px; align-items:center}
     .tab{background:transparent; color:var(--muted); border:1px solid rgba(255,255,255,.08); padding:8px 12px; border-radius:10px; cursor:pointer; font-weight:700}
     .tab.active{background:var(--accent); color:#08121b; border-color:transparent}
     .ghost{background:transparent; color:var(--muted)}
     .soft{background:rgba(255,255,255,.08); color:var(--text)}
     .primary{background:var(--accent); color:#08121b}
-    .danger{background:var(--bad); color:#120808}
     .ok{background:var(--good); color:#08120d}
     .disabled{opacity:.6; cursor:not-allowed}
     button{appearance:none; border:0; padding:10px 14px; border-radius:12px; font-weight:600; cursor:pointer; transition:.15s transform,.15s background,.15s opacity}
     button:active{transform:translateY(1px)}
-
-    /* Views */
     .view{display:none; padding:20px}
     .view.active{display:block}
-    .panel{border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:16px}
+    .panel{border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:16px; margin-bottom:12px}
     .panel h2{font-size:16px; margin:0 0 10px 0; color:#cfe6ff}
     .muted{color:var(--muted)}
     .small{font-size:12px}
     .kbd{font-family:ui-monospace,Consolas,monospace; background:#0d1420; border:1px solid rgba(255,255,255,.1); padding:2px 6px; border-radius:6px}
-    .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
-
     textarea{width:100%; min-height:260px; resize:vertical; background:#0e141d; color:var(--text); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:12px; font-family:ui-monospace,Consolas,monospace}
-
-    /* Drill Layout */
-    .quizWrap{max-width:900px; margin:0 auto}
     .question{font-size:20px; line-height:1.4; margin-bottom:14px}
     .options{display:grid; gap:10px}
     .opt{background:#101722; border:1px solid rgba(255,255,255,.08); padding:12px 14px; border-radius:12px; text-align:left; font-weight:600; color:white; outline:0}
@@ -59,12 +49,9 @@
     .footer{display:flex; justify-content:space-between; align-items:center; margin-top:14px}
     .progress{height:10px; background:#0f1722; border:1px solid rgba(255,255,255,.06); border-radius:999px; overflow:hidden}
     .bar{height:100%; background:linear-gradient(90deg,#68b2ff,#b8f1ff)}
-    .center{display:flex; align-items:center; justify-content:center}
     .hidden{display:none !important}
-
-    .inline{display:inline-flex; gap:8px; align-items:center}
-    input[type="number"]{background:#0e141d; color:var(--text); border:1px solid rgba(255,255,255,.08); border-radius:10px; padding:6px 8px; width:80px}
-    .help{font-size:12px; color:var(--muted); margin-top:6px}
+    /* Level progress bar inside stats */
+    .level-bar{height:12px; background:#0f1722; border-radius:999px; overflow:hidden; border:1px solid rgba(255,255,255,.06)}
   </style>
 </head>
 <body>
@@ -77,8 +64,8 @@
       </div>
       <div class="meta">
         <span class="pill" id="progressPill">0 / 0</span>
-        <span class="pill">Wrong: <span id="wrongCount">0</span> / <span id="wrongLimitLabel">2</span></span>
-        <label class="pill" style="display:flex;gap:6px;align-items:center">
+        <span class="pill" id="xpPill">XP: 0 · Level 1</span>
+        <label class="pill">
           <span class="small muted">Set</span>
           <select id="setSelect" style="background:#0e141d;color:var(--text);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:4px 6px">
             <option value="" disabled selected>Loading…</option>
@@ -87,7 +74,6 @@
         <button class="soft" id="resetBtn" title="Restart the current set (R)">Restart</button>
       </div>
     </header>
-
     <!-- IMPORT VIEW -->
     <section id="view-import" class="view active">
       <div class="panel">
@@ -102,38 +88,36 @@
     "notes": "Vitamin A (retinol) is critical for rhodopsin in rods. Deficiency → nyctalopia."
   }
 ]'></textarea>
-        <div class="row">
+        <div class="row" style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
           <button class="primary" id="loadBtn">Load Questions</button>
           <button class="soft" id="demoBtn">Load Demo Set</button>
           <button class="ghost" id="downloadTemplateBtn">Download JSON Template</button>
           <button class="ok" id="goDrillBtn" title="Go to Drill (D)">Go to Drill</button>
         </div>
-        <div class="help">Set your fail threshold (auto‑restart when wrong ≥ limit):
-          <div class="inline" style="margin-top:8px">
-            <label for="wrongLimitInput" class="small muted">Wrong limit</label>
-            <input id="wrongLimitInput" type="number" min="1" max="50" step="1" />
-            <button id="saveWrongLimitBtn" class="soft small">Save</button>
-            <span id="saveHint" class="small muted"></span>
-          </div>
-        </div>
         <p class="muted small" style="margin-top:8px">
           Tips: Paste JSON from ChatGPT → <span class="kbd">Load Questions</span>. Options must be exactly 4.
-          <b>If wrong answers reach your limit, the set auto‑restarts.</b>
         </p>
-        <div class="panel" style="margin-top:12px">
-          <h2>🎮 Controller / Keyboard quick map</h2>
-          <div class="small muted">
-            Keyboard: <span class="kbd">1</span>–<span class="kbd">4</span> choose · <span class="kbd">←/→</span> Prev/Next · <span class="kbd">R</span> Restart · <span class="kbd">I</span>/<span class="kbd">D</span> switch views
-            <br/>Gamepad (Nintendo/standard): D‑pad ↑/↓ move selection · <b>A</b> choose · <b>B</b>/Start Next · <b>X</b>/L Prev · <b>R</b> Next · <b>Select</b> Restart · <b>Plus</b> Drill · <b>Minus</b> Import
-          </div>
-        </div>
       </div>
-    </section>
-
-    <section class="view" style="padding-top:0">
+      <div class="panel">
+        <h2>📈 Level & Stats</h2>
+        <div id="levelSummary" class="small muted">Earn XP by answering questions correctly. Base: 5 XP per question (halves on retries). Completion bonus: 2.5 × number of questions.</div>
+        <div class="level-bar" style="margin:8px 0"><div class="bar" id="levelBar" style="width:0%"></div></div>
+        <div id="currentLevelBreakdown" class="small muted">No XP earned yet.</div>
+      </div>
       <div class="panel">
         <h2>📁 Available Question Sets (auto‑loaded from <span class="kbd">/questions/index.json</span>)</h2>
         <div id="setsList" class="small muted">Looking for sets…</div>
+      </div>
+      <div class="panel">
+        <h2>📊 Set Stats</h2>
+        <div id="setStats" class="small muted">Run some sets to see stats.</div>
+      </div>
+      <div class="panel">
+        <h2>🎮 Controller / Keyboard quick map</h2>
+        <div class="small muted">
+          Keyboard: <span class="kbd">1</span>–<span class="kbd">4</span> choose · <span class="kbd">←/→</span> Prev/Next · <span class="kbd">R</span> Restart · <span class="kbd">I</span>/<span class="kbd">D</span> switch views
+          <br/>Gamepad (Nintendo/standard): D‑pad ↑/↓ move selection · <b>A</b> choose · <b>B</b>/Start Next · <b>X</b>/L Prev · <b>R</b> Next · <b>Select</b> Restart · <b>Plus</b> Drill · <b>Minus</b> Import
+        </div>
       </div>
     </section>
 
@@ -151,9 +135,9 @@
                 <div class="progress"><div class="bar" id="bar" style="width:0%"></div></div>
                 <div class="small muted" id="statusText" style="margin-top:6px"></div>
               </div>
-              <div class="row">
+              <div class="row" style="display:flex; gap:10px">
                 <button class="soft" id="prevBtn" disabled>Prev</button>
-                <button class="ok disabled" id="nextBtn">Next</button>
+                <button class="ok" id="nextBtn">Next</button>
               </div>
             </div>
           </div>
@@ -166,44 +150,86 @@
   </div>
 
   <script>
+  // --- Persistent storage helpers ---
+  const PROFILE_KEY = 'mcq_profile_v1';
+  const SETS_KEY = 'mcq_sets_v1';
+  const EVENTS_KEY = 'mcq_events_v1';
+  const SESSION_KEY = 'mcq_session_v1';
+
+  function loadJSON(key, fallback) {
+    try {
+      const txt = localStorage.getItem(key);
+      if (!txt) return fallback;
+      return JSON.parse(txt);
+    } catch (e) {
+      return fallback;
+    }
+  }
+  function saveJSON(key, obj) {
+    localStorage.setItem(key, JSON.stringify(obj));
+  }
+
+  function loadProfile() {
+    let profile = loadJSON(PROFILE_KEY, null);
+    if (!profile) {
+      profile = { totalXP: 0, level: 1, levelStartXP: 0 };
+    }
+    // ensure fields
+    if (profile.totalXP == null) profile.totalXP = 0;
+    if (!profile.level) profile.level = Math.floor(profile.totalXP / 100) + 1;
+    if (profile.levelStartXP == null) profile.levelStartXP = Math.floor(profile.totalXP / 100) * 100;
+    return profile;
+  }
+  function saveProfile(profile) {
+    saveJSON(PROFILE_KEY, profile);
+  }
+
+  function loadSetsStats() {
+    return loadJSON(SETS_KEY, {});
+  }
+  function saveSetsStats(stats) {
+    saveJSON(SETS_KEY, stats);
+  }
+
+  function loadEvents() {
+    return loadJSON(EVENTS_KEY, []);
+  }
+  function saveEvents(ev) {
+    saveJSON(EVENTS_KEY, ev);
+  }
+
+  function loadSession() {
+    return loadJSON(SESSION_KEY, null);
+  }
+  function saveSession(sess) {
+    saveJSON(SESSION_KEY, sess);
+  }
+
   // --- State ---
+  const SETS = new Map(); // key -> { title, file, items }
   let QUESTIONS = [];
   let order = [];
-  let idx = 0;              // index into order
-  let answered = new Map();  // id -> {chosen, correct}
-  let wrong = 0;
-  let maxWrong = 2;          // configurable limit
-  let hoverIndex = 0;        // controller/keyboard selection cursor (0..3)
-
-  // persist wrong limit
-  const LS_KEY = 'mcq_wrong_limit_v1';
-  const savedLimit = parseInt(localStorage.getItem(LS_KEY), 10);
-  if(!Number.isNaN(savedLimit) && savedLimit > 0){ maxWrong = savedLimit; }
+  let idx = 0;
+  let hoverIndex = 0;
+  let session = loadSession() || { activeSetKey: null, answered: {}, awardedSetBonus: false };
 
   // --- Elements ---
   const els = {
-    // tabs/views
     tabImport: document.getElementById('tab-import'),
     tabDrill: document.getElementById('tab-drill'),
     viewImport: document.getElementById('view-import'),
     viewDrill: document.getElementById('view-drill'),
     goDrillBtn: document.getElementById('goDrillBtn'),
-
-    // import
     inputArea: document.getElementById('inputArea'),
     loadBtn: document.getElementById('loadBtn'),
     demoBtn: document.getElementById('demoBtn'),
     downloadTemplateBtn: document.getElementById('downloadTemplateBtn'),
-    wrongLimitInput: document.getElementById('wrongLimitInput'),
-    wrongLimitLabel: document.getElementById('wrongLimitLabel'),
-    saveWrongLimitBtn: document.getElementById('saveWrongLimitBtn'),
-    saveHint: document.getElementById('saveHint'),
-
-    // sets
     setSelect: document.getElementById('setSelect'),
     setsList: document.getElementById('setsList'),
-
-    // drill
+    levelSummary: document.getElementById('levelSummary'),
+    levelBar: document.getElementById('levelBar'),
+    currentLevelBreakdown: document.getElementById('currentLevelBreakdown'),
+    setStats: document.getElementById('setStats'),
     quizBox: document.getElementById('quizBox'),
     emptyState: document.getElementById('emptyState'),
     stem: document.getElementById('stem'),
@@ -212,15 +238,11 @@
     nextBtn: document.getElementById('nextBtn'),
     prevBtn: document.getElementById('prevBtn'),
     progressPill: document.getElementById('progressPill'),
-    wrongCount: document.getElementById('wrongCount'),
+    xpPill: document.getElementById('xpPill'),
     bar: document.getElementById('bar'),
     statusText: document.getElementById('statusText'),
     resetBtn: document.getElementById('resetBtn'),
   };
-
-  // initialize wrong limit UI
-  els.wrongLimitInput.value = maxWrong;
-  els.wrongLimitLabel.textContent = maxWrong;
 
   // --- View helpers ---
   function setActiveView(name){
@@ -231,18 +253,14 @@
     els.tabDrill.classList.toggle('active', !isImport);
   }
 
-  // --- Utils ---
-  // Auto-load all sets listed in /questions/index.json
-  const SETS = new Map(); // key -> { title, file, items }
-
+  // --- Load sets from /questions/index.json ---
   async function fetchJSON(url){
-    const resp = await fetch(url, { cache: 'no-store' });
+    const resp = await fetch(url, { cache:'no-store' });
     if(!resp.ok) throw new Error(`${url} → HTTP ${resp.status}`);
     return await resp.json();
   }
 
   function normalizeSetPayload(payload, fallbackTitle){
-    // Accept either {title, questions:[...]} or {title, items:[...]} or array
     if(Array.isArray(payload)){
       return { title: fallbackTitle, items: payload };
     }
@@ -252,46 +270,44 @@
   }
 
   async function loadIndex(){
-    try{
-      const idx = await fetchJSON('questions/index.json');
+    try {
+      const idxData = await fetchJSON('questions/index.json');
       let entries = [];
-      if(Array.isArray(idx)){
-        if(idx.length && typeof idx[0] === 'string'){
-          entries = idx.map(f=>({ file: String(f), title: null }));
+      if (Array.isArray(idxData)) {
+        if (idxData.length && typeof idxData[0] === 'string') {
+          entries = idxData.map(f => ({ file: String(f), title: null }));
         } else {
-          entries = idx.map(o=>({ file: o.file || o.path || o.url || '', title: o.title || null })).filter(e=>e.file);
+          entries = idxData.map(o => ({ file: o.file || o.path || o.url || '', title: o.title || null })).filter(e => e.file);
         }
-      } else if(idx && idx.files){
-        entries = idx.files.map(f=> typeof f === 'string' ? ({file:f, title:null}) : ({file:f.file, title:f.title||null}));
+      } else if (idxData && idxData.files) {
+        entries = idxData.files.map(f => typeof f === 'string' ? ({file:f, title:null}) : ({file:f.file, title:f.title||null}));
       }
-      if(!entries.length) throw new Error('index.json has no entries');
+      if (!entries.length) throw new Error('index.json has no entries');
 
       // populate selector and list
       els.setSelect.innerHTML = '';
       els.setsList.innerHTML = '';
-      for(const entry of entries){
+      for (const entry of entries) {
         const file = entry.file.startsWith('questions/') ? entry.file : `questions/${entry.file}`;
-        try{
+        try {
           const payload = await fetchJSON(file);
           const base = file.split('/').pop().replace(/\.json$/i,'');
           const { title, items } = normalizeSetPayload(payload, entry.title || base);
           SETS.set(base, { title, file, items });
 
-          // add to dropdown
+          // dropdown
           const opt = document.createElement('option');
           opt.value = base; opt.textContent = title;
           els.setSelect.appendChild(opt);
 
-          // add to list view
+          // list view
           const row = document.createElement('div');
           row.innerHTML = `<b>${title}</b> <span class="muted">(${base}.json)</span>`;
           els.setsList.appendChild(row);
-        } catch(err){
+        } catch(err) {
           console.error('Failed loading', file, err);
         }
       }
-
-      // auto-select first set
       const firstKey = [...SETS.keys()][0];
       if(firstKey){ els.setSelect.value = firstKey; applySet(firstKey); }
       else { els.setSelect.innerHTML = '<option disabled selected>No sets found</option>'; els.setsList.textContent='No sets found.'; }
@@ -302,28 +318,20 @@
     }
   }
 
-  function applySet(key){
-    const set = SETS.get(key);
-    if(!set){ return; }
-    const text = JSON.stringify(set.items);
-    loadQuestions(text); // reuse existing flow
-  }
-  function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]} return a; }
-
   function parseInput(text){
     try{
       const data = JSON.parse(text);
       if(!Array.isArray(data)) throw new Error('Top-level JSON must be an array');
-      data.forEach((q, i)=>{
-        if(typeof q.stem!== 'string') throw new Error(`Item ${i+1} missing "stem"`);
-        if(!Array.isArray(q.options) || q.options.length!==4) throw new Error(`Item ${i+1} must have 4 options`);
-        if(!('answer' in q)) throw new Error(`Item ${i+1} missing "answer" (0-3 or matching option text)`);
-        if(typeof q.notes !== 'string') throw new Error(`Item ${i+1} missing "notes" (string)`);
-        if(typeof q.answer === 'number'){
-          if(q.answer<0 || q.answer>3) throw new Error(`Item ${i+1} answer index must be 0-3`);
-        } else if(typeof q.answer === 'string'){
-          const ai = q.options.findIndex(o=>o.trim().toLowerCase()===q.answer.trim().toLowerCase());
-          if(ai<0) throw new Error(`Item ${i+1} answer text not found in options`);
+      data.forEach((q, i) => {
+        if (typeof q.stem !== 'string') throw new Error(`Item ${i+1} missing "stem"`);
+        if (!Array.isArray(q.options) || q.options.length !== 4) throw new Error(`Item ${i+1} must have 4 options`);
+        if (!('answer' in q)) throw new Error(`Item ${i+1} missing "answer" (0-3 or matching option text)`);
+        if (typeof q.notes !== 'string') throw new Error(`Item ${i+1} missing "notes" (string)`);
+        if (typeof q.answer === 'number') {
+          if (q.answer < 0 || q.answer > 3) throw new Error(`Item ${i+1} answer index must be 0-3`);
+        } else if (typeof q.answer === 'string') {
+          const ai = q.options.findIndex(o => o.trim().toLowerCase() === q.answer.trim().toLowerCase());
+          if(ai < 0) throw new Error(`Item ${i+1} answer text not found in options`);
           q.answer = ai;
         } else {
           throw new Error(`Item ${i+1} answer must be number or string`);
@@ -331,10 +339,28 @@
         if(!q.id) q.id = `q-${i+1}`;
       });
       return data;
-    }catch(e){
-      alert('Import error: '+e.message);
+    } catch(e) {
+      alert('Import error: ' + e.message);
       return null;
     }
+  }
+
+  function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]} return a; }
+
+  function applySet(key){
+    const set = SETS.get(key);
+    if(!set){ return; }
+    const text = JSON.stringify(set.items);
+    loadQuestions(text);
+    // new session for this set
+    session = { activeSetKey: key, answered: {}, awardedSetBonus: false };
+    saveSession(session);
+    // increment runs for set
+    let stats = loadSetsStats();
+    if(!stats[key]) stats[key] = { runs:0, totalCompletions:0, xpTotal:0 };
+    stats[key].runs = (stats[key].runs || 0) + 1;
+    saveSetsStats(stats);
+    updateSetStatsUI();
   }
 
   function loadQuestions(jsonText){
@@ -343,17 +369,118 @@
     QUESTIONS = data.map(q=>({...q}));
     order = [...Array(QUESTIONS.length).keys()];
     shuffle(order);
-    idx = 0; answered.clear(); wrong = 0; hoverIndex = 0;
-    els.wrongCount.textContent = wrong;
+    idx = 0; hoverIndex = 0;
     els.emptyState.classList.add('hidden');
     els.quizBox.classList.remove('hidden');
+    // If no active set key (manual import/demo), assign a default key so XP aggregates somewhere
+    if(!session.activeSetKey){
+      session.activeSetKey = 'manual';
+      saveSession(session);
+    }
     render();
     setActiveView('drill');
   }
 
-  function setNextBtnState(disabled){
-    els.nextBtn.classList.toggle('disabled', disabled);
-    els.nextBtn.disabled = disabled;
+  function updateXPUI(){
+    const profile = loadProfile();
+    els.xpPill.textContent = `XP: ${profile.totalXP.toFixed(1)} · Level ${profile.level}`;
+    // level progress
+    const progress = (profile.totalXP - profile.levelStartXP) / 100;
+    els.levelBar.style.width = `${Math.min(progress,1)*100}%`;
+    // breakdown
+    const events = loadEvents();
+    const xpForLevel = profile.totalXP - profile.levelStartXP;
+    let remain = xpForLevel;
+    const contrib = {};
+    for(let i=events.length-1; i>=0 && remain > 0; i--){
+      const e = events[i];
+      let x = Math.min(e.xp, remain);
+      contrib[e.set] = (contrib[e.set] || 0) + x;
+      remain -= x;
+    }
+    const breakdownEl = els.currentLevelBreakdown;
+    if(xpForLevel <= 0){
+      breakdownEl.textContent = 'No XP earned yet.';
+    } else {
+      let items = [];
+      const keys = Object.keys(contrib).sort((a,b)=>contrib[b]-contrib[a]);
+      for(const k of keys){
+        const xp = contrib[k];
+        const percent = ((xp / xpForLevel) * 100).toFixed(0);
+        const set = SETS.get(k);
+        const title = set ? set.title : k;
+        items.push(`<div><b>${title}</b>: ${xp.toFixed(1)} XP (${percent}%)</div>`);
+      }
+      breakdownEl.innerHTML = items.join('');
+    }
+    updateSetStatsUI();
+  }
+
+  // Update per-set stats table
+  function updateSetStatsUI(){
+    const stats = loadSetsStats();
+    const listEl = els.setStats;
+    if(!stats || Object.keys(stats).length === 0){
+      listEl.innerHTML = '<div class="muted">No runs yet.</div>';
+      return;
+    }
+    let html = '<table style="width:100%; border-collapse: collapse;"><thead><tr><th style="text-align:left;">Set</th><th style="text-align:center;">Runs</th><th style="text-align:center;">Completions</th><th style="text-align:center;">XP</th></tr></thead><tbody>';
+    for(const key of Object.keys(stats)){
+      const st = stats[key];
+      const set = SETS.get(key);
+      const title = set ? set.title : key;
+      html += `<tr><td>${title}</td><td style="text-align:center;">${st.runs || 0}</td><td style="text-align:center;">${st.totalCompletions || 0}</td><td style="text-align:center;">${(st.xpTotal || 0).toFixed(1)}</td></tr>`;
+    }
+    html += '</tbody></table>';
+    listEl.innerHTML = html;
+  }
+
+  function awardXP(xp, setKey, type){
+    if(xp <= 0) return;
+    // update profile
+    const profile = loadProfile();
+    profile.totalXP += xp;
+    const newLevel = Math.floor(profile.totalXP / 100) + 1;
+    if(newLevel > profile.level){
+      // adjust levelStartXP to new threshold
+      profile.level = newLevel;
+      profile.levelStartXP = Math.floor(profile.totalXP / 100) * 100;
+    }
+    saveProfile(profile);
+    // update sets stats
+    const stats = loadSetsStats();
+    if(!stats[setKey]) stats[setKey] = { runs:0, totalCompletions:0, xpTotal:0 };
+    stats[setKey].xpTotal = (stats[setKey].xpTotal || 0) + xp;
+    saveSetsStats(stats);
+    // record event
+    const ev = loadEvents();
+    ev.push({ ts: Date.now(), set: setKey, type, xp });
+    // limit length
+    if(ev.length > 1000) ev.shift();
+    saveEvents(ev);
+    // update UI
+    updateXPUI();
+  }
+
+  function checkSetCompletion(){
+    if(session.awardedSetBonus) return;
+    const allCorrect = QUESTIONS.every(q => {
+      const st = session.answered[q.id];
+      return st && st.correct;
+    });
+    if(allCorrect){
+      const bonus = QUESTIONS.length * 2.5;
+      awardXP(bonus, session.activeSetKey, 'set_bonus');
+      session.awardedSetBonus = true;
+      // update completions
+      const stats = loadSetsStats();
+      const s = stats[session.activeSetKey] || { runs:0, totalCompletions:0, xpTotal:0 };
+      s.totalCompletions = (s.totalCompletions || 0) + 1;
+      stats[session.activeSetKey] = s;
+      saveSetsStats(stats);
+      saveSession(session);
+      alert(`🎉 Set complete! +${bonus} XP bonus earned.`);
+    }
   }
 
   function render(){
@@ -368,25 +495,27 @@
     els.notes.classList.add('hidden');
     els.notes.textContent = '';
 
-    const seen = answered.get(current.id);
+    const st = session.answered[current.id];
 
-    current.options.forEach((opt, i)=>{
+    current.options.forEach((opt, i) => {
       const b = document.createElement('button');
-      b.className = 'opt'; b.textContent = opt; b.setAttribute('data-index', i);
-      if(seen){
-        b.classList.add(i===current.answer ? 'correct' : (i===seen.chosen ? 'wrong' : ''));
+      b.className = 'opt';
+      b.textContent = opt;
+      if(st && st.correct){
+        b.classList.add(i === current.answer ? 'correct' : '');
         b.disabled = true;
       } else {
         if(i === hoverIndex) b.classList.add('hovered');
       }
-      b.addEventListener('click', ()=> choose(i));
+      b.addEventListener('click', () => choose(i));
       els.options.appendChild(b);
     });
-
-    els.prevBtn.disabled = idx===0;
-    setNextBtnState(!seen);
-
-    if(seen){ showNotes(current); }
+    els.prevBtn.disabled = idx === 0;
+    // next always enabled
+    if(st && st.correct){
+      // show notes if correct
+      showNotes(current);
+    }
   }
 
   function showNotes(q){
@@ -396,71 +525,96 @@
 
   function choose(i){
     const current = QUESTIONS[order[idx]];
-    if(answered.has(current.id)) return; // already answered
-    const correct = i===current.answer;
-    answered.set(current.id,{chosen:i, correct});
-
-    if(!correct){
-      wrong += 1; els.wrongCount.textContent = wrong;
-      if(wrong >= maxWrong){
-        alert(`❌ You reached your wrong limit (${maxWrong}). Restarting the set.`);
-        restart();
-        return;
-      }
+    const key = current.id;
+    let st = session.answered[key];
+    if(st && st.correct) return;
+    if(!st){
+      st = { wrongs:0, correct:false, awarded:false };
+      session.answered[key] = st;
     }
-
-    // decorate buttons
-    [...els.options.children].forEach((b, k)=>{
+    if(i !== current.answer){
+      // wrong attempt
+      st.wrongs++;
+      // decorate button
+      [...els.options.children].forEach((b,k)=>{
+        if(k === i){
+          b.classList.add('wrong');
+        }
+        b.disabled = true;
+      });
+      // allow retry by enabling buttons after slight delay
+      setTimeout(() => {
+        render();
+      }, 600);
+      saveSession(session);
+      return;
+    }
+    // correct
+    st.correct = true;
+    // compute xp if not awarded
+    if(!st.awarded){
+      const xp = 5 * Math.pow(0.5, st.wrongs);
+      awardXP(xp, session.activeSetKey, 'question');
+      st.awarded = true;
+    }
+    // decorate
+    [...els.options.children].forEach((b,k)=>{
       b.disabled = true;
-      b.classList.toggle('correct', k===current.answer);
-      if(k===i && !correct) b.classList.add('wrong');
       b.classList.remove('hovered');
+      b.classList.toggle('correct', k === current.answer);
     });
-
     showNotes(current);
-    setNextBtnState(false);
+    saveSession(session);
+    checkSetCompletion();
   }
 
   function next(){
-    if(idx < order.length-1){
+    if(idx < order.length - 1){
       idx += 1; hoverIndex = 0; render();
     } else {
-      // finished
+      // finished run
       els.bar.style.width = '100%';
       const total = QUESTIONS.length;
-      const correctCount = [...answered.values()].filter(v=>v.correct).length;
-      const passed = wrong < maxWrong; // pass if you did NOT hit the limit
-      const msg = passed ? '✅ Passed' : '❌ Failed';
-      alert(`${msg}\nCorrect: ${correctCount}/${total}\nWrong: ${wrong}`);
-      if(!passed){ restart(); } else {
-        if(confirm('Run the set again (reshuffle)?')){ restart(true); }
-      }
+      const correctCount = Object.values(session.answered).filter(v => v && v.correct).length;
+      alert(`Run finished! You eventually got ${correctCount}/${total} correct. You can retry questions as many times as needed.`);
+      if(confirm('Run the set again (reshuffle)?')){ restart(true); }
     }
   }
 
-  function prev(){ if(idx>0){ idx -= 1; hoverIndex = 0; render(); } }
+  function prev(){
+    if(idx > 0){
+      idx -= 1;
+      hoverIndex = 0;
+      render();
+    }
+  }
 
   function restart(reshuffle=false){
-    idx = 0; answered.clear(); wrong = 0; hoverIndex = 0; els.wrongCount.textContent = wrong;
+    idx = 0; hoverIndex = 0;
+    session.answered = {};
+    session.awardedSetBonus = false;
+    saveSession(session);
     if(reshuffle){ shuffle(order); }
     render();
   }
 
   // --- Events: Tabs / Nav ---
-  // load sets index on boot
-  window.addEventListener('DOMContentLoaded', loadIndex);
+  window.addEventListener('DOMContentLoaded', () => {
+    loadIndex();
+    updateXPUI();
+  });
 
-  // change set from dropdown
-  els.setSelect && els.setSelect.addEventListener('change', (e)=> applySet(e.target.value));
+  els.setSelect && els.setSelect.addEventListener('change', (e) => {
+    applySet(e.target.value);
+  });
 
-  // (existing)
-  els.tabImport.addEventListener('click', ()=> setActiveView('import'));
-  els.tabDrill.addEventListener('click', ()=> setActiveView('drill'));
-  els.goDrillBtn.addEventListener('click', ()=> setActiveView('drill'));
+  els.tabImport.addEventListener('click', () => setActiveView('import'));
+  els.tabDrill.addEventListener('click', () => setActiveView('drill'));
+  els.goDrillBtn.addEventListener('click', () => setActiveView('drill'));
 
-  // --- Events: Import ---
-  els.loadBtn.addEventListener('click', ()=> loadQuestions(els.inputArea.value.trim()));
-  els.demoBtn.addEventListener('click', ()=>{
+  els.loadBtn.addEventListener('click', () => loadQuestions(els.inputArea.value.trim()));
+
+  els.demoBtn.addEventListener('click', () => {
     const demo = [
       {id:'d1', stem:'Beta-blockers ↓ what cardiac parameter at rest and exercise?', options:['Contractility','Preload','Afterload','Heart rate'], answer:3, notes:'β-blockers primarily lower HR (negative chronotropy) and contractility (negative inotropy). Clinically, HR reduction is the most reliable exam answer.'},
       {id:'d2', stem:'Which nerve is compressed in carpal tunnel syndrome?', options:['Ulnar','Radial','Median','Musculocutaneous'], answer:2, notes:'Median nerve compression under the flexor retinaculum. Thenar weakness, paresthesia of lateral 3½ digits, positive Phalen/Tinel.'},
@@ -472,7 +626,7 @@
     loadQuestions(els.inputArea.value);
   });
 
-  els.downloadTemplateBtn.addEventListener('click', ()=>{
+  els.downloadTemplateBtn.addEventListener('click', () => {
     const tmpl = [
       {id:'unique-id-1', stem:'Your question here', options:['A','B','C','D'], answer:0, notes:'Paste the relevant notes/explanation here.'}
     ];
@@ -483,53 +637,42 @@
     a.click();
   });
 
-  // save wrong limit
-  function saveLimit(){
-    const v = parseInt(els.wrongLimitInput.value, 10);
-    if(Number.isNaN(v) || v < 1){ els.saveHint.textContent = 'Enter a number ≥ 1'; return; }
-    maxWrong = v; localStorage.setItem(LS_KEY, String(v));
-    els.wrongLimitLabel.textContent = maxWrong;
-    els.saveHint.textContent = 'Saved!';
-    setTimeout(()=> els.saveHint.textContent = '', 1200);
-  }
-  els.saveWrongLimitBtn.addEventListener('click', saveLimit);
-  els.wrongLimitInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter') saveLimit(); });
-
-  // --- Events: Drill ---
   els.nextBtn.addEventListener('click', next);
   els.prevBtn.addEventListener('click', prev);
-  els.resetBtn.addEventListener('click', ()=> restart(true));
+  els.resetBtn.addEventListener('click', () => restart(true));
 
   // --- Keyboard shortcuts ---
-  document.addEventListener('keydown', (e)=>{
+  document.addEventListener('keydown', (e) => {
     const key = e.key.toLowerCase();
     if(key==='i') setActiveView('import');
     if(key==='d') setActiveView('drill');
-
-    if(e.key==='ArrowRight' && !els.nextBtn.disabled) next();
-    if(e.key==='ArrowLeft') prev();
-
+    if(e.key==='ArrowRight'){ next(); }
+    if(e.key==='ArrowLeft'){ prev(); }
     if(['1','2','3','4'].includes(e.key)){
       const n = parseInt(e.key,10)-1;
       const current = QUESTIONS[order[idx]];
-      if(current && !answered.get(current.id)) choose(n);
+      if(current){
+        choose(n);
+      }
     }
-
     if(e.key==='ArrowUp') moveHover(-1);
     if(e.key==='ArrowDown') moveHover(1);
     if(e.key==='enter'){
       const current = QUESTIONS[order[idx]];
-      if(current && !answered.get(current.id)) choose(hoverIndex);
+      if(current){
+        choose(hoverIndex);
+      }
     }
     if(key==='r') restart(true);
   });
 
   function moveHover(delta){
     const current = QUESTIONS[order[idx]];
-    if(!current) return; // nothing loaded
-    if(answered.get(current.id)) return; // already answered, ignore
+    if(!current) return;
+    const st = session.answered[current.id];
+    if(st && st.correct) return;
     hoverIndex = (hoverIndex + delta + 4) % 4;
-    [...els.options.children].forEach((b, k)=>{
+    [...els.options.children].forEach((b,k)=>{
       b.classList.toggle('hovered', k === hoverIndex);
     });
   }
@@ -537,13 +680,12 @@
   // --- Gamepad support ---
   let gpRAF = null;
   let prevButtons = [];
-  let axisCooldown = 0; // debounce stick/D-pad axes
-
+  let axisCooldown = 0;
   function startGamepadLoop(){
     if(gpRAF) return;
-    const loop = (ts)=>{
+    const loop = (ts) => {
       const pads = navigator.getGamepads ? navigator.getGamepads() : [];
-      const gp = pads && pads[0]; // use first connected controller
+      const gp = pads && pads[0];
       if(gp){
         handleGamepad(gp, ts);
       }
@@ -551,62 +693,36 @@
     };
     gpRAF = requestAnimationFrame(loop);
   }
-
   function stopGamepadLoop(){ if(gpRAF){ cancelAnimationFrame(gpRAF); gpRAF = null; } }
-
-  window.addEventListener('gamepadconnected', (e)=>{ startGamepadLoop(); console.log('Gamepad connected', e.gamepad); });
-  window.addEventListener('gamepaddisconnected', (e)=>{ console.log('Gamepad disconnected', e.gamepad); if(!navigator.getGamepads().some(g=>g)) stopGamepadLoop(); });
-
+  window.addEventListener('gamepadconnected', (e) => { startGamepadLoop(); console.log('Gamepad connected', e.gamepad); });
+  window.addEventListener('gamepaddisconnected', (e) => { console.log('Gamepad disconnected', e.gamepad); if(!navigator.getGamepads().some(g=>g)) stopGamepadLoop(); });
   function pressedEdge(i, buttons){ return buttons[i] && buttons[i].pressed && !(prevButtons[i] && prevButtons[i].pressed); }
-
   function handleGamepad(gp, ts){
     const btn = gp.buttons;
-
-    // Axes: use D-pad axes when exposed as axes (rare) or sticks for navigation
-    // debounce axes to avoid rapid repeats
     axisCooldown = axisCooldown - 1;
-    const axY = (gp.axes && gp.axes.length>1) ? gp.axes[1] : 0; // left stick vertical
+    const axY = (gp.axes && gp.axes.length>1) ? gp.axes[1] : 0;
     if(axisCooldown <= 0){
       if(axY < -0.5){ moveHover(-1); axisCooldown = 8; }
       else if(axY > 0.5){ moveHover(1); axisCooldown = 8; }
     }
-
-    // D-pad buttons (standard mapping 12..15)
-    if(pressedEdge(12, btn)) moveHover(-1); // up
-    if(pressedEdge(13, btn)) moveHover(1);  // down
-
-    // A (0) choose
+    if(pressedEdge(12, btn)) moveHover(-1);
+    if(pressedEdge(13, btn)) moveHover(1);
     if(pressedEdge(0, btn)){
       const current = QUESTIONS[order[idx]];
-      if(current && !answered.get(current.id)) choose(hoverIndex);
+      if(current){ choose(hoverIndex); }
     }
-
-    // B (1) or Start (9) -> Next
     if(pressedEdge(1, btn) || pressedEdge(9, btn)){
-      if(!els.nextBtn.disabled) next();
+      next();
     }
-
-    // X (2) or L (4) -> Prev
     if(pressedEdge(2, btn) || pressedEdge(4, btn)) prev();
-
-    // R (5) -> Next
-    if(pressedEdge(5, btn)) if(!els.nextBtn.disabled) next();
-
-    // Select/Minus (8) -> Restart
+    if(pressedEdge(5, btn)) next();
     if(pressedEdge(8, btn)) restart(true);
-
-    // Plus (9) already mapped to Next; use Home (16) to toggle Drill
     if(btn[16] && pressedEdge(16, btn)) setActiveView('drill');
-
-    // Capture (17) -> Import
     if(btn[17] && pressedEdge(17, btn)) setActiveView('import');
-
     prevButtons = btn.map(b=>({pressed:b.pressed}));
   }
-
-  // kick off polling immediately (for browsers that don't fire gamepadconnected until a button is pressed)
+  // start polling right away for browsers that delay event
   startGamepadLoop();
-
   </script>
 </body>
 </html>
