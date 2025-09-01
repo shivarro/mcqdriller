@@ -1,0 +1,794 @@
+[
+  {
+    "id": "q-1",
+    "stem": "A patient presents with a groin mass and symptoms of bowel obstruction such as vomiting and abdominal distension. What is the most likely diagnosis?",
+    "options": [
+      "Appendicitis",
+      "Strangulated hernia with ischemic bowel",
+      "Meckel's diverticulum",
+      "Incarcerated ovarian cyst"
+    ],
+    "answer": 1,
+    "notes": "A groin mass accompanied by bowel obstruction symptoms like vomiting and distension suggests a strangulated hernia with ischemic bowel."
+  },
+  {
+    "id": "q-2",
+    "stem": "Primary adrenal insufficiency typically presents with which triad of findings?",
+    "options": [
+      "Hyperpigmentation, hypotension, and increased renin activity due to low aldosterone",
+      "Hypopigmentation, hypertension, and low renin",
+      "Hypertension, hypernatremia, and low renin",
+      "Hyperglycemia, tachycardia, and elevated cortisol"
+    ],
+    "answer": 0,
+    "notes": "In primary adrenal insufficiency, low aldosterone leads to hypotension, high renin, and the ACTH excess causes hyperpigmentation."
+  },
+  {
+    "id": "q-3",
+    "stem": "A patient develops fever, abdominal pain, and leukocytosis shortly after a cholecystectomy. Imaging shows normal bile ducts. What complication should be suspected?",
+    "options": [
+      "Sphincter of Oddi dysfunction",
+      "Acute pancreatitis",
+      "Biliary leak",
+      "Hepatic abscess"
+    ],
+    "answer": 2,
+    "notes": "Post-cholecystectomy fever, abdominal pain, and leukocytosis with normal bile ducts suggest a biliary leak."
+  },
+  {
+    "id": "q-4",
+    "stem": "A young man presents with a firm, non-tender testicular mass that does not transilluminate. What is the most likely diagnosis?",
+    "options": [
+      "Hydrocele",
+      "Varicocele",
+      "Testicular cancer (germ cell tumor)",
+      "Epididymitis"
+    ],
+    "answer": 2,
+    "notes": "A firm, non-tender testicular mass that does not transilluminate is suggestive of testicular cancer, commonly a germ cell tumor."
+  },
+  {
+    "id": "q-5",
+    "stem": "Red plaques with satellite lesions in moist skin folds are most likely due to infection with which organism?",
+    "options": [
+      "Staphylococcus aureus",
+      "Candida (budding yeasts with pseudohyphae)",
+      "Dermatophyte",
+      "Streptococcus pyogenes"
+    ],
+    "answer": 1,
+    "notes": "Candida infections present as red plaques with satellite lesions in moist skin folds and show budding yeasts with pseudohyphae on microscopy."
+  },
+  {
+    "id": "q-6",
+    "stem": "A newborn has petechiae, jaundice, and hepatosplenomegaly. Which congenital infection classically causes this 'blueberry muffin' appearance?",
+    "options": [
+      "Congenital rubella syndrome",
+      "Congenital toxoplasmosis",
+      "Congenital cytomegalovirus (CMV) infection",
+      "Congenital syphilis"
+    ],
+    "answer": 2,
+    "notes": "Congenital CMV infection can present with petechiae, jaundice, and hepatosplenomegaly, often described as a 'blueberry muffin' baby."
+  },
+  {
+    "id": "q-7",
+    "stem": "A patient has mild erythema and tenderness after sun exposure without blister formation. What is the recommended management?",
+    "options": [
+      "Oral NSAIDs and cool compresses",
+      "Aloe vera and antihistamines",
+      "High-potency topical steroids",
+      "Systemic corticosteroids"
+    ],
+    "answer": 0,
+    "notes": "Mild to moderate sunburn (erythema and tenderness without blisters) is treated with oral NSAIDs and cool compresses for pain and inflammation."
+  },
+  {
+    "id": "q-8",
+    "stem": "A patient with acute gout cannot take NSAIDs due to anticoagulation and congestive heart failure. Which medication should be prescribed?",
+    "options": [
+      "Aspirin",
+      "Colchicine",
+      "Allopurinol",
+      "Prednisone"
+    ],
+    "answer": 1,
+    "notes": "In acute gout, patients who cannot use NSAIDs (eg, due to anticoagulation or CHF) should receive colchicine for treatment."
+  },
+  {
+    "id": "q-9",
+    "stem": "In a threatened abortion characterized by vaginal bleeding with a closed cervix and a live fetus, what is the appropriate management?",
+    "options": [
+      "Immediate dilation and curettage",
+      "Administration of methotrexate",
+      "Serial β-hCG measurements",
+      "Reassurance and follow-up ultrasound"
+    ],
+    "answer": 3,
+    "notes": "Threatened abortion (vaginal bleeding, closed cervix, live fetus) is managed with reassurance and follow-up ultrasound; β-hCG monitoring adds little once intrauterine pregnancy is confirmed."
+  },
+  {
+    "id": "q-10",
+    "stem": "Which condition presents with chronic eye irritation and facial erythema with pustules rather than acute watery discharge?",
+    "options": [
+      "Viral conjunctivitis",
+      "Ocular rosacea",
+      "Bacterial conjunctivitis",
+      "Allergic conjunctivitis"
+    ],
+    "answer": 1,
+    "notes": "Ocular rosacea causes chronic eye irritation accompanied by facial erythema and pustules; viral conjunctivitis typically has acute watery discharge and is linked to URI."
+  },
+  {
+    "id": "q-11",
+    "stem": "Acute liver failure is diagnosed by the presence of encephalopathy in a patient without chronic liver disease and which laboratory finding?",
+    "options": [
+      "Elevated bilirubin only",
+      "Low serum albumin only",
+      "Elevated PT/INR",
+      "Elevated alkaline phosphatase alone"
+    ],
+    "answer": 2,
+    "notes": "Acute liver failure is defined by hepatic encephalopathy plus elevated PT/INR in a patient without chronic liver stigmata; isolated alkaline phosphatase elevation suggests biliary disease instead."
+  },
+  {
+    "id": "q-12",
+    "stem": "A postpartum woman develops fever and uterine tenderness. What is the likely diagnosis?",
+    "options": [
+      "Uterine atony",
+      "Postpartum endometritis",
+      "Uterine rupture",
+      "Normal lochia"
+    ],
+    "answer": 1,
+    "notes": "Fever and uterine tenderness after delivery indicate postpartum endometritis due to infection of the uterine decidua; normal lochia is afebrile."
+  },
+  {
+    "id": "q-13",
+    "stem": "A patient with cataplexy, hallucinations, and decreased REM latency most likely has which disorder?",
+    "options": [
+      "Absence seizures",
+      "Major depressive disorder",
+      "Restless leg syndrome",
+      "Narcolepsy"
+    ],
+    "answer": 3,
+    "notes": "Narcolepsy features cataplexy, hypnagogic/hypnopompic hallucinations, and decreased REM latency; absence seizures show 3-Hz spike and wave patterns on EEG."
+  },
+  {
+    "id": "q-14",
+    "stem": "Henoch–Schönlein purpura is characterized by which combination of findings?",
+    "options": [
+      "Purpura, hemoptysis, and pulmonary infiltrates",
+      "Thrombocytopenia and petechiae",
+      "Purpura with leukopenia",
+      "Palpable purpura, arthralgia, abdominal pain, and renal involvement with normal platelets"
+    ],
+    "answer": 3,
+    "notes": "Henoch–Schönlein purpura presents with palpable purpura, arthralgia, abdominal pain, and renal manifestations (IgA nephropathy), while platelets remain normal."
+  },
+  {
+    "id": "q-15",
+    "stem": "A young heavy smoker presents with distal ischemia/gangrene but normal peripheral pulses. Which disease should be suspected?",
+    "options": [
+      "Deep vein thrombosis",
+      "Atherosclerotic peripheral artery disease",
+      "Raynaud disease",
+      "Thromboangiitis obliterans (Buerger disease)"
+    ],
+    "answer": 3,
+    "notes": "Thromboangiitis obliterans occurs in young smokers and causes distal ischemia/gangrene while pulses are preserved; Raynaud phenomenon presents with episodic color change without tissue necrosis."
+  },
+  {
+    "id": "q-16",
+    "stem": "A patient with a mechanical mitral valve, subtherapeutic INR, and new dyspnea with crackles is most likely experiencing which complication?",
+    "options": [
+      "Pulmonary embolism",
+      "Infective endocarditis",
+      "Prosthetic valve thrombosis",
+      "Isolated left ventricular dysfunction"
+    ],
+    "answer": 2,
+    "notes": "A mechanical mitral valve with subtherapeutic INR and new pulmonary symptoms suggests prosthetic valve thrombosis; isolated LV dysfunction lacks valve history and INR clue."
+  },
+  {
+    "id": "q-17",
+    "stem": "Fatigue, erectile dysfunction, hepatomegaly, and metacarpophalangeal joint arthropathy in a middle-aged patient most likely indicate which condition?",
+    "options": [
+      "Cushing syndrome",
+      "Hereditary hemochromatosis",
+      "Hypothyroidism",
+      "Rheumatoid arthritis"
+    ],
+    "answer": 1,
+    "notes": "Hereditary hemochromatosis causes iron overload leading to fatigue, erectile dysfunction, hepatomegaly, and arthropathy of the metacarpophalangeal joints."
+  },
+  {
+    "id": "q-18",
+    "stem": "In acute pancreatitis presenting with epigastric pain relieved by leaning forward and associated with leukocytosis and hypocalcemia, what is the first-line treatment?",
+    "options": [
+      "Immediate calcium supplementation",
+      "Emergency cholecystectomy",
+      "Aggressive intravenous fluid resuscitation",
+      "Oral pancreatic enzyme replacement"
+    ],
+    "answer": 2,
+    "notes": "Management of acute pancreatitis begins with aggressive IV fluid resuscitation; calcium supplementation is not initial therapy despite hypocalcemia."
+  },
+  {
+    "id": "q-19",
+    "stem": "A pregnant woman at 35 weeks with preeclampsia with severe features (thrombocytopenia and elevated creatinine) should undergo which management?",
+    "options": [
+      "Home bed rest only",
+      "Immediate delivery",
+      "Biophysical profile with expectant management",
+      "Tocolysis to prolong pregnancy"
+    ],
+    "answer": 1,
+    "notes": "Preeclampsia with severe features at or beyond 34 weeks requires immediate delivery to prevent maternal and fetal complications."
+  },
+  {
+    "id": "q-20",
+    "stem": "Proximal muscle weakness with absent reflexes in a smoker suggests which paraneoplastic syndrome?",
+    "options": [
+      "Guillain–Barré syndrome",
+      "Myasthenia gravis",
+      "Polymyositis",
+      "Lambert–Eaton myasthenic syndrome"
+    ],
+    "answer": 3,
+    "notes": "Lambert–Eaton syndrome is a paraneoplastic disorder seen in smokers (often with small cell lung cancer) presenting with proximal muscle weakness and diminished reflexes; evaluate with chest CT."
+  },
+  {
+    "id": "q-21",
+    "stem": "Lewy body dementia is characterized by dementia, visual hallucinations, parkinsonism, and which additional feature?",
+    "options": [
+      "Amyloid plaques exclusively",
+      "Postural instability",
+      "Primitive reflexes",
+      "Gait ataxia only"
+    ],
+    "answer": 1,
+    "notes": "Lewy body dementia includes dementia, visual hallucinations, parkinsonism, and postural instability; primitive reflexes are more characteristic of Alzheimer or frontal lobe disease."
+  },
+  {
+    "id": "q-22",
+    "stem": "Perifollicular hemorrhage, gum disease, and delayed wound healing are suggestive of which vitamin deficiency?",
+    "options": [
+      "Vitamin C deficiency (scurvy)",
+      "Vitamin K deficiency",
+      "Vitamin B12 deficiency",
+      "Vitamin D deficiency"
+    ],
+    "answer": 0,
+    "notes": "Vitamin C deficiency (scurvy) manifests with perifollicular hemorrhage, gum disease, and impaired collagen synthesis causing poor wound healing."
+  },
+  {
+    "id": "q-23",
+    "stem": "An HIV-positive man who has sex with men (MSM) presents with chronic rectal pain, bleeding, a single indurated ulcer, and firm inguinal nodes. What is the most likely diagnosis?",
+    "options": [
+      "Anal squamous cell carcinoma",
+      "Internal hemorrhoids",
+      "Gonococcal proctitis",
+      "Chancroid"
+    ],
+    "answer": 0,
+    "notes": "Anal squamous cell carcinoma often presents with chronic rectal pain/bleeding, a single indurated ulcer, and lymphadenopathy, especially in HIV-positive MSM; gonococcal proctitis causes mucopurulent discharge and tenesmus without a solitary ulcer."
+  },
+  {
+    "id": "q-24",
+    "stem": "In a smoker with chronic cough and dyspnea, what test is best for confirming a diagnosis of chronic obstructive pulmonary disease (COPD)?",
+    "options": [
+      "Serum beta-blocker level",
+      "CT angiography",
+      "Chest X-ray",
+      "Spirometry"
+    ],
+    "answer": 3,
+    "notes": "COPD is confirmed by spirometry demonstrating airflow limitation; chest x-ray can support but is not diagnostic, and beta-blocker side effects are not the cause."
+  },
+  {
+    "id": "q-25",
+    "stem": "Abdominal distension, high-pitched bowel sounds, and air–fluid levels on abdominal x-ray most likely indicate which condition?",
+    "options": [
+      "Perforated peptic ulcer",
+      "Intussusception",
+      "Small-bowel obstruction due to adhesions",
+      "Acute appendicitis"
+    ],
+    "answer": 2,
+    "notes": "These findings are characteristic of small-bowel obstruction (often from adhesions). A perforated ulcer presents with peritonitis and free air under the diaphragm."
+  },
+  {
+    "id": "q-26",
+    "stem": "Recurrent miscarriages, livedo reticularis, and thrombosis associated with a prolonged PTT are characteristic of which syndrome?",
+    "options": [
+      "Antithrombin III deficiency",
+      "Beta-2 microglobulin disease",
+      "Systemic sclerosis",
+      "Antiphospholipid syndrome"
+    ],
+    "answer": 3,
+    "notes": "Antiphospholipid syndrome manifests with recurrent pregnancy loss, livedo reticularis, thrombosis, and a prolonged PTT due to lupus anticoagulant."
+  },
+  {
+    "id": "q-27",
+    "stem": "A persistent painless ulcer on the penis with induration and inguinal lymphadenopathy in a smoker suggests which diagnosis?",
+    "options": [
+      "Genital herpes simplex infection",
+      "Fournier gangrene",
+      "Syphilitic chancre",
+      "Penile squamous cell carcinoma"
+    ],
+    "answer": 3,
+    "notes": "Penile squamous cell carcinoma presents as a persistent painless ulcer with induration and lymphadenopathy, often in smokers; syphilitic chancre typically heals in weeks."
+  },
+  {
+    "id": "q-28",
+    "stem": "What is a key hallmark of dilated cardiomyopathy leading to systolic heart failure?",
+    "options": [
+      "Replacement of dead myocytes by fibrous tissue causing ventricular dilation",
+      "Hypertrophy of ventricular walls only",
+      "Endocardial fibroelastosis",
+      "Deposition of amyloid in the myocardium"
+    ],
+    "answer": 0,
+    "notes": "Dilated cardiomyopathy results when dead myocytes are replaced by fibrous tissue, leaving a weak, dilated, noncontractile ventricle and resulting in systolic heart failure."
+  },
+  {
+    "id": "q-29",
+    "stem": "A liver lesion with a central stellate scar on CT is most likely which condition, and what is the recommended management?",
+    "options": [
+      "Focal nodular hyperplasia; reassurance and no treatment",
+      "Hydatid cyst; albendazole",
+      "Hepatic adenoma; surgical resection",
+      "Hepatocellular carcinoma; chemotherapy"
+    ],
+    "answer": 0,
+    "notes": "A central stellate scar on imaging suggests focal nodular hyperplasia, a benign lesion that requires no intervention; hepatic adenoma, associated with OCP use, is resected due to hemorrhage risk."
+  },
+  {
+    "id": "q-30",
+    "stem": "Prevention of Listeria meningitis in the elderly or immunocompromised includes avoidance of which foods?",
+    "options": [
+      "Gluten-containing foods",
+      "Raw fruits and vegetables",
+      "Red meat",
+      "Unpasteurized dairy and deli meats"
+    ],
+    "answer": 3,
+    "notes": "Listeria monocytogenes is often acquired from unpasteurized dairy or deli meats; avoiding these foods reduces infection risk in elderly or immunocompromised individuals."
+  },
+  {
+    "id": "q-31",
+    "stem": "A groin mass with a systolic bruit following cardiac catheterization most likely represents which complication?",
+    "options": [
+      "Femoral hernia",
+      "Arteriovenous fistula",
+      "Hematoma",
+      "Pseudoaneurysm"
+    ],
+    "answer": 3,
+    "notes": "A systolic bruit over a groin mass after catheterization is characteristic of a pseudoaneurysm; a continuous bruit/thrill suggests an AV fistula, and a mass without bruit implies a hematoma."
+  },
+  {
+    "id": "q-32",
+    "stem": "Sudden severe chest pain with mediastinal air on imaging suggests esophageal perforation. How should this diagnosis be confirmed?",
+    "options": [
+      "Non-contrast CT of the head",
+      "Water-soluble contrast esophagram",
+      "Esophagogastroduodenoscopy",
+      "Electrocardiography"
+    ],
+    "answer": 1,
+    "notes": "Esophageal perforation is best diagnosed with a water-soluble contrast esophagram; endoscopy can worsen the tear."
+  },
+  {
+    "id": "q-33",
+    "stem": "DiGeorge syndrome results from a 22q11.2 deletion causing defective development of the 3rd and 4th pharyngeal pouches. Which combination of features is typical?",
+    "options": [
+      "Renal agenesis, spina bifida, and normal thymus",
+      "Hypercalcemia, intact immune system, craniosynostosis, and cleft lip",
+      "Macroglossia, umbilical hernia, and hypoglycemia",
+      "Hypocalcemia with tetany, conotruncal heart defects, cleft palate, and absent thymus leading to cellular immune deficiency"
+    ],
+    "answer": 3,
+    "notes": "DiGeorge syndrome involves hypocalcemia (tetany/seizures) due to parathyroid hypoplasia, conotruncal heart defects, craniofacial anomalies such as cleft palate, and thymic aplasia causing T-cell deficiency."
+  },
+  {
+    "id": "q-34",
+    "stem": "A progressive single longitudinal dark band on a fingernail most likely represents which condition?",
+    "options": [
+      "Psoriasis",
+      "Beau lines due to trauma",
+      "Onychomycosis",
+      "Subungual melanoma from the nail matrix"
+    ],
+    "answer": 3,
+    "notes": "A progressive, solitary dark stripe under the nail is suspicious for subungual melanoma arising from the nail matrix; Beau lines are horizontal ridges following illness or trauma."
+  },
+  {
+    "id": "q-35",
+    "stem": "What is the first-line therapy for borderline personality disorder (BPD)?",
+    "options": [
+      "Dialectical behavior therapy (DBT)",
+      "Electroconvulsive therapy",
+      "Cognitive behavioral therapy (standard CBT)",
+      "Interpersonal therapy"
+    ],
+    "answer": 0,
+    "notes": "Dialectical behavior therapy is the evidence-based first-line treatment for BPD and targets core features such as suicidality and impulsivity; interpersonal therapy is used for depression but not specifically for BPD."
+  },
+  {
+    "id": "q-36",
+    "stem": "A patient presents with sharp pleuritic chest pain following a viral prodrome and has a normal chest x‑ray. Which diagnosis is most likely?",
+    "options": [
+      "Viral pleuritis",
+      "Reflux esophagitis",
+      "Pulmonary embolism",
+      "Myocardial infarction"
+    ],
+    "answer": 0,
+    "notes": "Viral pleuritis presents with sharp, pleuritic chest pain after a viral prodrome and a normal chest radiograph; reflux esophagitis produces burning pain unrelated to breathing."
+  },
+  {
+    "id": "q-37",
+    "stem": "Which group of pulmonary hypertension is due to primary pulmonary vascular disease rather than left‑sided heart failure?",
+    "options": [
+      "Group 4 pulmonary hypertension",
+      "Group 1 pulmonary arterial hypertension",
+      "Group 2 pulmonary hypertension",
+      "Group 3 pulmonary hypertension"
+    ],
+    "answer": 1,
+    "notes": "Pulmonary arterial hypertension (PAH) group 1 refers to primary pulmonary vascular disease. Group 2 is due to left heart disease, group 3 due to lung diseases/hypoxia, and group 4 due to chronic thromboembolic disease."
+  },
+  {
+    "id": "q-38",
+    "stem": "A teenager with localized bone pain and swelling, normal white blood cell count, and a Codman triangle/sunburst pattern on x‑ray most likely has which bone tumor?",
+    "options": [
+      "Fibrous dysplasia",
+      "Ewing sarcoma",
+      "Osteosarcoma",
+      "Osteoid osteoma"
+    ],
+    "answer": 2,
+    "notes": "Osteosarcoma commonly presents in adolescents with bone pain and swelling; radiographs show a sunburst pattern and Codman triangle. Ewing sarcoma often has systemic features and onion-skinning on imaging."
+  },
+  {
+    "id": "q-39",
+    "stem": "Following a Cesarean section, a patient has dark sanguineous drainage and a firm mass under the incision, especially while on anticoagulation. What complication is most likely?",
+    "options": [
+      "Wound dehiscence",
+      "Endometritis",
+      "Necrotizing fasciitis",
+      "Incisional hematoma"
+    ],
+    "answer": 3,
+    "notes": "A firm mass with dark sanguineous drainage under a surgical incision, particularly in a patient on anticoagulation, indicates an incisional hematoma; wound dehiscence presents with separation of fascial layers."
+  },
+  {
+    "id": "q-40",
+    "stem": "For evaluation of a new breast mass in a postmenopausal woman, what is the initial diagnostic step?",
+    "options": [
+      "Ultrasonography only",
+      "Diagnostic mammography",
+      "Observation without imaging",
+      "Fine‑needle aspiration"
+    ],
+    "answer": 1,
+    "notes": "Postmenopausal women with a new breast mass require diagnostic mammography first; fine‑needle aspiration is reserved for cystic lesions after imaging."
+  },
+  {
+    "id": "q-41",
+    "stem": "Gradual, painless peripheral vision loss with optic disc cupping is characteristic of which ocular condition?",
+    "options": [
+      "Age‑related macular degeneration",
+      "Open‑angle glaucoma",
+      "Retinal detachment",
+      "Diabetic retinopathy"
+    ],
+    "answer": 1,
+    "notes": "Open‑angle glaucoma presents with painless peripheral vision loss and optic disc cupping. Diabetic retinopathy shows neovascularization rather than cupping."
+  },
+  {
+    "id": "q-42",
+    "stem": "Infants born to diabetic mothers are at increased risk for macrosomia, neonatal hypoglycemia, and which additional condition?",
+    "options": [
+      "Neural tube defects only",
+      "Congenital cataracts",
+      "Polycythemia due to fetal hypoxemia and increased erythropoietin",
+      "Trisomy 21"
+    ],
+    "answer": 2,
+    "notes": "Infants of diabetic mothers frequently develop polycythemia from fetal hypoxemia and increased erythropoietin production, along with macrosomia and neonatal hypoglycemia."
+  },
+  {
+    "id": "q-43",
+    "stem": "Which is the appropriate initial management for drug reaction with eosinophilia and systemic symptoms (DRESS) syndrome?",
+    "options": [
+      "Gradual increase of the drug dose",
+      "High‑dose intravenous steroids only",
+      "Immediate discontinuation of the offending drug",
+      "Skin biopsy before any action"
+    ],
+    "answer": 2,
+    "notes": "DRESS syndrome is treated by promptly stopping the causative medication; delaying discontinuation can worsen systemic involvement."
+  },
+  {
+    "id": "q-44",
+    "stem": "In postoperative abdominal distension, diffuse colonic dilation up to the splenic flexure without a transition point in an elderly immobilized patient suggests which condition?",
+    "options": [
+      "Toxic megacolon",
+      "Normal postoperative ileus",
+      "Mechanical small‑bowel obstruction",
+      "Acute colonic pseudo‑obstruction (Ogilvie syndrome)"
+    ],
+    "answer": 3,
+    "notes": "Ogilvie syndrome typically presents 3–7 days after surgery in elderly, immobilized patients with diffuse colonic dilation and no mechanical transition point."
+  },
+  {
+    "id": "q-45",
+    "stem": "A 39‑year‑old woman develops persistent amenorrhea and heavy vaginal bleeding after a spontaneous abortion. She has an enlarged uterus and a friable vascular lesion in the vagina. What is the most likely diagnosis?",
+    "options": [
+      "Choriocarcinoma",
+      "Uterine fibroid",
+      "Endometriosis",
+      "Condyloma acuminatum"
+    ],
+    "answer": 0,
+    "notes": "Following pregnancy (including miscarriage), persistent amenorrhea followed by heavy vaginal bleeding and a friable vaginal lesion suggest choriocarcinoma, a malignant trophoblastic tumor."
+  },
+  {
+    "id": "q-46",
+    "stem": "Which therapy is recommended for post‑traumatic stress disorder (PTSD) when symptoms have persisted for more than one month and cause significant impairment?",
+    "options": [
+      "Benzodiazepines only",
+      "Trauma‑focused cognitive behavioral therapy (CBT) with an SSRI/SNRI",
+      "Psychoanalysis",
+      "Antipsychotic monotherapy"
+    ],
+    "answer": 1,
+    "notes": "PTSD is treated with trauma‑focused CBT combined with SSRIs or SNRIs. Benzodiazepines and antipsychotics are not first‑line treatments."
+  },
+  {
+    "id": "q-47",
+    "stem": "In a young hypertensive patient suspected of having coarctation of the aorta, what is the best initial diagnostic test?",
+    "options": [
+      "Echocardiography (transthoracic or transesophageal)",
+      "Genetic karyotyping",
+      "CT angiography only",
+      "Renal artery Doppler ultrasonography"
+    ],
+    "answer": 0,
+    "notes": "Coarctation of the aorta should be initially evaluated with echocardiography. CT or MR angiography is often used for confirmation or surgical planning."
+  },
+  {
+    "id": "q-48",
+    "stem": "Psoriasis affecting the skin and nails increases the risk for which type of arthritis?",
+    "options": [
+      "Seronegative spondyloarthropathy (psoriatic arthritis)",
+      "Rheumatoid arthritis",
+      "Osteoarthritis",
+      "Septic arthritis"
+    ],
+    "answer": 0,
+    "notes": "Psoriasis, particularly with nail involvement, is associated with psoriatic arthritis, a seronegative spondyloarthropathy that may involve DIP joints or cause asymmetric oligoarthritis."
+  },
+  {
+    "id": "q-49",
+    "stem": "A patient on lithium presents with depressive symptoms, weight gain, and elevated thyroid-stimulating hormone (TSH). What should be done before adjusting psychiatric medications?",
+    "options": [
+      "Add sildenafil for sexual dysfunction",
+      "Start an additional antipsychotic",
+      "Discontinue selective serotonin reuptake inhibitors",
+      "Obtain thyroid function tests and address hypothyroidism"
+    ],
+    "answer": 3,
+    "notes": "Lithium can cause hypothyroidism; therefore thyroid function tests should be obtained and hypothyroidism treated before adjusting psychiatric medications."
+  },
+  {
+    "id": "q-50",
+    "stem": "A child with acute fever, refusal to bear weight, elevated white blood cell count, high ESR, and severe hip pain most likely has which condition?",
+    "options": [
+      "Legg–Calvé–Perthes disease",
+      "Transient synovitis",
+      "Septic arthritis due to hematogenous spread",
+      "Slipped capital femoral epiphysis"
+    ],
+    "answer": 2,
+    "notes": "According to the Kocher criteria, fever, leukocytosis, elevated ESR, and refusal to bear weight indicate septic arthritis requiring emergent drainage rather than transient synovitis."
+  },
+  {
+    "id": "q-51",
+    "stem": "Restlessness and an irresistible urge to move after taking an antipsychotic or antiemetic indicate which extrapyramidal side effect, and what is an appropriate treatment?",
+    "options": [
+      "Acute dystonia; treat with diphenhydramine",
+      "Tardive dyskinesia; treat with valbenazine",
+      "Neuroleptic malignant syndrome; treat with dantrolene",
+      "Akathisia; treat with a beta‑blocker or benztropine"
+    ],
+    "answer": 3,
+    "notes": "Akathisia presents as restlessness and urge to move and can be treated with propranolol or benztropine; it often occurs after antiemetic or antipsychotic use."
+  },
+  {
+    "id": "q-52",
+    "stem": "An elderly patient who previously received chemotherapy develops pancytopenia, macrocytosis, and dysplastic neutrophils with less than 20% blasts on smear. What is the most likely diagnosis?",
+    "options": [
+      "Chronic myelogenous leukemia",
+      "Folate deficiency",
+      "Aplastic anemia",
+      "Myelodysplastic syndrome"
+    ],
+    "answer": 3,
+    "notes": "Myelodysplastic syndrome is common in older patients with prior chemo/radiation and presents with pancytopenia, macrocytic anemia, and dysplastic neutrophils; blasts remain below 20%."
+  },
+  {
+    "id": "q-53",
+    "stem": "Patients with recurrent hepatic encephalopathy while on lactulose benefit from the addition of which medication?",
+    "options": [
+      "High‑dose loop diuretics",
+      "Rifaximin",
+      "Protein restriction",
+      "Transjugular intrahepatic portosystemic shunt (TIPS)"
+    ],
+    "answer": 1,
+    "notes": "Rifaximin is added to lactulose in patients with recurrent hepatic encephalopathy; protein restriction is not recommended and TIPS can worsen encephalopathy."
+  },
+  {
+    "id": "q-54",
+    "stem": "A traveler presenting with pneumonia, high fever, gastrointestinal symptoms, and relative bradycardia should be suspected of which infection, and how is it treated?",
+    "options": [
+      "Legionella pneumonia; treat with levofloxacin or azithromycin",
+      "Streptococcus pneumoniae; treat with amoxicillin",
+      "Mycoplasma pneumonia; treat with doxycycline",
+      "Chlamydophila psittaci; treat with macrolides"
+    ],
+    "answer": 0,
+    "notes": "Legionella infection often presents with pneumonia and GI symptoms after travel; treatment requires agents with intracellular activity such as respiratory fluoroquinolones or macrolides."
+  },
+  {
+    "id": "q-55",
+    "stem": "Before starting isotretinoin for severe nodulocystic acne, what additional step must be confirmed despite two negative pregnancy tests?",
+    "options": [
+      "Tuberculin skin testing",
+      "Concurrent doxycycline therapy",
+      "Baseline eye examination",
+      "Use of an additional barrier contraceptive method"
+    ],
+    "answer": 3,
+    "notes": "Isotretinoin is teratogenic; patients must have two negative pregnancy tests and use two forms of contraception (e.g., oral contraceptive plus barrier) before starting therapy."
+  },
+  {
+    "id": "q-56",
+    "stem": "Testicular torsion is caused by which anatomic defect, leading to sudden scrotal pain and an absent cremasteric reflex?",
+    "options": [
+      "Hydrocele",
+      "Torsion of the appendix testis",
+      "Inadequate fixation of the lower pole of the testis to the tunica vaginalis",
+      "Epididymitis"
+    ],
+    "answer": 2,
+    "notes": "Testicular torsion results from failure of the lower pole of the testis to fix to the tunica vaginalis, allowing the spermatic cord to twist and cutting off blood flow."
+  },
+  {
+    "id": "q-57",
+    "stem": "In syndrome of inappropriate antidiuretic hormone secretion (SIADH), what are the typical laboratory findings regarding serum osmolality, urine osmolality, and urine sodium?",
+    "options": [
+      "High serum osmolality, low urine osmolality, and low urine sodium",
+      "Low serum osmolality, high urine osmolality, and high urine sodium",
+      "Normal serum osmolality, high urine osmolality, and low urine sodium",
+      "High serum osmolality, high urine osmolality, and high urine sodium"
+    ],
+    "answer": 1,
+    "notes": "SIADH causes dilutional hyponatremia: serum is dilute (low osmolality) while urine remains concentrated with high osmolality and high sodium due to persistent ADH activity."
+  },
+  {
+    "id": "q-58",
+    "stem": "Chronic diarrhea leading to loss of bicarbonate and dehydration predisposes to which type of kidney stone?",
+    "options": [
+      "Calcium oxalate stones",
+      "Struvite stones",
+      "Cystine stones",
+      "Uric acid stones (due to acidic, concentrated urine)"
+    ],
+    "answer": 3,
+    "notes": "Chronic diarrhea causes metabolic acidosis and concentrated acidic urine, leading to uric acid stone formation."
+  },
+  {
+    "id": "q-59",
+    "stem": "A patient with Waldenström macroglobulinemia develops headaches, dizziness, blurred vision, hepatosplenomegaly, and very high IgM levels. What immediate treatment is indicated?",
+    "options": [
+      "Bone marrow transplantation",
+      "High‑dose chemotherapy alone",
+      "Intravenous immunoglobulin",
+      "Plasmapheresis (plasma exchange)"
+    ],
+    "answer": 3,
+    "notes": "Symptoms of hyperviscosity (headache, visual disturbances) in Waldenström macroglobulinemia require immediate plasmapheresis to remove excess IgM."
+  },
+  {
+    "id": "q-60",
+    "stem": "Sudden syncope in a patient with risk factors for pulmonary embolism is due to what pathophysiology?",
+    "options": [
+      "Hypoglycemia",
+      "Decreased cardiac output from acute right ventricular dysfunction",
+      "Pericardial effusion causing tamponade",
+      "Decreased stroke volume due to left ventricular failure"
+    ],
+    "answer": 1,
+    "notes": "Massive pulmonary embolism causes acute right ventricular strain and failure, leading to reduced cardiac output and syncope."
+  },
+  {
+    "id": "q-61",
+    "stem": "Paraphimosis in a child, where the foreskin is retracted behind the glans and cannot be reduced, requires what immediate intervention?",
+    "options": [
+      "Prompt manual or surgical reduction of the foreskin",
+      "Observation only",
+      "Phenylephrine injection",
+      "Topical corticosteroids"
+    ],
+    "answer": 0,
+    "notes": "Paraphimosis is a urologic emergency; the foreskin must be reduced immediately to prevent vascular compromise, not treated with topical creams or observation."
+  },
+  {
+    "id": "q-62",
+    "stem": "A 4‑year‑old child develops ataxia, horizontal nystagmus, and intention tremor after a viral illness but has normal strength and reflexes. What is the most likely diagnosis?",
+    "options": [
+      "Acute cerebellar ataxia (postinfectious)",
+      "Friedreich ataxia",
+      "Transverse myelitis",
+      "Sydenham chorea"
+    ],
+    "answer": 0,
+    "notes": "Postinfectious acute cerebellar ataxia occurs in children after viral illness and features ataxia, nystagmus, and intention tremor with normal reflexes."
+  },
+  {
+    "id": "q-63",
+    "stem": "A patient reports a sudden 'worst headache of her life' during exertion with nausea and vomiting. What is the initial diagnostic step?",
+    "options": [
+      "Non‑contrast CT scan of the head",
+      "Administration of sumatriptan",
+      "Lumbar puncture only",
+      "CT angiography immediately"
+    ],
+    "answer": 0,
+    "notes": "A thunderclap headache suggests subarachnoid hemorrhage; non‑contrast head CT is the first diagnostic step. LP follows only if CT is negative but suspicion remains high."
+  },
+  {
+    "id": "q-64",
+    "stem": "A pregnant woman at 22 weeks with clusters of flesh‑colored growths on the vulva (condyloma acuminata) caused by HPV types 6 and 11 should be treated with which therapy?",
+    "options": [
+      "Topical trichloroacetic acid",
+      "Podophyllin resin",
+      "Topical imiquimod",
+      "Penicillin G injection"
+    ],
+    "answer": 0,
+    "notes": "Genital warts during pregnancy are safely treated with topical trichloroacetic acid; podophyllin and imiquimod are contraindicated in pregnancy."
+  },
+  {
+    "id": "q-65",
+    "stem": "Which imaging finding differentiates acute colonic pseudo‑obstruction (Ogilvie syndrome) from mechanical large‑bowel obstruction?",
+    "options": [
+      "Both small and large bowel dilated with air–fluid levels",
+      "Free air under the diaphragm",
+      "Diffuse colonic dilation up to the splenic flexure without a transition point",
+      "Bird’s beak sign at the sigmoid colon"
+    ],
+    "answer": 2,
+    "notes": "Ogilvie syndrome shows diffuse colonic dilation without a discrete transition point; mechanical obstruction typically demonstrates a transition point or bird’s beak sign (as seen in volvulus)."
+  },
+  {
+    "id": "q-66",
+    "stem": "Which risk factors are associated with acute colonic pseudo‑obstruction (Ogilvie syndrome) occurring 3–7 days postoperatively?",
+    "options": [
+      "Young athletes with high fiber diets",
+      "Elderly, immobile patients with recent surgery, metabolic derangements, and opioid use",
+      "Pregnant women with urinary tract infections",
+      "Patients with Crohn disease"
+    ],
+    "answer": 1,
+    "notes": "Ogilvie syndrome typically occurs in elderly, immobile patients 3–7 days after major surgery or trauma, especially with metabolic derangements or opioid use."
+  }
+]
