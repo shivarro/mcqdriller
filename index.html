@@ -52,6 +52,15 @@
     .hidden{display:none !important}
     /* Level progress bar inside stats */
     .level-bar{height:12px; background:#0f1722; border-radius:999px; overflow:hidden; border:1px solid rgba(255,255,255,.06)}
+    /* Gamepad tester styles */
+    .tester-buttons{display:flex; flex-wrap:wrap; gap:4px; margin-top:8px;}
+    .tester-btn{background:#0e141d; border:1px solid rgba(255,255,255,.1); padding:2px 4px; border-radius:6px; font-size:11px; color:var(--text);}
+    .tester-btn.active{background:var(--accent); color:#08121b;}
+    .tester-axis{position:relative; height:8px; background:#0f1722; border:1px solid rgba(255,255,255,.06); border-radius:999px; overflow:hidden; margin-top:4px;}
+    .tester-axis-bar{position:absolute; top:0; height:100%; background:linear-gradient(90deg,#68b2ff,#b8f1ff);}
+    .mapping-row{display:flex; gap:4px; align-items:center; margin-top:4px;}
+    .mapping-row label{flex:0 0 100px; font-size:12px; color:var(--muted);}
+    .mapping-row input{flex:1; background:#0e141d; color:var(--text); border:1px solid rgba(255,255,255,.08); border-radius:6px; padding:4px 6px; font-size:12px;}
   </style>
 </head>
 <body>
@@ -117,6 +126,26 @@
         <div class="small muted">
           Keyboard: <span class="kbd">1</span>–<span class="kbd">4</span> choose · <span class="kbd">←/→</span> Prev/Next · <span class="kbd">R</span> Restart · <span class="kbd">I</span>/<span class="kbd">D</span> switch views
           <br/>Gamepad (Nintendo/standard): D‑pad ↑/↓ move selection · <b>A</b> choose · <b>B</b>/Start Next · <b>X</b>/L Prev · <b>R</b> Next · <b>Select</b> Restart · <b>Plus</b> Drill · <b>Minus</b> Import
+        </div>
+      </div>
+
+      <!-- Controller configuration and tester panel -->
+      <div class="panel" id="controllerConfigPanel">
+        <h2>🎮 Controller Config &amp; Tester</h2>
+        <div id="controllerStatus" class="small muted">No gamepad connected.</div>
+        <div id="testerButtons" class="tester-buttons"></div>
+        <div id="testerAxes" style="margin-top:8px;"></div>
+        <div style="margin-top:8px;">
+          <label class="small muted">Deadzone: <input type="range" id="deadzoneInput" min="0" max="0.6" step="0.01" value="0.3" style="vertical-align:middle"/></label>
+          <span id="deadzoneValue" class="small muted">0.3</span>
+        </div>
+        <div style="margin-top:4px;">
+          <label class="small muted"><input type="checkbox" id="verticalInput" /> Vertical orientation (swap axis)</label>
+        </div>
+        <div id="mappingList" style="margin-top:8px;"></div>
+        <div style="margin-top:8px;">
+          <button id="saveConfigBtn" class="soft small">Save Config</button>
+          <button id="resetConfigBtn" class="soft small">Reset to Default</button>
         </div>
       </div>
     </section>
@@ -204,6 +233,52 @@
   function saveSession(sess) {
     saveJSON(SESSION_KEY, sess);
   }
+
+  // --- Gamepad configuration ---
+  const CONFIG_KEY = 'mcq_gamepad_cfg_v1';
+  const DEFAULT_CONFIG = {
+    deadzone: 0.3,
+    vertical: false,
+    axis: {
+      index: 1,      // axis index for vertical movement (1 = Y axis)
+      invert: false, // invert direction of axis
+      threshold: 0.6, // threshold for movement detection after deadzone
+      repeatDelay: 300, // ms before repeating when axis held
+      repeatRate: 200   // ms between repeats after initial delay
+    },
+    buttons: {
+      choose: [0],        // A
+      next: [1, 9, 5],    // B, Start, R
+      prev: [2, 4],       // X, L
+      restart: [8],       // Select / Minus
+      toggleDrill: [16],  // Home / Plus
+      toggleImport: [17]  // Capture / Minus (varies by controller)
+    }
+  };
+
+  function loadConfig(){
+    try {
+      const txt = localStorage.getItem(CONFIG_KEY);
+      if(!txt) return JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+      const cfg = JSON.parse(txt);
+      // merge missing fields from default
+      const merged = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+      Object.assign(merged, cfg);
+      if(cfg.axis) Object.assign(merged.axis, cfg.axis);
+      if(cfg.buttons) merged.buttons = Object.assign({}, DEFAULT_CONFIG.buttons, cfg.buttons);
+      return merged;
+    } catch(e){
+      return JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+    }
+  }
+  function saveConfig(cfg){
+    localStorage.setItem(CONFIG_KEY, JSON.stringify(cfg));
+  }
+
+  let gamepadConfig = loadConfig();
+  let testerButtonsElems = [];
+  // axis state for repeat logic
+  let axisState = { dir: 0, holdStart: 0, lastTrigger: 0, repeated: false };
 
   // --- State ---
   const SETS = new Map(); // key -> { title, file, items }
@@ -435,6 +510,229 @@
     listEl.innerHTML = html;
   }
 
+  // Initialize controller tester/config UI
+  function initControllerPanel(){
+    // Build button tester display for first 18 buttons
+    const btnContainer = document.getElementById('testerButtons');
+    if(btnContainer){
+      btnContainer.innerHTML = '';
+      testerButtonsElems = [];
+      for(let i=0; i<18; i++){
+        const span = document.createElement('div');
+        span.className = 'tester-btn';
+        span.textContent = i;
+        testerButtonsElems.push(span);
+        btnContainer.appendChild(span);
+      }
+    }
+    // Build axes display for first two axes
+    const axesContainer = document.getElementById('testerAxes');
+    if(axesContainer){
+      axesContainer.innerHTML = '';
+      for(let i=0; i<2; i++){
+        const axisContainer = document.createElement('div');
+        axisContainer.className = 'tester-axis';
+        const bar = document.createElement('div');
+        bar.className = 'tester-axis-bar';
+        bar.style.left = '50%';
+        bar.style.width = '0%';
+        axisContainer.appendChild(bar);
+        const label = document.createElement('div');
+        label.className = 'small muted';
+        label.style.marginTop = '2px';
+        label.textContent = `Axis ${i}: 0`;
+        axisContainer.appendChild(label);
+        axesContainer.appendChild(axisContainer);
+      }
+    }
+    // Populate config inputs
+    const dzInput = document.getElementById('deadzoneInput');
+    const dzValue = document.getElementById('deadzoneValue');
+    if(dzInput && dzValue){
+      dzInput.value = gamepadConfig.deadzone;
+      dzValue.textContent = gamepadConfig.deadzone;
+      dzInput.addEventListener('input', () => {
+        dzValue.textContent = dzInput.value;
+        gamepadConfig.deadzone = parseFloat(dzInput.value);
+      });
+    }
+    const vertInput = document.getElementById('verticalInput');
+    if(vertInput){
+      vertInput.checked = !!gamepadConfig.vertical;
+      vertInput.addEventListener('change', () => {
+        const checked = vertInput.checked;
+        gamepadConfig.vertical = checked;
+        if(checked){
+          gamepadConfig.axis.index = 0;
+          gamepadConfig.axis.invert = true;
+        } else {
+          gamepadConfig.axis.index = 1;
+          gamepadConfig.axis.invert = false;
+        }
+      });
+    }
+    // Build mapping list
+    const mappingList = document.getElementById('mappingList');
+    if(mappingList){
+      mappingList.innerHTML = '';
+      const actions = ['choose','next','prev','restart','toggleDrill','toggleImport'];
+      actions.forEach(action => {
+        const row = document.createElement('div');
+        row.className = 'mapping-row';
+        const label = document.createElement('label');
+        label.textContent = action.charAt(0).toUpperCase() + action.slice(1);
+        row.appendChild(label);
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.dataset.action = action;
+        input.value = (gamepadConfig.buttons[action] || []).join(',');
+        row.appendChild(input);
+        mappingList.appendChild(row);
+      });
+      const saveBtn = document.getElementById('saveConfigBtn');
+      const resetBtn = document.getElementById('resetConfigBtn');
+      if(saveBtn){
+        saveBtn.onclick = () => {
+          const inputs = mappingList.querySelectorAll('input[data-action]');
+          inputs.forEach(inp => {
+            const act = inp.dataset.action;
+            const vals = inp.value.split(',').map(s => parseInt(s.trim(),10)).filter(n => !isNaN(n));
+            gamepadConfig.buttons[act] = vals;
+          });
+          saveConfig(gamepadConfig);
+          alert('Controller config saved.');
+        };
+      }
+      if(resetBtn){
+        resetBtn.onclick = () => {
+          gamepadConfig = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+          saveConfig(gamepadConfig);
+          initControllerPanel();
+          alert('Controller config reset to default.');
+        };
+      }
+    }
+  }
+
+  // Update tester UI with live gamepad state
+  function updateTesterUI(gp){
+    const statusEl = document.getElementById('controllerStatus');
+    if(statusEl){
+      statusEl.textContent = gp ? `Gamepad: ${gp.id || 'Unknown'} (index ${gp.index})` : 'No gamepad connected.';
+    }
+    // update button states
+    if(gp && testerButtonsElems.length){
+      gp.buttons.forEach((b,i) => {
+        const elem = testerButtonsElems[i];
+        if(elem){
+          elem.classList.toggle('active', !!b.pressed);
+        }
+      });
+    }
+    // update axes
+    const axesContainer = document.getElementById('testerAxes');
+    if(gp && axesContainer){
+      const axes = gp.axes || [];
+      const children = axesContainer.children;
+      for(let i=0; i<Math.min(2, children.length); i++){
+        const axisContainer = children[i];
+        const val = axes[i] || 0;
+        const bar = axisContainer.querySelector('.tester-axis-bar');
+        if(bar){
+          const width = Math.abs(val) * 50;
+          if(val >= 0){
+            bar.style.left = '50%';
+            bar.style.width = `${width}%`;
+          } else {
+            bar.style.left = `${50 - width}%`;
+            bar.style.width = `${width}%`;
+          }
+        }
+        const label = axisContainer.querySelector('.small');
+        if(label){
+          label.textContent = `Axis ${i}: ${val.toFixed(2)}`;
+        }
+      }
+    }
+  }
+
+  // Handle axis movement with repeat logic
+  function handleAxis(gp, ts){
+    const cfg = gamepadConfig;
+    const axisIdx = cfg.axis.index;
+    let val = (gp.axes && gp.axes.length > axisIdx) ? gp.axes[axisIdx] : 0;
+    if(cfg.axis.invert) val = -val;
+    // apply deadzone
+    const dz = cfg.deadzone != null ? cfg.deadzone : 0.3;
+    if(Math.abs(val) < dz){
+      val = 0;
+    } else {
+      const sign = val > 0 ? 1 : -1;
+      const mag = (Math.abs(val) - dz) / (1 - dz);
+      val = sign * mag;
+    }
+    const threshold = cfg.axis.threshold;
+    let dir = 0;
+    if(val > threshold) dir = 1;
+    else if(val < -threshold) dir = -1;
+    if(dir !== 0){
+      if(axisState.dir !== dir){
+        // immediate trigger on direction change
+        if(dir === 1) moveHover(1); else moveHover(-1);
+        axisState.dir = dir;
+        axisState.holdStart = ts;
+        axisState.lastTrigger = ts;
+        axisState.repeated = false;
+      } else {
+        const sinceHold = ts - axisState.holdStart;
+        const sinceLast = ts - axisState.lastTrigger;
+        if(!axisState.repeated){
+          if(sinceHold > cfg.axis.repeatDelay){
+            if(dir === 1) moveHover(1); else moveHover(-1);
+            axisState.lastTrigger = ts;
+            axisState.repeated = true;
+          }
+        } else {
+          if(sinceLast > cfg.axis.repeatRate){
+            if(dir === 1) moveHover(1); else moveHover(-1);
+            axisState.lastTrigger = ts;
+          }
+        }
+      }
+    } else {
+      axisState.dir = 0;
+      axisState.repeated = false;
+    }
+  }
+
+  // Handle button presses with custom mapping
+  function handleButtons(gp){
+    const cfg = gamepadConfig;
+    const btns = gp.buttons;
+    const actions = Object.keys(cfg.buttons);
+    for(const act of actions){
+      const indices = cfg.buttons[act] || [];
+      indices.forEach(idxBtn => {
+        if(pressedEdge(idxBtn, btns)){
+          if(act === 'choose'){
+            const current = QUESTIONS[order[idx]];
+            if(current){ choose(hoverIndex); }
+          } else if(act === 'next'){
+            next();
+          } else if(act === 'prev'){
+            prev();
+          } else if(act === 'restart'){
+            restart(true);
+          } else if(act === 'toggleDrill'){
+            setActiveView('drill');
+          } else if(act === 'toggleImport'){
+            setActiveView('import');
+          }
+        }
+      });
+    }
+  }
+
   function awardXP(xp, setKey, type){
     if(xp <= 0) return;
     // update profile
@@ -602,6 +900,7 @@
   window.addEventListener('DOMContentLoaded', () => {
     loadIndex();
     updateXPUI();
+    initControllerPanel();
   });
 
   els.setSelect && els.setSelect.addEventListener('change', (e) => {
@@ -698,28 +997,14 @@
   window.addEventListener('gamepaddisconnected', (e) => { console.log('Gamepad disconnected', e.gamepad); if(!navigator.getGamepads().some(g=>g)) stopGamepadLoop(); });
   function pressedEdge(i, buttons){ return buttons[i] && buttons[i].pressed && !(prevButtons[i] && prevButtons[i].pressed); }
   function handleGamepad(gp, ts){
-    const btn = gp.buttons;
-    axisCooldown = axisCooldown - 1;
-    const axY = (gp.axes && gp.axes.length>1) ? gp.axes[1] : 0;
-    if(axisCooldown <= 0){
-      if(axY < -0.5){ moveHover(-1); axisCooldown = 8; }
-      else if(axY > 0.5){ moveHover(1); axisCooldown = 8; }
-    }
-    if(pressedEdge(12, btn)) moveHover(-1);
-    if(pressedEdge(13, btn)) moveHover(1);
-    if(pressedEdge(0, btn)){
-      const current = QUESTIONS[order[idx]];
-      if(current){ choose(hoverIndex); }
-    }
-    if(pressedEdge(1, btn) || pressedEdge(9, btn)){
-      next();
-    }
-    if(pressedEdge(2, btn) || pressedEdge(4, btn)) prev();
-    if(pressedEdge(5, btn)) next();
-    if(pressedEdge(8, btn)) restart(true);
-    if(btn[16] && pressedEdge(16, btn)) setActiveView('drill');
-    if(btn[17] && pressedEdge(17, btn)) setActiveView('import');
-    prevButtons = btn.map(b=>({pressed:b.pressed}));
+    // Update live tester UI
+    updateTesterUI(gp);
+    // Handle axis movement (with repeat logic)
+    handleAxis(gp, ts);
+    // Handle buttons according to custom mapping
+    handleButtons(gp);
+    // update previous button states for edge detection
+    prevButtons = gp.buttons.map(b => ({ pressed: b.pressed }));
   }
   // start polling right away for browsers that delay event
   startGamepadLoop();
