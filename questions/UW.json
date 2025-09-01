@@ -1,0 +1,1754 @@
+[
+  {
+    "id": "q-1",
+    "stem": "Which of the following is the recommended initial diagnostic test for suspected deep vein thrombosis (DVT)?",
+    "options": [
+      "Compression ultrasound",
+      "CT angiography",
+      "D-dimer assay alone",
+      "Contrast venography"
+    ],
+    "answer": 0,
+    "notes": "Compression ultrasound is a non-invasive bedside test with >95% sensitivity and specificity for proximal DVT; it identifies non-compressible veins and is the recommended initial diagnostic test."
+  },
+  {
+    "id": "q-2",
+    "stem": "Which statement about compression ultrasound for DVT is correct?",
+    "options": [
+      "It is invasive and cannot be performed at the bedside",
+      "It has poor sensitivity for proximal DVT",
+      "It requires contrast agents and ionizing radiation",
+      "It may miss distal (calf) DVTs but is highly accurate for proximal veins"
+    ],
+    "answer": 3,
+    "notes": "Compression ultrasound works by compressing the vein; normal veins collapse fully, but thrombus prevents compression. It is highly accurate for proximal DVT but less reliable for calf DVT and requires no contrast or radiation."
+  },
+  {
+    "id": "q-3",
+    "stem": "Lithium therapy can cause which endocrine complication requiring periodic monitoring?",
+    "options": [
+      "Hyperparathyroidism",
+      "Cushing’s syndrome",
+      "Hypothyroidism",
+      "Addison’s disease"
+    ],
+    "answer": 2,
+    "notes": "Approximately 25% of patients on lithium develop hypothyroidism (fatigue, constipation, myalgias). Lithium inhibits thyroid hormone synthesis and release, causing increased TSH and decreased T4."
+  },
+  {
+    "id": "q-4",
+    "stem": "In patients on chronic lithium therapy who develop hypothyroidism, the best management is to:",
+    "options": [
+      "Switch to valproate",
+      "Decrease lithium and stop any thyroid hormone",
+      "Discontinue lithium immediately",
+      "Continue lithium and add levothyroxine"
+    ],
+    "answer": 3,
+    "notes": "Management includes regular TSH monitoring; if hypothyroidism develops, continue lithium and start levothyroxine. Lithium need only be discontinued in severe cases."
+  },
+  {
+    "id": "q-5",
+    "stem": "Which combination of medications is likely to cause severe hypotension due to synergistic vasodilation?",
+    "options": [
+      "Metoprolol and amlodipine",
+      "Hydrochlorothiazide and lisinopril",
+      "Sildenafil and prazosin",
+      "Furosemide and digoxin"
+    ],
+    "answer": 2,
+    "notes": "PDE-5 inhibitors such as sildenafil combined with α-blockers like prazosin can lead to marked hypotension."
+  },
+  {
+    "id": "q-6",
+    "stem": "Specific phobia in children (e.g., fear of thunderstorms) is best treated with:",
+    "options": [
+      "Punishment for avoidance",
+      "Reassurance alone",
+      "Exposure therapy",
+      "Sedative medication"
+    ],
+    "answer": 2,
+    "notes": "Specific phobia causes avoidance behavior. Effective treatment involves exposure therapy rather than reassurance or punishment."
+  },
+  {
+    "id": "q-7",
+    "stem": "Diffuse abdominal and rebound tenderness in a patient with C. difficile infection indicates:",
+    "options": [
+      "Continue medical therapy alone",
+      "Fecal transplantation alone",
+      "Possible peritonitis requiring surgical evaluation",
+      "Switch to fidaxomicin and avoid surgery"
+    ],
+    "answer": 2,
+    "notes": "Peritonitis (diffuse abdominal and rebound tenderness) is a surgical indication in C. difficile infection; signs include necrosis, perforation or compartment syndrome."
+  },
+  {
+    "id": "q-8",
+    "stem": "Children with juvenile idiopathic arthritis (JIA) are predisposed to septic arthritis primarily because of:",
+    "options": [
+      "Dehydration",
+      "Underlying joint damage or immunosuppression",
+      "Obesity",
+      "High physical activity"
+    ],
+    "answer": 1,
+    "notes": "A history of JIA increases susceptibility to septic arthritis due to use of immunosuppressants and chronic joint damage."
+  },
+  {
+    "id": "q-9",
+    "stem": "Which clinical scenario most suggests a Mallory-Weiss tear rather than Boerhaave syndrome?",
+    "options": [
+      "Crepitus on chest auscultation",
+      "Severe chest pain and fever",
+      "Epigastric pain with hematemesis after vomiting",
+      "Transmural esophageal rupture with subcutaneous emphysema"
+    ],
+    "answer": 2,
+    "notes": "Mallory-Weiss tear is a mucosal laceration causing epigastric pain and hematemesis. Boerhaave syndrome is a transmural rupture causing chest pain, subcutaneous emphysema and sepsis."
+  },
+  {
+    "id": "q-10",
+    "stem": "Boerhaave syndrome is characterized by:",
+    "options": [
+      "Esophageal variceal bleeding",
+      "Chronic heartburn",
+      "Transmural esophageal rupture with chest pain and subcutaneous emphysema",
+      "Superficial mucosal tear"
+    ],
+    "answer": 2,
+    "notes": "Boerhaave syndrome involves a transmural tear leading to chest pain, subcutaneous emphysema (crunching on auscultation) and sepsis."
+  },
+  {
+    "id": "q-11",
+    "stem": "Acute pancreatitis is diagnosed when a patient has severe epigastric pain and:",
+    "options": [
+      "Elevated amylase and/or lipase",
+      "Elevated AST alone",
+      "Elevated alkaline phosphatase",
+      "Low bilirubin"
+    ],
+    "answer": 0,
+    "notes": "Diagnosis of pancreatitis requires severe epigastric pain with elevated amylase and/or lipase levels."
+  },
+  {
+    "id": "q-12",
+    "stem": "In a patient with type A aortic dissection, worsening dissection can lead to:",
+    "options": [
+      "Aortic regurgitation due to aortic valve involvement",
+      "Tricuspid regurgitation",
+      "Pulmonic stenosis",
+      "Mitral stenosis"
+    ],
+    "answer": 0,
+    "notes": "Worsening type A aortic dissection can extend into the aortic root, causing aortic valve insufficiency (aortic regurgitation)."
+  },
+  {
+    "id": "q-13",
+    "stem": "Pediatric breath-holding spells are best described as:",
+    "options": [
+      "Signs of cardiac arrhythmia",
+      "Sleep apnea requiring CPAP",
+      "Benign episodes triggered by crying or minor trauma causing pre-syncope",
+      "Pathologic seizures requiring antiepileptics"
+    ],
+    "answer": 2,
+    "notes": "Breath-holding spells are benign; the cyanotic type is triggered by crying and the pallid type by trauma. Diagnosis is clinical."
+  },
+  {
+    "id": "q-14",
+    "stem": "Metabolic acidosis due to tissue ischemia results in increased lactic acid and is compensated by:",
+    "options": [
+      "Hyperkalemia and metabolic alkalosis",
+      "Hypoventilation and renal bicarbonate retention",
+      "Hyperventilation with respiratory alkalosis and renal hydrogen ion excretion",
+      "Renal retention of hydrogen ions"
+    ],
+    "answer": 2,
+    "notes": "Compensation for metabolic acidosis includes increased ventilation (decreasing pCO2) and renal excretion of hydrogen ions."
+  },
+  {
+    "id": "q-15",
+    "stem": "In metabolic acidosis, a higher than expected pCO2 suggests:",
+    "options": [
+      "Concurrent respiratory acidosis due to muscle fatigue or failure",
+      "Hypocapnia from hyperventilation",
+      "Respiratory alkalosis",
+      "Perfect compensation"
+    ],
+    "answer": 0,
+    "notes": "If the measured pCO2 exceeds the expected value in metabolic acidosis, a concurrent respiratory acidosis (e.g., due to respiratory muscle fatigue) is present, indicating risk of respiratory failure."
+  },
+  {
+    "id": "q-16",
+    "stem": "Which organism is most commonly associated with infective endocarditis following a urinary tract infection?",
+    "options": [
+      "Staphylococcus aureus",
+      "Staphylococcus epidermidis",
+      "Enterococcus",
+      "Streptococcus mutans"
+    ],
+    "answer": 2,
+    "notes": "Enterococcus is commonly associated with endocarditis in patients with a history of urinary tract infection."
+  },
+  {
+    "id": "q-17",
+    "stem": "Infective endocarditis caused by Streptococcus mutans is typically associated with:",
+    "options": [
+      "Colon cancer",
+      "Dental procedures",
+      "Prosthetic valves",
+      "Immunosuppression alone"
+    ],
+    "answer": 1,
+    "notes": "Streptococcus mutans (viridans streptococci) is associated with dental procedures leading to infective endocarditis."
+  },
+  {
+    "id": "q-18",
+    "stem": "Candida species causing infective endocarditis are most likely seen in patients who are:",
+    "options": [
+      "Immunosuppressed or on prolonged antibiotics",
+      "Healthy teenagers",
+      "Colon cancer patients",
+      "Undergoing dental procedures"
+    ],
+    "answer": 0,
+    "notes": "Candida endocarditis occurs in immunosuppressed patients or those exposed to prolonged antibiotics."
+  },
+  {
+    "id": "q-19",
+    "stem": "A patient with acute motor weakness and sensory involvement that progresses over ≤4 weeks is most consistent with:",
+    "options": [
+      "Multiple sclerosis",
+      "Amyotrophic lateral sclerosis",
+      "Chronic inflammatory demyelinating polyneuropathy",
+      "Guillain-Barré syndrome"
+    ],
+    "answer": 3,
+    "notes": "Guillain-Barré syndrome is an acute demyelinating polyneuropathy that develops over days to 4 weeks and includes sensory involvement."
+  },
+  {
+    "id": "q-20",
+    "stem": "Which statement about chronic inflammatory demyelinating polyneuropathy (CIDP) is true?",
+    "options": [
+      "It affects central vision only",
+      "It has acute onset like Guillain-Barré syndrome",
+      "It presents with pure motor weakness without sensory findings",
+      "It has a chronic course ≥8 weeks with peripheral demyelination and decreased conduction velocity"
+    ],
+    "answer": 3,
+    "notes": "CIDP is a chronic autoimmune demyelinating neuropathy progressing over ≥8 weeks with both motor and sensory involvement and slowed conduction velocity."
+  },
+  {
+    "id": "q-21",
+    "stem": "Which of the following is true about ALS compared to CIDP and GBS?",
+    "options": [
+      "It involves both upper and lower motor neuron signs without sensory involvement",
+      "It affects only the central nervous system",
+      "It has an acute onset",
+      "It causes only sensory loss"
+    ],
+    "answer": 0,
+    "notes": "Amyotrophic lateral sclerosis produces both upper and lower motor neuron signs with no sensory involvement."
+  },
+  {
+    "id": "q-22",
+    "stem": "Pneumocystis pneumonia (PCP) in immunosuppressed patients is typically diagnosed by:",
+    "options": [
+      "Stool examination",
+      "Serum antibody titer",
+      "Chest X-ray alone",
+      "Sputum examination and bronchoalveolar lavage if sputum is non-diagnostic"
+    ],
+    "answer": 3,
+    "notes": "Diagnosis of PCP relies on identification of organisms in induced sputum or, if negative, bronchoalveolar lavage."
+  },
+  {
+    "id": "q-23",
+    "stem": "Which of the following is NOT a first-line prophylactic agent for migraine?",
+    "options": [
+      "Sumatriptan",
+      "Beta-blockers",
+      "Topiramate",
+      "Amitriptyline"
+    ],
+    "answer": 0,
+    "notes": "First-line prophylaxis includes beta-blockers, topiramate, and amitriptyline. Sumatriptan is used for acute abortive therapy."
+  },
+  {
+    "id": "q-24",
+    "stem": "Chagas disease is characterized by the triad of:",
+    "options": [
+      "Polyarthritis, rash, and fever",
+      "Megaloblastic anemia, neuropathy, and ataxia",
+      "Hyperthyroidism, tachycardia, and goiter",
+      "Megacolon, cardiac disease, and esophageal dysfunction caused by Trypanosoma cruzi"
+    ],
+    "answer": 3,
+    "notes": "Chagas disease, caused by Trypanosoma cruzi, presents with megacolon, cardiomyopathy, and esophageal dysmotility."
+  },
+  {
+    "id": "q-25",
+    "stem": "A patient with virilization and elevated serum testosterone but normal DHEAS levels most likely has:",
+    "options": [
+      "Cushing’s disease",
+      "An adrenal tumor",
+      "Addison’s disease",
+      "An ovarian androgen-producing tumor"
+    ],
+    "answer": 3,
+    "notes": "Elevated testosterone with normal DHEAS suggests an ovarian source; elevated DHEAS would point to an adrenal tumor."
+  },
+  {
+    "id": "q-26",
+    "stem": "In fall risk assessment in the elderly, which factor should be routinely evaluated?",
+    "options": [
+      "Ferritin level",
+      "Serum potassium",
+      "Visual acuity",
+      "Vitamin D level"
+    ],
+    "answer": 2,
+    "notes": "Multifactorial fall assessment includes testing visual acuity; decreased proprioception and impaired vision increase fall risk."
+  },
+  {
+    "id": "q-27",
+    "stem": "Methimazole and propylthiouracil can cause agranulocytosis; when infection occurs while on these medications, the most appropriate immediate action is to:",
+    "options": [
+      "Continue the medication and add antibiotics",
+      "Add levothyroxine and continue the drug",
+      "Discontinue the antithyroid medication immediately",
+      "Increase the dosage"
+    ],
+    "answer": 2,
+    "notes": "Onset of infection (e.g., sore throat, fever) on antithyroid therapy suggests agranulocytosis; the drug should be stopped immediately to prevent sepsis."
+  },
+  {
+    "id": "q-28",
+    "stem": "Chronic NSAID use can result in which type of anemia?",
+    "options": [
+      "Iron deficiency anemia due to occult gastrointestinal bleeding",
+      "Pernicious anemia",
+      "Thalassemia",
+      "Sideroblastic anemia"
+    ],
+    "answer": 0,
+    "notes": "NSAIDs may cause occult GI bleeding, leading to iron deficiency anemia."
+  },
+  {
+    "id": "q-29",
+    "stem": "Disseminated gonococcal infection presents with which triad of symptoms?",
+    "options": [
+      "Fever, jaundice, and anemia",
+      "Polyarthralgia, tenosynovitis, and vesiculopustular rash",
+      "Rash, renal failure, and hypertension",
+      "Cough, hemoptysis, and night sweats"
+    ],
+    "answer": 1,
+    "notes": "Disseminated Neisseria gonorrhoeae infection typically presents with polyarthralgia, tenosynovitis, and a vesiculopustular rash."
+  },
+  {
+    "id": "q-30",
+    "stem": "Regarding dementia with Lewy bodies (DLB) and Parkinson’s disease (PD), which statement is correct?",
+    "options": [
+      "DLB does not involve parkinsonism",
+      "Parkinson’s disease never leads to dementia",
+      "Parkinsonian motor symptoms precede cognitive decline by at least one year in DLB",
+      "Cognitive fluctuations and dementia appear early in DLB, often before parkinsonian motor symptoms"
+    ],
+    "answer": 3,
+    "notes": "In dementia with Lewy bodies, cognitive fluctuations and dementia occur early and often precede parkinsonism; in Parkinson’s disease, motor symptoms precede dementia by ≥1 year."
+  },
+  {
+    "id": "q-31",
+    "stem": "In evaluation of chronic diarrhea, the presence of weight loss, systemic symptoms, or abnormal laboratory findings indicates:",
+    "options": [
+      "Lactose intolerance",
+      "A functional cause such as irritable bowel syndrome requiring reassurance only",
+      "An organic cause such as inflammatory bowel disease or Giardia infection warranting further testing",
+      "Dietary preference"
+    ],
+    "answer": 2,
+    "notes": "Organic causes of chronic diarrhea (IBD, Giardia) are suspected when there is weight loss, systemic symptoms, or abnormal labs; stool antigen or PCR may be needed."
+  },
+  {
+    "id": "q-32",
+    "stem": "For suspected Giardia infection causing greasy stools, the appropriate diagnostic test is:",
+    "options": [
+      "Stool occult blood testing",
+      "Stool antigen or PCR testing",
+      "Serum IgA levels",
+      "Hydrogen breath test"
+    ],
+    "answer": 1,
+    "notes": "Giardia diagnosis is made via stool antigen or nucleic acid testing; stool occult blood is not specific for Giardia."
+  },
+  {
+    "id": "q-33",
+    "stem": "Which of the following is NOT a first-line antihypertensive agent?",
+    "options": [
+      "Calcium channel blocker",
+      "Thiazide diuretic",
+      "Loop diuretic",
+      "ACE inhibitor"
+    ],
+    "answer": 2,
+    "notes": "First-line antihypertensives include ACE inhibitors, ARBs, CCBs, and thiazide diuretics. Loop diuretics are not first-line for primary hypertension."
+  },
+  {
+    "id": "q-34",
+    "stem": "In case-control studies, the odds ratio approximates relative risk when:",
+    "options": [
+      "The cohort is small",
+      "Exposures are common but outcomes are rare",
+      "The disease is very common",
+      "The disease is rare (rare disease assumption)"
+    ],
+    "answer": 3,
+    "notes": "When the disease prevalence is low, the odds ratio from a case-control study approximates the relative risk."
+  },
+  {
+    "id": "q-35",
+    "stem": "Cross-sectional studies are poor for estimating prevalence of:",
+    "options": [
+      "Stable conditions",
+      "Rapidly fatal conditions",
+      "Behaviors",
+      "Chronic non-fatal diseases"
+    ],
+    "answer": 1,
+    "notes": "Because cross-sectional studies capture a snapshot, they underestimate the prevalence of diseases with high mortality (rapidly fatal conditions)."
+  },
+  {
+    "id": "q-36",
+    "stem": "Oral estrogen therapy affects thyroid hormone levels by:",
+    "options": [
+      "Suppressing TSH secretion",
+      "Increasing thyroid-binding globulin (TBG), leading to decreased free T3/T4 and requiring higher levothyroxine doses in hypothyroid patients",
+      "Decreasing TBG",
+      "Causing hyperthyroidism directly"
+    ],
+    "answer": 1,
+    "notes": "Oral estrogens increase TBG, which binds more thyroid hormone, lowering free T4. Hypothyroid patients on levothyroxine require higher doses when starting oral estrogen."
+  },
+  {
+    "id": "q-37",
+    "stem": "Radicular back pain due to a herniated disc at the S1 nerve root is caused by:",
+    "options": [
+      "Spinal canal narrowing (stenosis)",
+      "Degenerative osteophyte disease only",
+      "Vertebral body slippage (spondylolisthesis)",
+      "Herniated nucleus pulposus compressing the nerve root"
+    ],
+    "answer": 3,
+    "notes": "Herniated nucleus pulposus (\"jelly\") compresses the nerve root, causing radicular pain. Spondylolisthesis (\"slip\") and stenosis (\"narrow\") cause other patterns."
+  },
+  {
+    "id": "q-38",
+    "stem": "Spondylolisthesis typically presents with:",
+    "options": [
+      "Radicular pain only",
+      "No findings on imaging",
+      "Relief of leg pain with extension",
+      "Back-predominant pain and neurogenic claudication with a step-off on x-ray"
+    ],
+    "answer": 3,
+    "notes": "Spondylolisthesis involves vertebral body slippage; patients may have back-predominant pain, neurogenic claudication, and a palpable step-off on physical exam."
+  },
+  {
+    "id": "q-39",
+    "stem": "Spinal stenosis manifests as:",
+    "options": [
+      "Absence of neurogenic claudication",
+      "Pain isolated to the arms",
+      "Pain only when lying down",
+      "Leg pain with standing or walking that improves with flexion"
+    ],
+    "answer": 3,
+    "notes": "Spinal canal narrowing causes neurogenic claudication, with leg pain worsened by standing or walking and relieved by sitting or lumbar flexion."
+  },
+  {
+    "id": "q-40",
+    "stem": "Memory aid for back pathologies: “Slip” refers to spondylolisthesis, “Jelly” refers to disc herniation, and “Narrow” refers to spinal stenosis. Which statement is true?",
+    "options": [
+      "“Slip” refers to disc herniation",
+      "None of the above",
+      "“Jelly” refers to spondylolisthesis",
+      "“Narrow” refers to spinal stenosis causing canal narrowing"
+    ],
+    "answer": 3,
+    "notes": "Slip = spondylolisthesis (vertebral slippage), Jelly = herniated disc, Narrow = spinal stenosis."
+  },
+  {
+    "id": "q-41",
+    "stem": "Normal pressure hydrocephalus is characterized by which triad?",
+    "options": [
+      "Hypotension, bradycardia, and respiratory depression",
+      "Headache, vomiting, and blurred vision",
+      "Gait disturbance, dementia, and urinary incontinence",
+      "Tremor, rigidity, and bradykinesia"
+    ],
+    "answer": 2,
+    "notes": "Normal pressure hydrocephalus presents with gait disturbance, cognitive decline, and urinary incontinence (wacky, wobbly, wet)."
+  },
+  {
+    "id": "q-42",
+    "stem": "Treatment for normal pressure hydrocephalus often involves:",
+    "options": [
+      "Immediate craniotomy",
+      "Dopaminergic agents",
+      "Ventriculoperitoneal shunting since it is a reversible cause of dementia",
+      "No therapy"
+    ],
+    "answer": 2,
+    "notes": "NPH is a treatable cause of dementia; ventriculoperitoneal shunt drains excess CSF."
+  },
+  {
+    "id": "q-43",
+    "stem": "Proliferative diabetic retinopathy is marked by:",
+    "options": [
+      "Papilledema",
+      "Cataracts only",
+      "Optic neuritis",
+      "Neovascularization of the retina"
+    ],
+    "answer": 3,
+    "notes": "Progressive diabetic retinopathy features microaneurysms, hemorrhages, cotton wool spots, and neovascularization in the proliferative phase."
+  },
+  {
+    "id": "q-44",
+    "stem": "Management of proliferative diabetic retinopathy includes:",
+    "options": [
+      "Intravitreal VEGF inhibitors like ranibizumab and laser photocoagulation",
+      "Beta-blockers",
+      "Oral antibiotics",
+      "Vitamin A supplementation"
+    ],
+    "answer": 0,
+    "notes": "Treatment involves VEGF inhibitors (e.g., ranibizumab) and laser photocoagulation to prevent vision loss."
+  },
+  {
+    "id": "q-45",
+    "stem": "Persistent hoarseness in a chronic smoker should prompt:",
+    "options": [
+      "CT head",
+      "Empiric antibiotics",
+      "Steroid therapy",
+      "Laryngoscopy for biopsy to evaluate for laryngeal cancer"
+    ],
+    "answer": 3,
+    "notes": "Persistent hoarseness in a smoker raises concern for laryngeal cancer; evaluation is by laryngoscopy with biopsy."
+  },
+  {
+    "id": "q-46",
+    "stem": "Which of the following is NOT a risk factor for postoperative pulmonary complications?",
+    "options": [
+      "Poor baseline health",
+      "Short surgical duration (<1 hour)",
+      "Smoking",
+      "Thoracoabdominal surgery"
+    ],
+    "answer": 1,
+    "notes": "Risk factors include smoking, underlying lung disease, thoracoabdominal surgery, long operative time (>3 hours), and poor baseline health; short operations are not high risk."
+  },
+  {
+    "id": "q-47",
+    "stem": "Incentive spirometry and deep-breathing exercises are recommended postoperatively to prevent:",
+    "options": [
+      "Anemia",
+      "Pulmonary complications such as atelectasis and pneumonia",
+      "Deep vein thrombosis",
+      "Renal failure"
+    ],
+    "answer": 1,
+    "notes": "These exercises reduce postoperative pulmonary complications by improving lung expansion and clearing secretions."
+  },
+  {
+    "id": "q-48",
+    "stem": "Uncal herniation due to increased intracranial pressure results in:",
+    "options": [
+      "Flaccid paralysis only",
+      "Leg weakness with preserved pupils",
+      "Bilateral pinpoint pupils",
+      "Ipsilateral fixed and dilated pupil due to oculomotor nerve compression"
+    ],
+    "answer": 3,
+    "notes": "Uncal herniation compresses cranial nerve III, causing a blown (dilated) pupil on the side of herniation."
+  },
+  {
+    "id": "q-49",
+    "stem": "Post-traumatic neuroma following nerve transection is characterized by:",
+    "options": [
+      "A painful mass of unmyelinated nerves at the surgical site that is tender to palpation",
+      "Improvement with opioids alone",
+      "No pain on palpation",
+      "Resolution without intervention"
+    ],
+    "answer": 0,
+    "notes": "Transected nerves regenerate into a tangled mass (neuroma), causing localized pain triggered by palpation; treatment is surgical excision."
+  },
+  {
+    "id": "q-50",
+    "stem": "The treatment for symptomatic post-traumatic neuroma is:",
+    "options": [
+      "Surgical excision of the neuroma",
+      "High-dose steroids",
+      "Physical therapy only",
+      "Cooling the area"
+    ],
+    "answer": 0,
+    "notes": "Excision of the neuroma is usually required to relieve pain."
+  },
+  {
+    "id": "q-51",
+    "stem": "Olanzapine use is associated with which adverse effect requiring monitoring?",
+    "options": [
+      "Hypotension alone",
+      "Agranulocytosis",
+      "Metabolic syndrome with weight gain, hyperglycemia, and dyslipidemia",
+      "Liver failure"
+    ],
+    "answer": 2,
+    "notes": "Olanzapine has a high risk of metabolic syndrome including weight gain, elevated glucose, and lipid abnormalities; monitoring is needed."
+  },
+  {
+    "id": "q-52",
+    "stem": "Sphincter of Oddi dysfunction (SOD) can present as:",
+    "options": [
+      "No biliary dilation",
+      "Pain relief after opioids",
+      "Jaundice with gallstones",
+      "Increased pain after opioids with dilated bile ducts and no gallstones"
+    ],
+    "answer": 3,
+    "notes": "Opioids increase sphincter tone, leading to biliary pain and ductal dilation without stones in SOD."
+  },
+  {
+    "id": "q-53",
+    "stem": "Choroid plexus papilloma causes increased cerebrospinal fluid production leading to:",
+    "options": [
+      "Hyponatremia",
+      "Hydrocephalus due to CSF overproduction",
+      "Decreased CSF",
+      "Spinal stenosis"
+    ],
+    "answer": 1,
+    "notes": "These tumors overproduce CSF, causing hydrocephalus and increased intracranial pressure."
+  },
+  {
+    "id": "q-54",
+    "stem": "Optic neuritis in multiple sclerosis presents with:",
+    "options": [
+      "Acute painful unilateral vision loss often preceding other MS symptoms",
+      "Papilledema only",
+      "Periorbital edema",
+      "Painless gradual bilateral vision loss"
+    ],
+    "answer": 0,
+    "notes": "Optic neuritis is an acute demyelinating event causing painful vision loss in one eye; it is highly associated with MS."
+  },
+  {
+    "id": "q-55",
+    "stem": "A patient with syphilis who has a true penicillin allergy can be treated with:",
+    "options": [
+      "Cephalexin",
+      "Amoxicillin",
+      "Oral doxycycline",
+      "Vancomycin"
+    ],
+    "answer": 2,
+    "notes": "For non-pregnant patients with penicillin allergy, doxycycline is an alternative for syphilis treatment."
+  },
+  {
+    "id": "q-56",
+    "stem": "In hypoalbuminemia, total serum calcium must be corrected because:",
+    "options": [
+      "Ionized calcium rises",
+      "No correction is needed",
+      "Ionized calcium drops proportionally",
+      "Ionized calcium remains stable despite low albumin and the total calcium falls with albumin"
+    ],
+    "answer": 3,
+    "notes": "Only about 40-45% of serum calcium is protein-bound; ionized (active) calcium remains stable, so total calcium decreases with low albumin and must be corrected."
+  },
+  {
+    "id": "q-57",
+    "stem": "Corrected calcium can be approximated by adding how much to the measured calcium for each 1 g/dL decrease in albumin below normal?",
+    "options": [
+      "2 mg/dL",
+      "0.8 mg/dL",
+      "1.5 mg/dL",
+      "0.2 mg/dL"
+    ],
+    "answer": 1,
+    "notes": "For each 1 g/dL decrease in albumin, add approximately 0.8 mg/dL to the measured total calcium to estimate the corrected level."
+  },
+  {
+    "id": "q-58",
+    "stem": "Oxytocin administration can lead to which electrolyte abnormality due to its antidiuretic effect?",
+    "options": [
+      "Hypercalcemia",
+      "Hyponatremia",
+      "Hypernatremia",
+      "Hyperkalemia"
+    ],
+    "answer": 1,
+    "notes": "High doses of oxytocin can cause water retention and dilutional hyponatremia due to its similarity to vasopressin."
+  },
+  {
+    "id": "q-59",
+    "stem": "Neuroleptic malignant syndrome (NMS) is characterized by which of the following?",
+    "options": [
+      "Immediate onset within minutes of drug exposure",
+      "Slow onset bradycardia and miosis",
+      "Hyperreflexia and clonus with diarrhea",
+      "Lead-pipe rigidity, high fever, autonomic instability and elevated creatine kinase due to dopamine blockade"
+    ],
+    "answer": 3,
+    "notes": "NMS presents with muscle rigidity, hyperthermia, altered mental status, autonomic instability and elevated CK; it results from dopamine D2 receptor blockade."
+  },
+  {
+    "id": "q-60",
+    "stem": "Serotonin syndrome typically features:",
+    "options": [
+      "Lead-pipe rigidity without clonus",
+      "Bradycardia and miosis",
+      "Hyperreflexia, clonus, tremor and hyperthermia due to serotonergic excess",
+      "Hyporeflexia and flaccid paralysis"
+    ],
+    "answer": 2,
+    "notes": "Serotonin toxicity is marked by neuromuscular hyperactivity (clonus, hyperreflexia), autonomic hyperactivity (hyperthermia) and mental status changes."
+  },
+  {
+    "id": "q-61",
+    "stem": "Malignant hyperthermia is triggered by:",
+    "options": [
+      "Dopamine receptor blockers",
+      "SSRIs",
+      "Inhalational anesthetics or succinylcholine leading to muscle rigidity, hypercarbia and hyperthermia",
+      "Fluoroquinolones"
+    ],
+    "answer": 2,
+    "notes": "Malignant hyperthermia is a genetic disorder triggered by agents like halothane or succinylcholine causing uncontrolled calcium release and muscle rigidity."
+  },
+  {
+    "id": "q-62",
+    "stem": "A patient with an epidural hematoma after a motor vehicle collision develops an ipsilateral dilated pupil due to:",
+    "options": [
+      "Subfalcine herniation",
+      "Uncal herniation compressing cranial nerve III",
+      "Central herniation",
+      "Tonsillar herniation"
+    ],
+    "answer": 1,
+    "notes": "Epidural hematoma can cause uncal herniation, compressing CN III and producing an ipsilateral blown pupil."
+  },
+  {
+    "id": "q-63",
+    "stem": "Immune thrombocytopenic purpura (ITP) is characterized by:",
+    "options": [
+      "Microangiopathic hemolytic anemia",
+      "Bone marrow failure causing pancytopenia",
+      "Increased platelet function",
+      "Autoimmune destruction of platelets leading to isolated thrombocytopenia with petechiae and mucosal bleeding"
+    ],
+    "answer": 3,
+    "notes": "ITP is an autoimmune condition causing platelet destruction. It presents with isolated thrombocytopenia and mucocutaneous bleeding."
+  },
+  {
+    "id": "q-64",
+    "stem": "An S4 heart sound is best explained by:",
+    "options": [
+      "A stiff ventricle requiring atrial contraction to fill the noncompliant chamber",
+      "Valve regurgitation",
+      "Opening snap of the mitral valve",
+      "Rapid ventricular filling"
+    ],
+    "answer": 0,
+    "notes": "An S4 occurs when the atria contract forcefully against a stiff ventricle (e.g., in hypertrophic cardiomyopathy, diastolic dysfunction)."
+  },
+  {
+    "id": "q-65",
+    "stem": "Infectious mononucleosis (Epstein-Barr virus) may also cause:",
+    "options": [
+      "Chronic kidney disease",
+      "Severe pancreatitis",
+      "Mild hepatitis with elevated liver enzymes",
+      "Hypertension"
+    ],
+    "answer": 2,
+    "notes": "Mononucleosis often includes mild hepatitis with transient elevation of transaminases."
+  },
+  {
+    "id": "q-66",
+    "stem": "Osteoporosis screening is recommended for:",
+    "options": [
+      "All adolescents",
+      "Women age <30 regardless of risk",
+      "Women age ≥65 and younger women with risk factors via DEXA scanning",
+      "Men only"
+    ],
+    "answer": 2,
+    "notes": "USPSTF recommends DEXA screening for women 65 and older or younger women with equivalent fracture risk."
+  },
+  {
+    "id": "q-67",
+    "stem": "Rosacea is characterized by:",
+    "options": [
+      "Isolated comedonal acne",
+      "Vesicular rash",
+      "Facial flushing, erythema, telangiectasias, and pustules often triggered by alcohol or heat",
+      "Hyperpigmented macules"
+    ],
+    "answer": 2,
+    "notes": "Rosacea features episodic facial flushing and chronic redness with telangiectasias; triggers include sun, spicy foods, alcohol."
+  },
+  {
+    "id": "q-68",
+    "stem": "Tuberculosis reactivation is most likely to occur in which scenario?",
+    "options": [
+      "BCG-vaccinated individual with no risk factors",
+      "Latent infection with immunosuppression leading to cavitary upper lobe disease",
+      "Ingestion of dairy products",
+      "Primary infection in immunocompetent host"
+    ],
+    "answer": 1,
+    "notes": "Reactivation TB occurs in previously infected individuals when immunity wanes (e.g., HIV, corticosteroids); it manifests with cavitary lesions in the upper lobes."
+  },
+  {
+    "id": "q-69",
+    "stem": "Lactational mastitis not responding to antibiotics may indicate:",
+    "options": [
+      "That mastitis always resolves spontaneously",
+      "Candida infection requiring antifungal therapy only",
+      "Breast abscess requiring ultrasound and drainage",
+      "Underlying breast cancer"
+    ],
+    "answer": 2,
+    "notes": "Persistent mastitis despite antibiotics suggests development of a breast abscess; diagnosis is by ultrasound, and treatment is drainage plus continued antibiotics."
+  },
+  {
+    "id": "q-70",
+    "stem": "Graves disease treatment options include:",
+    "options": [
+      "Antithyroid medications (methimazole, PTU), radioactive iodine ablation, or surgery depending on severity",
+      "Levothyroxine therapy",
+      "Glucagon",
+      "Insulin therapy"
+    ],
+    "answer": 0,
+    "notes": "Management of Graves hyperthyroidism includes antithyroid drugs, radioactive iodine, or thyroidectomy."
+  },
+  {
+    "id": "q-71",
+    "stem": "First-line treatment for major depression with psychotic features is:",
+    "options": [
+      "Psychotherapy only",
+      "Combined antidepressant and antipsychotic or electroconvulsive therapy (ECT)",
+      "Anxiolytic medication only",
+      "Antidepressant alone"
+    ],
+    "answer": 1,
+    "notes": "Major depressive disorder with psychotic features requires combined pharmacologic therapy (antidepressant plus antipsychotic) or ECT."
+  },
+  {
+    "id": "q-72",
+    "stem": "Degenerating uterine fibroids during pregnancy may present with:",
+    "options": [
+      "No symptoms",
+      "Painless vaginal bleeding",
+      "Acute abdominal pain mimicking cholecystitis with a firm, tender uterine mass",
+      "Hypertension"
+    ],
+    "answer": 2,
+    "notes": "Rapid growth and degeneration of fibroids in pregnancy cause acute abdominal pain and a firm tender mass, which can mimic other acute abdominal conditions."
+  },
+  {
+    "id": "q-73",
+    "stem": "A branchial cleft cyst typically presents as:",
+    "options": [
+      "Thyroid enlargement",
+      "A lateral neck mass anterior to the sternocleidomastoid in a child",
+      "Painless axillary lymphadenopathy",
+      "A midline mass that moves with swallowing"
+    ],
+    "answer": 1,
+    "notes": "Branchial cleft cysts are congenital epithelial remnants presenting as lateral neck masses near the sternocleidomastoid muscle."
+  },
+  {
+    "id": "q-74",
+    "stem": "The most common cause of vaginitis presenting with thin, fishy-smelling discharge and clue cells is:",
+    "options": [
+      "Bacterial vaginosis due to Gardnerella vaginalis",
+      "Trichomonas infection",
+      "Candida albicans infection",
+      "Atrophic vaginitis"
+    ],
+    "answer": 0,
+    "notes": "Bacterial vaginosis causes thin gray discharge with fishy odor and clue cells on microscopy."
+  },
+  {
+    "id": "q-75",
+    "stem": "Vaginal discharge with pruritus and thick white cottage cheese consistency most likely indicates:",
+    "options": [
+      "Bacterial vaginosis",
+      "Atrophic vaginitis",
+      "Candida infection",
+      "Trichomonas infection"
+    ],
+    "answer": 2,
+    "notes": "Candidal vaginitis presents with pruritus, thick cottage cheese discharge, and vulvar erythema."
+  },
+  {
+    "id": "q-76",
+    "stem": "Frothy green-yellow vaginal discharge with itching and a “strawberry” cervix is typical of:",
+    "options": [
+      "Candida infection",
+      "Atrophic vaginitis",
+      "Trichomonas infection",
+      "Bacterial vaginosis"
+    ],
+    "answer": 2,
+    "notes": "Trichomonas vaginalis infection causes frothy yellow-green discharge, vulvovaginal irritation, and a punctate cervix."
+  },
+  {
+    "id": "q-77",
+    "stem": "Intraductal papilloma presents with:",
+    "options": [
+      "Diffuse breast pain without discharge",
+      "Painless axillary mass",
+      "Bloody or serosanguinous nipple discharge from a single duct",
+      "Eczematous changes of the nipple"
+    ],
+    "answer": 2,
+    "notes": "Intraductal papilloma is a benign lesion presenting with bloody or serous nipple discharge, usually from one duct."
+  },
+  {
+    "id": "q-78",
+    "stem": "Epiglottitis is most reliably diagnosed by which imaging?",
+    "options": [
+      "MRI of the neck",
+      "Chest X-ray",
+      "CT head",
+      "Lateral neck radiograph showing the “thumb sign”"
+    ],
+    "answer": 3,
+    "notes": "A lateral neck radiograph can show the swollen epiglottis as a thumb-shaped protrusion, diagnosing epiglottitis quickly and non-invasively."
+  },
+  {
+    "id": "q-79",
+    "stem": "The “thumb sign” seen on a lateral neck radiograph in epiglottitis represents:",
+    "options": [
+      "Tracheal deviation",
+      "Swollen tonsils",
+      "Air in the esophagus",
+      "An enlarged swollen epiglottis protruding like a thumb"
+    ],
+    "answer": 3,
+    "notes": "The swollen epiglottis resembles a thumb on lateral radiography; this sign assists in diagnosing epiglottitis."
+  },
+  {
+    "id": "q-80",
+    "stem": "What is a key reason a lateral neck radiograph is used to diagnose epiglottitis instead of other imaging?",
+    "options": [
+      "It provides an anterior view",
+      "It is cheaper than clinical exam",
+      "It can show the swollen epiglottis without manipulating the airway, avoiding triggering airway compromise",
+      "It always detects pneumonia"
+    ],
+    "answer": 2,
+    "notes": "Lateral neck radiograph visualizes the airway structures from the side, showing epiglottic swelling without requiring a potentially dangerous examination that could provoke airway obstruction."
+  },
+  {
+    "id": "q-81",
+    "stem": "Angina is more likely than acid reflux when:",
+    "options": [
+      "Pain occurs only when lying down",
+      "Pain is sharp and localized",
+      "Substernal chest pain occurs on exertion and may radiate to the arm or jaw",
+      "Chest pain is relieved by antacids and worsened by fatty foods"
+    ],
+    "answer": 2,
+    "notes": "Classic exertional substernal chest pain radiating to arm/jaw suggests cardiac ischemia (angina), unlike reflux, which is associated with meals and relieved by antacids."
+  },
+  {
+    "id": "q-82",
+    "stem": "Neuroleptic malignant syndrome is primarily associated with which class of drugs?",
+    "options": [
+      "Benzodiazepines",
+      "Beta-blockers",
+      "Antipsychotics that block dopamine D2 receptors",
+      "SSRIs"
+    ],
+    "answer": 2,
+    "notes": "Dopamine receptor antagonists (antipsychotics) can precipitate NMS."
+  },
+  {
+    "id": "q-83",
+    "stem": "Serotonin syndrome is most commonly triggered by:",
+    "options": [
+      "Anticholinergic agents",
+      "Antipsychotic overdose",
+      "Combination of serotonergic agents (SSRIs, SNRIs, MAOIs) causing serotonin excess",
+      "Lithium monotherapy"
+    ],
+    "answer": 2,
+    "notes": "Serotonin syndrome results from excess serotonergic activity, often due to drug combinations or overdose."
+  },
+  {
+    "id": "q-84",
+    "stem": "Patients with Bruton's (X-linked) agammaglobulinemia are predisposed to:",
+    "options": [
+      "Toxoplasmosis",
+      "Chronic enteroviral infection due to absence of B cells and antibodies",
+      "Malaria",
+      "Histoplasmosis"
+    ],
+    "answer": 1,
+    "notes": "Patients lack functional B cells and immunoglobulins, making them susceptible to persistent enteroviral infections."
+  },
+  {
+    "id": "q-85",
+    "stem": "Creutzfeldt-Jakob disease typically presents with:",
+    "options": [
+      "Rapidly progressive dementia, myoclonus, and periodic sharp waves on EEG",
+      "Slowly progressive dementia with hallucinations",
+      "Chronic seizures",
+      "Peripheral neuropathy only"
+    ],
+    "answer": 0,
+    "notes": "CJD is a prion disease marked by rapidly progressive dementia, myoclonus and characteristic EEG findings."
+  },
+  {
+    "id": "q-86",
+    "stem": "A hiatal hernia occurs when:",
+    "options": [
+      "Intestines protrude outside the abdominal wall",
+      "The stomach herniates through the esophageal hiatus into the thorax",
+      "The colon twists on itself",
+      "The liver enlarges"
+    ],
+    "answer": 1,
+    "notes": "A sliding or paraesophageal hiatal hernia involves herniation of the stomach through the esophageal hiatus."
+  },
+  {
+    "id": "q-87",
+    "stem": "According to Light’s criteria, a pleural effusion is exudative when:",
+    "options": [
+      "The pleural fluid LDH/serum LDH ratio is >0.6 or pleural LDH exceeds two-thirds the upper limit of normal",
+      "Pleural glucose is >120 mg/dL",
+      "Pleural fluid protein/serum protein ratio is <0.5",
+      "Pleural LDH is <0.2"
+    ],
+    "answer": 0,
+    "notes": "Exudates have high protein and LDH; any one of Light’s criteria (protein ratio >0.5, LDH ratio >0.6, or pleural LDH > 2/3 ULN) defines an exudative effusion."
+  },
+  {
+    "id": "q-88",
+    "stem": "Which pleural fluid glucose level suggests exudative effusions such as empyema or rheumatoid pleurisy?",
+    "options": [
+      ">100 mg/dL",
+      "No level is suggestive",
+      "<60 mg/dL",
+      "80-90 mg/dL"
+    ],
+    "answer": 2,
+    "notes": "Low pleural glucose (<60 mg/dL) occurs in exudative effusions such as empyema, malignancy, rheumatoid pleurisy and lupus."
+  },
+  {
+    "id": "q-89",
+    "stem": "Flail chest is defined by:",
+    "options": [
+      "Fracture of the clavicle",
+      "Multiple spinal fractures",
+      "Fractures of three or more consecutive ribs in two places causing paradoxical chest wall motion",
+      "A single rib fracture"
+    ],
+    "answer": 2,
+    "notes": "Flail chest results from multiple rib fractures creating an isolated chest wall segment that moves paradoxically, increasing work of breathing."
+  },
+  {
+    "id": "q-90",
+    "stem": "Acute chest syndrome in sickle cell disease is managed with:",
+    "options": [
+      "Observation only",
+      "Corticosteroids only",
+      "Antibiotics (ceftriaxone plus azithromycin), IV fluids, and analgesia",
+      "Blood transfusion alone"
+    ],
+    "answer": 2,
+    "notes": "Acute chest syndrome, indistinguishable from pneumonia, is treated with broad-spectrum antibiotics, hydration and pain control."
+  },
+  {
+    "id": "q-91",
+    "stem": "In postoperative hypoxemia, a normal alveolar-arterial (A-a) gradient with high PaCO2 suggests:",
+    "options": [
+      "Asthma attack",
+      "Pulmonary embolism",
+      "Hypoventilation due to central respiratory depression or neuromuscular disorder",
+      "Ventilation/perfusion mismatch"
+    ],
+    "answer": 2,
+    "notes": "A normal A-a gradient and elevated CO2 indicate alveolar hypoventilation (e.g., from opioid depression or muscle fatigue)."
+  },
+  {
+    "id": "q-92",
+    "stem": "Life-threatening hemoptysis (>600 mL/day) requires initial management with:",
+    "options": [
+      "NSAIDs",
+      "Plasma transfusion",
+      "Airway protection and identification of the bleeding source via bronchoscopy or CT",
+      "Oral antibiotics"
+    ],
+    "answer": 2,
+    "notes": "Severe hemoptysis requires prompt airway stabilization and localization of bleeding for definitive therapy."
+  },
+  {
+    "id": "q-93",
+    "stem": "In immunosuppressed patients with suspected pneumonia and a normal chest X-ray, the next diagnostic step is:",
+    "options": [
+      "CT angiography",
+      "Chest CT to detect infiltrates",
+      "Serum D-dimer",
+      "Abdominal ultrasound"
+    ],
+    "answer": 1,
+    "notes": "Chest CT is more sensitive than X-ray and should be performed to evaluate pneumonia in immunosuppressed patients with negative radiographs."
+  },
+  {
+    "id": "q-94",
+    "stem": "Granulomatosis with polyangiitis (GPA) may show which radiographic findings?",
+    "options": [
+      "Bilateral hilar lymphadenopathy only",
+      "Pleural effusion only",
+      "Ascites",
+      "Lung nodules or cavitations, tracheal ulceration and alveolar hemorrhage"
+    ],
+    "answer": 3,
+    "notes": "GPA (Wegener) manifests with lung nodules, cavitary lesions, tracheal ulcers, alveolar hemorrhage and upper airway involvement."
+  },
+  {
+    "id": "q-95",
+    "stem": "Chronic alcohol use causing megaloblastic anemia is most commonly due to:",
+    "options": [
+      "Iron deficiency",
+      "Thiamine deficiency",
+      "Vitamin B12 deficiency",
+      "Folate deficiency because of reduced intake and rapid depletion of stores"
+    ],
+    "answer": 3,
+    "notes": "Alcohol abuse often leads to folate deficiency and megaloblastic anemia because folate stores are small and can be depleted quickly."
+  },
+  {
+    "id": "q-96",
+    "stem": "Lateral medullary (Wallenberg) syndrome classically presents with:",
+    "options": [
+      "Isolated vision loss",
+      "Ipsilateral loss of facial pain/temperature with contralateral loss of body pain/temperature, vertigo, nystagmus, hoarseness/dysphagia, and Horner’s syndrome",
+      "Pure motor deficit",
+      "Contralateral facial weakness only"
+    ],
+    "answer": 1,
+    "notes": "Wallenberg syndrome results from lateral medullary infarction, producing the listed combination of sensory, vestibular, and bulbar symptoms with ipsilateral Horner's."
+  },
+  {
+    "id": "q-97",
+    "stem": "Multiple myeloma workup shows:",
+    "options": [
+      "Elevated white blood cell count only",
+      "Low ESR",
+      "Serum protein electrophoresis with M spike and ≥10% plasma cells on bone marrow biopsy",
+      "Low calcium"
+    ],
+    "answer": 2,
+    "notes": "Diagnosis of multiple myeloma requires monoclonal (M) spike on serum/urine electrophoresis and clonal plasma cells ≥10% in bone marrow."
+  },
+  {
+    "id": "q-98",
+    "stem": "Meniere’s disease first-line management includes:",
+    "options": [
+      "Surgical labyrinthectomy",
+      "High-salt diet",
+      "High-intensity exercise",
+      "Lifestyle changes such as reducing caffeine, alcohol, salt intake, and avoiding allergens"
+    ],
+    "answer": 3,
+    "notes": "Meniere’s disease results from endolymphatic hydrops and is initially managed by lifestyle modification to lower endolymph volume."
+  },
+  {
+    "id": "q-99",
+    "stem": "Essential tremor is differentiated from Parkinson’s tremor by:",
+    "options": [
+      "Not responding to beta-blockers",
+      "Being a resting tremor",
+      "Always being unilateral",
+      "Being an action tremor that worsens with goal-directed movement and improves with alcohol"
+    ],
+    "answer": 3,
+    "notes": "Essential tremor occurs during action, improves with alcohol and may respond to beta-blockers; Parkinsonian tremor occurs at rest."
+  },
+  {
+    "id": "q-100",
+    "stem": "Treatment for restless leg syndrome includes:",
+    "options": [
+      "Gabapentin or pregabalin, which are alpha-2-delta calcium channel ligands",
+      "Beta-blockers",
+      "SSRI antidepressants",
+      "Benzodiazepines only"
+    ],
+    "answer": 0,
+    "notes": "RLS is treated with dopaminergic agents or alpha-2-delta calcium channel ligands such as gabapentin or pregabalin."
+  },
+  {
+    "id": "q-101",
+    "stem": "Myasthenic crisis is precipitated by infection and is characterized by:",
+    "options": [
+      "Hyperreflexia",
+      "Respiratory muscle weakness requiring airway protection",
+      "Miosis and bradycardia",
+      "Excess salivation with miosis"
+    ],
+    "answer": 1,
+    "notes": "Myasthenic crisis leads to severe muscle weakness, especially of respiratory muscles; requires intubation and IVIG or plasmapheresis."
+  },
+  {
+    "id": "q-102",
+    "stem": "In contrast to myasthenic crisis, cholinergic crisis involves:",
+    "options": [
+      "No pupil changes",
+      "Hypertension",
+      "Hyperreflexia",
+      "Miosis and bradycardia due to excess acetylcholine from overmedication"
+    ],
+    "answer": 3,
+    "notes": "Cholinergic crisis is due to excessive ACh from acetylcholinesterase inhibitors; features include miosis, bradycardia and salivation."
+  },
+  {
+    "id": "q-103",
+    "stem": "Which statement correctly differentiates pemphigus vulgaris from bullous pemphigoid?",
+    "options": [
+      "Bullous pemphigoid occurs in younger adults",
+      "Pemphigus vulgaris involves IgG against desmosomes with flaccid bullae and mucosal erosions",
+      "Pemphigus vulgaris presents with tense pruritic bullae and spares mucosa",
+      "Bullous pemphigoid presents with flaccid bullae and mucosal involvement"
+    ],
+    "answer": 1,
+    "notes": "Pemphigus vulgaris has IgG against desmosomes, causing painful flaccid bullae and mucosal erosions; bullous pemphigoid has tense pruritic bullae with rare mucosal involvement and IgG against hemidesmosomes."
+  },
+  {
+    "id": "q-104",
+    "stem": "Back pain with red flags such as urinary retention, saddle anesthesia, infection signs, or suspected malignancy should prompt:",
+    "options": [
+      "Immediate MRI of the spine",
+      "Only over-the-counter analgesics",
+      "Bed rest",
+      "Massage therapy"
+    ],
+    "answer": 0,
+    "notes": "Presence of neurological deficits or systemic signs in back pain requires urgent imaging (usually MRI) to evaluate for serious causes."
+  },
+  {
+    "id": "q-105",
+    "stem": "In cardiac arrest, which rhythms are non-shockable?",
+    "options": [
+      "Torsades de pointes",
+      "Atrial flutter",
+      "Pulseless electrical activity (PEA) and asystole",
+      "Ventricular fibrillation and pulseless ventricular tachycardia"
+    ],
+    "answer": 2,
+    "notes": "PEA and asystole are non-shockable; V-fib and pulseless V-tach are treated with defibrillation."
+  },
+  {
+    "id": "q-106",
+    "stem": "Differentiating arsenic from lead poisoning: which feature is more suggestive of arsenic?",
+    "options": [
+      "Lead lines on the gums",
+      "GI complaints without skin changes",
+      "Hyperpigmentation and transverse white lines (Mee’s lines) on nails with peripheral neuropathy",
+      "Only anemia without neuropathy"
+    ],
+    "answer": 2,
+    "notes": "Arsenic poisoning causes neuropathy with skin changes (hyperpigmentation, Mee’s lines); lead poisoning causes GI pain, anemia and no skin changes."
+  },
+  {
+    "id": "q-107",
+    "stem": "Ichthyosis vulgaris is best managed with:",
+    "options": [
+      "Antibiotics",
+      "Phototherapy alone",
+      "Long baths, keratolytics like alpha-hydroxy acids, and emollients",
+      "Systemic steroids"
+    ],
+    "answer": 2,
+    "notes": "Treatment includes moisturizing regimens and keratolytic agents to reduce scaling in this inherited dry skin disorder."
+  },
+  {
+    "id": "q-108",
+    "stem": "In HIV-positive patients with mild esophageal symptoms and oral thrush, initial management is:",
+    "options": [
+      "Acyclovir",
+      "Proton pump inhibitor",
+      "Immediate endoscopy",
+      "Empiric oral fluconazole"
+    ],
+    "answer": 3,
+    "notes": "Thrush plus esophageal symptoms suggests Candida esophagitis; empiric fluconazole is started. Endoscopy is reserved for severe or refractory cases."
+  },
+  {
+    "id": "q-109",
+    "stem": "Failure of microcytic anemia to respond to iron therapy within 4 weeks should prompt evaluation for:",
+    "options": [
+      "Thalassemia",
+      "Vitamin B12 deficiency",
+      "Lead poisoning",
+      "Iron overload"
+    ],
+    "answer": 0,
+    "notes": "Iron deficiency should improve within 4 weeks of therapy; lack of response suggests another cause such as thalassemia (part of the TAIL mnemonic)."
+  },
+  {
+    "id": "q-110",
+    "stem": "High aldosterone levels lead to:",
+    "options": [
+      "No change in electrolytes",
+      "Hypernatremia, hypokalemia, and hypertension",
+      "Hypotension",
+      "Hyponatremia and hyperkalemia"
+    ],
+    "answer": 1,
+    "notes": "Aldosterone promotes sodium retention and potassium excretion, causing hypernatremia, hypokalemia and hypertension."
+  },
+  {
+    "id": "q-111",
+    "stem": "Low aldosterone levels (as in adrenal insufficiency) result in:",
+    "options": [
+      "Hypercalcemia",
+      "Hyponatremia, hyperkalemia, and hypotension",
+      "Hypernatremia, hypokalemia, and hypertension",
+      "No change"
+    ],
+    "answer": 1,
+    "notes": "Absence of aldosterone leads to sodium loss and potassium retention, causing hyponatremia, hyperkalemia and low blood pressure."
+  },
+  {
+    "id": "q-112",
+    "stem": "Delirium is characterized by:",
+    "options": [
+      "Chronic progressive memory loss",
+      "Only hallucinations without cognitive changes",
+      "Acute onset fluctuating consciousness and confusion",
+      "No long-term effects"
+    ],
+    "answer": 2,
+    "notes": "Delirium is an acute fluctuating disturbance in attention and consciousness; even a single episode increases risk of long-term cognitive decline."
+  },
+  {
+    "id": "q-113",
+    "stem": "Experiencing a single episode of delirium increases risk of:",
+    "options": [
+      "Stroke",
+      "Complete recovery with no consequences",
+      "Long-term cognitive decline even after resolution",
+      "Schizophrenia"
+    ],
+    "answer": 2,
+    "notes": "Delirium is linked to subsequent persistent cognitive impairment; thus prevention and management are important."
+  },
+  {
+    "id": "q-114",
+    "stem": "Acute tubular necrosis (ATN) due to hypotension classically shows:",
+    "options": [
+      "Urine sodium >40 mEq/L and FENa >2%, muddy brown casts may be present but are not required for diagnosis",
+      "Low urine sodium <10 mEq/L",
+      "FENa <1%",
+      "BUN:Creatinine ratio >20"
+    ],
+    "answer": 0,
+    "notes": "ATN results from ischemic injury causing tubular damage; the tubules cannot reabsorb sodium, leading to high urine sodium/FENa and muddy brown casts although casts are not necessary for diagnosis."
+  },
+  {
+    "id": "q-115",
+    "stem": "Vomiting leads to which metabolic and electrolyte abnormalities?",
+    "options": [
+      "Metabolic alkalosis with hyperkalemia",
+      "No changes in acid-base status",
+      "Metabolic alkalosis with hypokalemia and hypochloremia",
+      "Metabolic acidosis and hyperkalemia"
+    ],
+    "answer": 2,
+    "notes": "Loss of gastric acid and chloride causes metabolic alkalosis; volume depletion triggers secondary hyperaldosteronism leading to hypokalemia."
+  },
+  {
+    "id": "q-116",
+    "stem": "Esophageal strictures due to poorly controlled GERD typically present with:",
+    "options": [
+      "Bird beak appearance",
+      "Proximal esophageal compression",
+      "Dysphagia to liquids before solids",
+      "Dysphagia to solids with symmetric concentric narrowing of the distal esophagus on barium swallow"
+    ],
+    "answer": 3,
+    "notes": "Peptic strictures cause progressive solid food dysphagia and symmetric narrowing of the distal esophagus on barium swallow."
+  },
+  {
+    "id": "q-117",
+    "stem": "Achalasia causes:",
+    "options": [
+      "Dysphagia to both solids and liquids from onset with proximal dilation and distal tapering ('bird beak') on barium swallow",
+      "Asymmetric irregular narrowing",
+      "Dysphagia to solids only",
+      "Palpitations only"
+    ],
+    "answer": 0,
+    "notes": "Achalasia involves failure of LES relaxation and esophageal aperistalsis, causing dysphagia to solids and liquids and a bird-beak sign on imaging."
+  },
+  {
+    "id": "q-118",
+    "stem": "Esophageal adenocarcinoma often presents as:",
+    "options": [
+      "Intermittent chest pain only",
+      "Progressive dysphagia to solids then liquids with asymmetric irregular narrowing",
+      "Symmetric narrowing",
+      "Proximal ring"
+    ],
+    "answer": 1,
+    "notes": "Cancer produces an irregular asymmetric narrowing causing progressive dysphagia and weight loss."
+  },
+  {
+    "id": "q-119",
+    "stem": "Vascular rings cause esophageal compression typically in the:",
+    "options": [
+      "Upper or mid-esophagus causing compressive symptoms especially in infants",
+      "Rectum",
+      "Stomach",
+      "Distal esophagus"
+    ],
+    "answer": 0,
+    "notes": "Congenital vascular rings encircle the trachea and esophagus, often presenting with dysphagia in children due to proximal narrowing."
+  },
+  {
+    "id": "q-120",
+    "stem": "In asthma exacerbation, a normal or elevated PaCO2 is concerning because it suggests:",
+    "options": [
+      "Hypoxia alone",
+      "Hyperventilation",
+      "Good prognosis",
+      "Impending respiratory failure due to muscle fatigue"
+    ],
+    "answer": 3,
+    "notes": "Early asthma exacerbation causes low PaCO2 due to hyperventilation; normalization or elevation indicates fatigue and risk of respiratory failure requiring intubation."
+  },
+  {
+    "id": "q-121",
+    "stem": "Fluoxetine and other SSRIs commonly cause which early side effect?",
+    "options": [
+      "Weight gain as initial effect",
+      "Anxiety and insomnia due to activating effects",
+      "Agranulocytosis",
+      "Sedation only"
+    ],
+    "answer": 1,
+    "notes": "SSRIs can initially cause activating side effects such as anxiety and insomnia, particularly in patients with anxiety disorders; dose adjustment may help."
+  },
+  {
+    "id": "q-122",
+    "stem": "Post-streptococcal glomerulonephritis is treated primarily with:",
+    "options": [
+      "Supportive care including diuretics for volume overload",
+      "ACE inhibitors only",
+      "Immediate dialysis in all cases",
+      "High-dose steroids"
+    ],
+    "answer": 0,
+    "notes": "PSGN treatment is supportive; diuretics manage fluid overload, and antihypertensives as needed. Immunosuppressants are not usually required."
+  },
+  {
+    "id": "q-123",
+    "stem": "Which of the following is NOT a typical feature of osteoarthritis?",
+    "options": [
+      "Periarticular bony hypertrophy and crepitus",
+      "Pain worsened with weight-bearing",
+      "Joint tenderness and limited range of motion",
+      "Warm erythematous joint effusions"
+    ],
+    "answer": 3,
+    "notes": "OA causes non-inflammatory joint pain with bony enlargement, crepitus and stiffness; effusions are usually cool without warmth or redness."
+  },
+  {
+    "id": "q-124",
+    "stem": "Acute mastoiditis following otitis media typically presents with:",
+    "options": [
+      "Clear nasal discharge",
+      "Painless swelling behind the ear",
+      "Cough as primary symptom",
+      "Fever, ear pain, and postauricular swelling with protrusion of the pinna"
+    ],
+    "answer": 3,
+    "notes": "Acute mastoiditis presents with fever, otalgia, tender swelling over mastoid and displacement of the pinna; treatment is IV antibiotics and drainage."
+  },
+  {
+    "id": "q-125",
+    "stem": "Narcolepsy often includes:",
+    "options": [
+      "Seizures",
+      "Hypersomnia due to hypothyroidism",
+      "Continuous insomnia",
+      "Excessive daytime sleepiness with cataplexy, hypnagogic hallucinations, and sleep paralysis"
+    ],
+    "answer": 3,
+    "notes": "Narcolepsy is characterized by sudden sleep attacks, cataplexy, hallucinations upon falling asleep and waking, and sleep paralysis."
+  },
+  {
+    "id": "q-126",
+    "stem": "Cervical insufficiency in the second trimester is most strongly associated with history of:",
+    "options": [
+      "Smoking only",
+      "Advanced maternal age",
+      "Cone biopsy or LEEP procedure causing cervical trauma",
+      "Preeclampsia"
+    ],
+    "answer": 2,
+    "notes": "Surgical procedures such as cone biopsy weaken the cervix, leading to painless dilation and bulging membranes in the second trimester."
+  },
+  {
+    "id": "q-127",
+    "stem": "Management of antipsychotic-induced akathisia includes:",
+    "options": [
+      "Increasing the antipsychotic dose",
+      "Switching to a more potent antipsychotic",
+      "Reducing the antipsychotic dose and adding a beta-blocker such as propranolol",
+      "Discontinuing all medications immediately"
+    ],
+    "answer": 2,
+    "notes": "Akathisia (inner restlessness) is best managed by decreasing the dose and adding a beta-blocker; increasing the dose worsens symptoms."
+  },
+  {
+    "id": "q-128",
+    "stem": "Chronic progressive early satiety, nausea, weight loss, and succussion splash in a 70-year-old smoker most likely indicate:",
+    "options": [
+      "Pancreatic adenocarcinoma causing gastric outlet obstruction",
+      "Peptic ulcer disease",
+      "Functional dyspepsia",
+      "Acute gastric volvulus"
+    ],
+    "answer": 0,
+    "notes": "Chronic progressive symptoms and weight loss with succussion splash suggest gastric outlet obstruction due to pancreatic head tumor rather than acute volvulus or ulcer."
+  },
+  {
+    "id": "q-129",
+    "stem": "Fibromuscular dysplasia (FMD) typically presents with:",
+    "options": [
+      "Fatigue and cognitive fog",
+      "Chronic widespread musculoskeletal pain",
+      "Hypertension in young women due to renal or carotid artery stenosis with a 'string-of-beads' appearance on angiography",
+      "Stroke symptoms due to carotid atherosclerosis"
+    ],
+    "answer": 2,
+    "notes": "FMD is a vascular disease causing abnormal arterial growth; common sites include renal and carotid arteries, leading to secondary hypertension or neurologic symptoms."
+  },
+  {
+    "id": "q-130",
+    "stem": "Fibromyalgia is characterized by:",
+    "options": [
+      "Stroke symptoms",
+      "Chronic widespread pain, fatigue, tender points, and normal laboratory studies",
+      "Hypertension and pulsatile tinnitus",
+      "Abnormal vascular imaging"
+    ],
+    "answer": 1,
+    "notes": "Fibromyalgia is a disorder of pain processing causing diffuse musculoskeletal pain, fatigue and cognitive difficulties; labs and imaging are normal."
+  },
+  {
+    "id": "q-131",
+    "stem": "Osteomyelitis secondary to a chronic diabetic foot ulcer arises by:",
+    "options": [
+      "Viral infection",
+      "Genetic predisposition alone",
+      "Hematogenous spread of a single organism",
+      "Contiguous spread of polymicrobial infection from the ulcer to bone"
+    ],
+    "answer": 3,
+    "notes": "In adults with ulcers, osteomyelitis results from contiguous spread and is often polymicrobial; children more commonly have hematogenous spread."
+  },
+  {
+    "id": "q-132",
+    "stem": "Cardiorenal syndrome due to decompensated heart failure causes acute kidney injury primarily by:",
+    "options": [
+      "NSAID toxicity",
+      "Intrinsic nephritis",
+      "Elevated central venous pressure causing renal venous congestion and impaired perfusion",
+      "Reduced left ventricular preload"
+    ],
+    "answer": 2,
+    "notes": "In heart failure, elevated venous pressures back up into the kidneys, causing congestion and impaired filtration (cardiorenal syndrome)."
+  },
+  {
+    "id": "q-133",
+    "stem": "Paroxysmal supraventricular tachycardia (PSVT) due to AV nodal reentrant tachycardia is terminated by vagal maneuvers because they:",
+    "options": [
+      "Stimulate the SA node",
+      "Increase parasympathetic tone at the AV node, slowing conduction and interrupting the reentry circuit",
+      "Increase sympathetic tone",
+      "Decrease ventricular contractility"
+    ],
+    "answer": 1,
+    "notes": "Vagal maneuvers (e.g., carotid massage, Valsalva) increase vagal tone, slowing AV nodal conduction and terminating PSVT."
+  },
+  {
+    "id": "q-134",
+    "stem": "Anaerobic infection causing cervical lymphadenitis with a fluctuant abscess in a child is most likely due to:",
+    "options": [
+      "Tularemia",
+      "Incomplete immunizations",
+      "Poor dental hygiene and oral flora",
+      "Cat scratch disease"
+    ],
+    "answer": 2,
+    "notes": "Anaerobic bacteria (e.g., Bacteroides, Fusobacterium) causing cervical abscesses often originate from dental or oropharyngeal infections."
+  },
+  {
+    "id": "q-135",
+    "stem": "Biliary colic from gallstones is suspected in a woman with postprandial right upper quadrant pain radiating to the back lasting 30–60 minutes; the initial test should be:",
+    "options": [
+      "CT scan of the pancreas",
+      "Right upper quadrant ultrasound",
+      "Upper endoscopy",
+      "HIDA scan"
+    ],
+    "answer": 1,
+    "notes": "RUQ ultrasound is the first diagnostic test for suspected gallstones causing biliary colic."
+  },
+  {
+    "id": "q-136",
+    "stem": "In brain herniations, subfalcine herniation typically results in:",
+    "options": [
+      "Respiratory arrest",
+      "Ipsilateral dilated pupil",
+      "Leg weakness due to compression of the anterior cerebral artery",
+      "Horner syndrome"
+    ],
+    "answer": 2,
+    "notes": "Subfalcine (cingulate) herniation compresses the ACA, leading to contralateral leg weakness; pupils are usually spared."
+  },
+  {
+    "id": "q-137",
+    "stem": "Central (transtentorial) herniation leads to:",
+    "options": [
+      "No neurological changes",
+      "Unilateral blown pupil",
+      "Bilateral mid-position pupils with progressive posturing (flexor then extensor) and downward displacement of the brainstem",
+      "Ipsilateral leg weakness only"
+    ],
+    "answer": 2,
+    "notes": "Central herniation compresses the brainstem, causing bilateral fixed mid-size pupils, altered consciousness and decorticate/decerebrate posturing."
+  },
+  {
+    "id": "q-138",
+    "stem": "Tonsillar herniation causes:",
+    "options": [
+      "Horner syndrome only",
+      "Coma and respiratory arrest due to compression of the medulla through the foramen magnum",
+      "Unilateral dilated pupil",
+      "Leg weakness"
+    ],
+    "answer": 1,
+    "notes": "Downward herniation of the cerebellar tonsils compresses the medulla, leading to respiratory and cardiovascular collapse."
+  },
+  {
+    "id": "q-139",
+    "stem": "To differentiate myasthenia gravis from statin-induced myopathy, one should note that:",
+    "options": [
+      "Statin myopathy causes diplopia and ptosis",
+      "Statin myopathy improves with activity",
+      "Myasthenia causes fatigable ocular and bulbar weakness with normal creatine kinase, whereas statin myopathy causes proximal muscle weakness with elevated CK",
+      "Myasthenia always has elevated CK"
+    ],
+    "answer": 2,
+    "notes": "Myasthenia presents with fluctuating weakness of ocular, bulbar and limb muscles; CK is normal. Statin myopathy involves muscle pain and proximal weakness with elevated CK."
+  },
+  {
+    "id": "q-140",
+    "stem": "Omphalocele differs from gastroschisis in that omphalocele:",
+    "options": [
+      "Is covered by a peritoneal membrane and associated with other congenital anomalies",
+      "Contains only bowel loops with no other organs",
+      "Involves herniation of bowel loops without a covering sac",
+      "Occurs to the right of the umbilical cord"
+    ],
+    "answer": 0,
+    "notes": "Omphalocele is a midline abdominal wall defect covered by a membrane and often associated with other anomalies; gastroschisis is uncovered and lateral."
+  },
+  {
+    "id": "q-141",
+    "stem": "Which of the following is NOT an effect of positive pressure ventilation (PPV) in cardiogenic pulmonary edema?",
+    "options": [
+      "Increasing left ventricular workload",
+      "Reducing preload and afterload on the left ventricle",
+      "Improving oxygenation",
+      "Possibly lowering blood pressure"
+    ],
+    "answer": 0,
+    "notes": "PPV reduces venous return and afterload, thereby improving pulmonary edema and reducing LV workload; it may lower blood pressure but does not increase workload."
+  },
+  {
+    "id": "q-142",
+    "stem": "Cardiogenic pulmonary edema management is directed at:",
+    "options": [
+      "Increasing fluid intake",
+      "Improving left ventricular performance via diuretics and positive pressure ventilation to reduce preload",
+      "Improving right ventricular performance only",
+      "Beta-blockade without diuretics"
+    ],
+    "answer": 1,
+    "notes": "Treatment aims to reduce preload/afterload (diuretics, nitrates) and support oxygenation (PPV) to improve LV function."
+  },
+  {
+    "id": "q-143",
+    "stem": "In children with intussusception, the most common pathological lead point is:",
+    "options": [
+      "Appendicitis",
+      "Lymphoma",
+      "Enlarged Peyer’s patches",
+      "Meckel’s diverticulum"
+    ],
+    "answer": 3,
+    "notes": "Meckel’s diverticulum is a common pathological lead point for intussusception, particularly in older children."
+  },
+  {
+    "id": "q-144",
+    "stem": "The diagnostic test for Meckel’s diverticulum is:",
+    "options": [
+      "Barium enema",
+      "CT abdomen",
+      "Ultrasound alone",
+      "Nuclear scan (technetium-99m pertechnetate Meckel scan) detecting ectopic gastric mucosa"
+    ],
+    "answer": 3,
+    "notes": "Meckel scan uses 99m technetium to detect ectopic gastric mucosa within a diverticulum."
+  },
+  {
+    "id": "q-145",
+    "stem": "Lynch syndrome is associated with an increased risk of which cancers?",
+    "options": [
+      "Breast and prostate only",
+      "Pancreatic only",
+      "Colon, endometrial, and ovarian cancers",
+      "Thyroid only"
+    ],
+    "answer": 2,
+    "notes": "Hereditary nonpolyposis colorectal cancer (Lynch) is linked to colon, endometrial, ovarian and other cancers."
+  },
+  {
+    "id": "q-146",
+    "stem": "Hydatidiform moles can cause hyperthyroidism because:",
+    "options": [
+      "They compress the thyroid gland",
+      "They secrete cortisol",
+      "High hCG levels cross-react with TSH receptors, stimulating the thyroid",
+      "They produce thyroid-stimulating immunoglobulins"
+    ],
+    "answer": 2,
+    "notes": "Molar pregnancies produce large amounts of hCG, which is structurally similar to TSH and stimulates the thyroid."
+  }
+]
