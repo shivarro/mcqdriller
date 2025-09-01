@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MCQ Notes Driller</title>
   <style>
     :root{
@@ -11,21 +11,19 @@
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-    margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
-    background:linear-gradient(180deg,#0a0e13,#0b1219 40%, #0a0e13); color:var(--text);
-    display:flex; align-items:center; justify-content:center; padding:24px;
-    overflow-y:auto; -webkit-overflow-scrolling:touch;
+      margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+      background:linear-gradient(180deg,#0a0e13,#0b1219 40%, #0a0e13); color:var(--text);
+      display:flex; align-items:center; justify-content:center; padding:24px;
     }
-    
     .app{width:min(1100px,100%);} 
     .card{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.25); overflow:hidden}
-    header{display:flex; gap:12px; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid rgba(255,255,255,.06); flex-wrap:wrap}
+    header{display:flex; gap:12px; align-items:center; justify-content:space-between; padding:16px 20px; border-bottom:1px solid rgba(255,255,255,.06)}
     header h1{font-size:18px; margin:0; letter-spacing:.2px}
     header .meta{display:flex; gap:14px; align-items:center; color:var(--muted); font-size:13px}
     header .pill{background:rgba(255,255,255,.06); padding:6px 10px; border-radius:999px}
 
     /* Tabs */
-    .tabs{display:flex; gap:8px; align-items:center; flex-wrap:wrap}
+    .tabs{display:flex; gap:8px; align-items:center}
     .tab{background:transparent; color:var(--muted); border:1px solid rgba(255,255,255,.08); padding:8px 12px; border-radius:10px; cursor:pointer; font-weight:700}
     .tab.active{background:var(--accent); color:#08121b; border-color:transparent}
     .ghost{background:transparent; color:var(--muted)}
@@ -40,18 +38,12 @@
     /* Views */
     .view{display:none; padding:20px}
     .view.active{display:block}
-    .panel{border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:16px; margin-bottom:14px}
+    .panel{border:1px solid rgba(255,255,255,.06); border-radius:14px; padding:16px}
     .panel h2{font-size:16px; margin:0 0 10px 0; color:#cfe6ff}
     .muted{color:var(--muted)}
     .small{font-size:12px}
     .kbd{font-family:ui-monospace,Consolas,monospace; background:#0d1420; border:1px solid rgba(255,255,255,.1); padding:2px 6px; border-radius:6px}
     .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
-    .stack{display:grid; gap:8px}
-
-    input[type="text"], input[type="search"], input[type="file"], select{
-      width:100%; background:#0e141d; color:var(--text); border:1px solid rgba(255,255,255,.08); border-radius:10px; padding:10px 12px; font-family:inherit;
-    }
-    label{font-size:12px; color:var(--muted)}
 
     textarea{width:100%; min-height:260px; resize:vertical; background:#0e141d; color:var(--text); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:12px; font-family:ui-monospace,Consolas,monospace}
 
@@ -59,33 +51,20 @@
     .quizWrap{max-width:900px; margin:0 auto}
     .question{font-size:20px; line-height:1.4; margin-bottom:14px}
     .options{display:grid; gap:10px}
-    .opt{background:#101722; border:1px solid rgba(255,255,255,.08); padding:14px 14px; border-radius:12px; text-align:left; font-weight:700; color:white; min-height:48px}
+    .opt{background:#101722; border:1px solid rgba(255,255,255,.08); padding:12px 14px; border-radius:12px; text-align:left; font-weight:600; color:white; outline:0}
     .opt.correct{border-color:rgba(55,211,153,.8); box-shadow:0 0 0 2px rgba(55,211,153,.25) inset}
     .opt.wrong{border-color:rgba(255,107,107,.8); box-shadow:0 0 0 2px rgba(255,107,107,.25) inset}
+    .opt.hovered{outline:2px dashed rgba(184,241,255,.9); outline-offset:2px}
     .notes{margin-top:14px; background:#0e141d; border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:12px; color:#c9d7e5; white-space:pre-wrap}
-    .footer{display:flex; justify-content:space-between; align-items:center; margin-top:14px; gap:12px; flex-wrap:wrap}
+    .footer{display:flex; justify-content:space-between; align-items:center; margin-top:14px}
     .progress{height:10px; background:#0f1722; border:1px solid rgba(255,255,255,.06); border-radius:999px; overflow:hidden}
     .bar{height:100%; background:linear-gradient(90deg,#68b2ff,#b8f1ff)}
     .center{display:flex; align-items:center; justify-content:center}
     .hidden{display:none !important}
 
-    /* Lists */
-    .list{display:grid; gap:8px}
-    .list-item{display:flex; justify-content:space-between; align-items:center; gap:10px; background:#0f1621; border:1px solid rgba(255,255,255,.06); border-radius:10px; padding:10px 12px}
-    .list-item .meta{font-size:12px; color:var(--muted)}
-
-    /* Mobile tweaks */
-    @media (max-width: 640px){
-      body{padding:10px}
-      header{gap:8px}
-      header h1{font-size:16px}
-      .opt{padding:16px; font-size:15px}
-      .question{font-size:18px}
-      .panel{padding:14px}
-      .row button{flex:1}
-      .meta{width:100%; justify-content:space-between}
-      body{padding:10px; display:block;}  /* ensures scroll on small screens */
-    }
+    .inline{display:inline-flex; gap:8px; align-items:center}
+    input[type="number"]{background:#0e141d; color:var(--text); border:1px solid rgba(255,255,255,.08); border-radius:10px; padding:6px 8px; width:80px}
+    .help{font-size:12px; color:var(--muted); margin-top:6px}
   </style>
 </head>
 <body>
@@ -98,7 +77,13 @@
       </div>
       <div class="meta">
         <span class="pill" id="progressPill">0 / 0</span>
-        <span class="pill">Wrong: <span id="wrongCount">0</span> / 2</span>
+        <span class="pill">Wrong: <span id="wrongCount">0</span> / <span id="wrongLimitLabel">2</span></span>
+        <label class="pill" style="display:flex;gap:6px;align-items:center">
+          <span class="small muted">Set</span>
+          <select id="setSelect" style="background:#0e141d;color:var(--text);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:4px 6px">
+            <option value="" disabled selected>Loading…</option>
+          </select>
+        </label>
         <button class="soft" id="resetBtn" title="Restart the current set (R)">Restart</button>
       </div>
     </header>
@@ -106,7 +91,7 @@
     <!-- IMPORT VIEW -->
     <section id="view-import" class="view active">
       <div class="panel">
-        <h2>Import Questions</h2>
+        <h2>1) Paste your generated questions (JSON)</h2>
         <p class="muted small">Schema per item: { "id": "unique", "stem": "question text", "options": ["A","B","C","D"], "answer": 0, "notes": "your source notes here" }</p>
         <textarea id="inputArea" placeholder='[
   {
@@ -123,68 +108,46 @@
           <button class="ghost" id="downloadTemplateBtn">Download JSON Template</button>
           <button class="ok" id="goDrillBtn" title="Go to Drill (D)">Go to Drill</button>
         </div>
+        <div class="help">Set your fail threshold (auto‑restart when wrong ≥ limit):
+          <div class="inline" style="margin-top:8px">
+            <label for="wrongLimitInput" class="small muted">Wrong limit</label>
+            <input id="wrongLimitInput" type="number" min="1" max="50" step="1" />
+            <button id="saveWrongLimitBtn" class="soft small">Save</button>
+            <span id="saveHint" class="small muted"></span>
+          </div>
+        </div>
+        <p class="muted small" style="margin-top:8px">
+          Tips: Paste JSON from ChatGPT → <span class="kbd">Load Questions</span>. Options must be exactly 4.
+          <b>If wrong answers reach your limit, the set auto‑restarts.</b>
+        </p>
+        <div class="panel" style="margin-top:12px">
+          <h2>🎮 Controller / Keyboard quick map</h2>
+          <div class="small muted">
+            Keyboard: <span class="kbd">1</span>–<span class="kbd">4</span> choose · <span class="kbd">←/→</span> Prev/Next · <span class="kbd">R</span> Restart · <span class="kbd">I</span>/<span class="kbd">D</span> switch views
+            <br/>Gamepad (Nintendo/standard): D‑pad ↑/↓ move selection · <b>A</b> choose · <b>B</b>/Start Next · <b>X</b>/L Prev · <b>R</b> Next · <b>Select</b> Restart · <b>Plus</b> Drill · <b>Minus</b> Import
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Library (IndexedDB) -->
+    <section class="view" style="padding-top:0">
       <div class="panel">
-        <h2>Library (Save / Load)</h2>
-        <div class="stack">
-          <div class="row" style="align-items:flex-end">
-            <div style="flex:2">
-              <label for="setName">Set name</label>
-              <input id="setName" type="text" placeholder="e.g., NBME 11" />
-            </div>
-            <div class="row" style="flex:3">
-              <button class="ok" id="saveToLibraryBtn">Save to Library</button>
-              <button class="soft" id="exportBtn">Export to File (.json)</button>
-              <input id="filePicker" type="file" accept="application/json,.json" class="hidden" />
-              <button class="soft" id="importFileBtn">Import from File</button>
-            </div>
-          </div>
-          <div class="row" style="align-items:center">
-            <input id="searchLibrary" type="search" placeholder="Search saved sets..." style="flex:1" />
-            <button class="ghost" id="refreshLibraryBtn">Refresh</button>
-          </div>
-          <div class="list" id="libraryList"></div>
-          <p class="muted small">Saved sets live in your browser (IndexedDB). Export/import to move between devices.</p>
-        </div>
+        <h2>📁 Available Question Sets (auto‑loaded from <span class="kbd">/questions/index.json</span>)</h2>
+        <div id="setsList" class="small muted">Looking for sets…</div>
       </div>
-
-      <!-- Optional: Local Folder (File System Access API) -->
-      <div class="panel">
-        <h2>Local Folder (Optional)</h2>
-        <p class="muted small">Connect a folder (Chromium browsers) to list and open <span class="kbd">*.json</span> files directly. iOS Safari/Firefox may not support this yet.</p>
-        <div class="row">
-          <button id="connectFolderBtn" class="soft">Connect Folder</button>
-          <button id="refreshFolderBtn" class="ghost">Refresh Folder</button>
-          <span id="folderStatus" class="muted small">No folder connected</span>
-        </div>
-        <div class="stack" style="margin-top:10px">
-          <div class="list" id="folderList"></div>
-          <div class="row" style="align-items:flex-end">
-            <div style="flex:2">
-              <label for="fileName">Save current set as file</label>
-              <input id="fileName" type="text" placeholder="NBME 11.json" />
-            </div>
-            <button id="saveToFolderBtn" class="ok">Save to Connected Folder</button>
-          </div>
-        </div>
-      </div>
-
-      <p class="muted small">Tips: Paste JSON from ChatGPT → <span class="kbd">Load Questions</span>. Options must be exactly 4. If you get 3 wrong at any time, the set auto‑restarts.</p>
     </section>
 
     <!-- DRILL VIEW -->
     <section id="view-drill" class="view">
       <div class="quizWrap">
         <div class="panel">
-          <h2>Drill</h2>
+          <h2>2) Drill</h2>
           <div id="quizBox" class="hidden">
             <div class="question" id="stem"></div>
             <div class="options" id="options"></div>
             <div class="notes hidden" id="notes"></div>
             <div class="footer">
-              <div style="flex:1; margin-right:12px; min-width:220px">
+              <div style="flex:1; margin-right:12px">
                 <div class="progress"><div class="bar" id="bar" style="width:0%"></div></div>
                 <div class="small muted" id="statusText" style="margin-top:6px"></div>
               </div>
@@ -198,28 +161,26 @@
             <div class="muted">No questions loaded yet. Go to <span class="kbd">Import</span> to load a set.</div>
           </div>
         </div>
-
-      
+      </div>
+    </section>
+  </div>
 
   <script>
-  // ==========================
-  // State
-  // ==========================
+  // --- State ---
   let QUESTIONS = [];
   let order = [];
-  let idx = 0;          // index into order
-  let answered = new Map(); // id -> {chosen, correct}
+  let idx = 0;              // index into order
+  let answered = new Map();  // id -> {chosen, correct}
   let wrong = 0;
+  let maxWrong = 2;          // configurable limit
+  let hoverIndex = 0;        // controller/keyboard selection cursor (0..3)
 
-  // IndexedDB constants
-  const DB_NAME = 'mcq-driller';
-  const DB_VERSION = 1;
-  const STORE_SETS = 'sets';
-  const STORE_FS = 'fs'; // to keep a directory handle
+  // persist wrong limit
+  const LS_KEY = 'mcq_wrong_limit_v1';
+  const savedLimit = parseInt(localStorage.getItem(LS_KEY), 10);
+  if(!Number.isNaN(savedLimit) && savedLimit > 0){ maxWrong = savedLimit; }
 
-  // ==========================
-  // Elements
-  // ==========================
+  // --- Elements ---
   const els = {
     // tabs/views
     tabImport: document.getElementById('tab-import'),
@@ -233,24 +194,14 @@
     loadBtn: document.getElementById('loadBtn'),
     demoBtn: document.getElementById('demoBtn'),
     downloadTemplateBtn: document.getElementById('downloadTemplateBtn'),
+    wrongLimitInput: document.getElementById('wrongLimitInput'),
+    wrongLimitLabel: document.getElementById('wrongLimitLabel'),
+    saveWrongLimitBtn: document.getElementById('saveWrongLimitBtn'),
+    saveHint: document.getElementById('saveHint'),
 
-    // library
-    setName: document.getElementById('setName'),
-    saveToLibraryBtn: document.getElementById('saveToLibraryBtn'),
-    exportBtn: document.getElementById('exportBtn'),
-    importFileBtn: document.getElementById('importFileBtn'),
-    filePicker: document.getElementById('filePicker'),
-    searchLibrary: document.getElementById('searchLibrary'),
-    refreshLibraryBtn: document.getElementById('refreshLibraryBtn'),
-    libraryList: document.getElementById('libraryList'),
-
-    // folder
-    connectFolderBtn: document.getElementById('connectFolderBtn'),
-    refreshFolderBtn: document.getElementById('refreshFolderBtn'),
-    folderStatus: document.getElementById('folderStatus'),
-    folderList: document.getElementById('folderList'),
-    fileName: document.getElementById('fileName'),
-    saveToFolderBtn: document.getElementById('saveToFolderBtn'),
+    // sets
+    setSelect: document.getElementById('setSelect'),
+    setsList: document.getElementById('setsList'),
 
     // drill
     quizBox: document.getElementById('quizBox'),
@@ -267,9 +218,11 @@
     resetBtn: document.getElementById('resetBtn'),
   };
 
-  // ==========================
-  // View helpers
-  // ==========================
+  // initialize wrong limit UI
+  els.wrongLimitInput.value = maxWrong;
+  els.wrongLimitLabel.textContent = maxWrong;
+
+  // --- View helpers ---
   function setActiveView(name){
     const isImport = name === 'import';
     els.viewImport.classList.toggle('active', isImport);
@@ -278,20 +231,85 @@
     els.tabDrill.classList.toggle('active', !isImport);
   }
 
-  function shuffle(a){
-    for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}
-    return a;
+  // --- Utils ---
+  // Auto-load all sets listed in /questions/index.json
+  const SETS = new Map(); // key -> { title, file, items }
+
+  async function fetchJSON(url){
+    const resp = await fetch(url, { cache: 'no-store' });
+    if(!resp.ok) throw new Error(`${url} → HTTP ${resp.status}`);
+    return await resp.json();
   }
 
-  function syncNextState() {
-    const current = QUESTIONS[order[idx]];
-    const seen = answered.get(current.id);
-    setNextBtnState(!seen);
+  function normalizeSetPayload(payload, fallbackTitle){
+    // Accept either {title, questions:[...]} or {title, items:[...]} or array
+    if(Array.isArray(payload)){
+      return { title: fallbackTitle, items: payload };
+    }
+    const title = payload.title || fallbackTitle || 'Untitled';
+    const items = payload.questions || payload.items || payload.data || payload.qs || payload;
+    return { title, items };
   }
 
-  // ==========================
-  // JSON Parse/Load
-  // ==========================
+  async function loadIndex(){
+    try{
+      const idx = await fetchJSON('questions/index.json');
+      let entries = [];
+      if(Array.isArray(idx)){
+        if(idx.length && typeof idx[0] === 'string'){
+          entries = idx.map(f=>({ file: String(f), title: null }));
+        } else {
+          entries = idx.map(o=>({ file: o.file || o.path || o.url || '', title: o.title || null })).filter(e=>e.file);
+        }
+      } else if(idx && idx.files){
+        entries = idx.files.map(f=> typeof f === 'string' ? ({file:f, title:null}) : ({file:f.file, title:f.title||null}));
+      }
+      if(!entries.length) throw new Error('index.json has no entries');
+
+      // populate selector and list
+      els.setSelect.innerHTML = '';
+      els.setsList.innerHTML = '';
+      for(const entry of entries){
+        const file = entry.file.startsWith('questions/') ? entry.file : `questions/${entry.file}`;
+        try{
+          const payload = await fetchJSON(file);
+          const base = file.split('/').pop().replace(/\.json$/i,'');
+          const { title, items } = normalizeSetPayload(payload, entry.title || base);
+          SETS.set(base, { title, file, items });
+
+          // add to dropdown
+          const opt = document.createElement('option');
+          opt.value = base; opt.textContent = title;
+          els.setSelect.appendChild(opt);
+
+          // add to list view
+          const row = document.createElement('div');
+          row.innerHTML = `<b>${title}</b> <span class="muted">(${base}.json)</span>`;
+          els.setsList.appendChild(row);
+        } catch(err){
+          console.error('Failed loading', file, err);
+        }
+      }
+
+      // auto-select first set
+      const firstKey = [...SETS.keys()][0];
+      if(firstKey){ els.setSelect.value = firstKey; applySet(firstKey); }
+      else { els.setSelect.innerHTML = '<option disabled selected>No sets found</option>'; els.setsList.textContent='No sets found.'; }
+    } catch(err){
+      console.error('Index load error', err);
+      els.setSelect.innerHTML = '<option disabled selected>index.json missing</option>';
+      els.setsList.textContent = 'Could not load /questions/index.json. Create one listing your JSON files.';
+    }
+  }
+
+  function applySet(key){
+    const set = SETS.get(key);
+    if(!set){ return; }
+    const text = JSON.stringify(set.items);
+    loadQuestions(text); // reuse existing flow
+  }
+  function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]} return a; }
+
   function parseInput(text){
     try{
       const data = JSON.parse(text);
@@ -319,28 +337,13 @@
     }
   }
 
-
-// helper: shuffle options and remap answer for a list of questions
-  function shuffleOptionsOnLoad(list){
-    return list.map(q => {
-      const pairs = q.options.map((text, i) => ({ text, i }));
-      shuffle(pairs); // existing shuffle()
-      const options = pairs.map(p => p.text);
-      const answer = pairs.findIndex(p => p.i === q.answer);
-      return { ...q, options, answer };
-    });
-  }
-  // LOAD FROM JSON (Import)
   function loadQuestions(jsonText){
     const data = parseInput(jsonText);
     if(!data) return;
-  
-    // shuffle options BEFORE anything renders
-    QUESTIONS = shuffleOptionsOnLoad(data.map(q => ({ ...q })));
-  
+    QUESTIONS = data.map(q=>({...q}));
     order = [...Array(QUESTIONS.length).keys()];
     shuffle(order);
-    idx = 0; answered.clear(); wrong = 0;
+    idx = 0; answered.clear(); wrong = 0; hoverIndex = 0;
     els.wrongCount.textContent = wrong;
     els.emptyState.classList.add('hidden');
     els.quizBox.classList.remove('hidden');
@@ -348,15 +351,10 @@
     setActiveView('drill');
   }
 
-    // Shuffle options per question and remap answer
-  QUESTIONS = QUESTIONS.map(q => {
-    const pairs = q.options.map((text, i) => ({ text, i }));
-    shuffle(pairs); // your existing shuffle()
-    const newOptions = pairs.map(p => p.text);
-    const newAnswer = pairs.findIndex(p => p.i === q.answer);
-    return { ...q, options: newOptions, answer: newAnswer };
-  });
-
+  function setNextBtnState(disabled){
+    els.nextBtn.classList.toggle('disabled', disabled);
+    els.nextBtn.disabled = disabled;
+  }
 
   function render(){
     const current = QUESTIONS[order[idx]];
@@ -374,24 +372,26 @@
 
     current.options.forEach((opt, i)=>{
       const b = document.createElement('button');
-      b.className = 'opt'; b.textContent = opt;
+      b.className = 'opt'; b.textContent = opt; b.setAttribute('data-index', i);
       if(seen){
         b.classList.add(i===current.answer ? 'correct' : (i===seen.chosen ? 'wrong' : ''));
         b.disabled = true;
+      } else {
+        if(i === hoverIndex) b.classList.add('hovered');
       }
       b.addEventListener('click', ()=> choose(i));
       els.options.appendChild(b);
     });
 
     els.prevBtn.disabled = idx===0;
-    setNextState();
+    setNextBtnState(!seen);
 
     if(seen){ showNotes(current); }
   }
 
-  function setNextBtnState(disabled){
-    els.nextBtn.classList.toggle('disabled', disabled);
-    els.nextBtn.disabled = disabled;
+  function showNotes(q){
+    els.notes.classList.remove('hidden');
+    els.notes.textContent = q.notes || '(No notes provided)';
   }
 
   function choose(i){
@@ -402,8 +402,8 @@
 
     if(!correct){
       wrong += 1; els.wrongCount.textContent = wrong;
-      if(wrong>=3){
-        alert('❌ You missed 3 or more. Restarting the set.');
+      if(wrong >= maxWrong){
+        alert(`❌ You reached your wrong limit (${maxWrong}). Restarting the set.`);
         restart();
         return;
       }
@@ -414,245 +414,51 @@
       b.disabled = true;
       b.classList.toggle('correct', k===current.answer);
       if(k===i && !correct) b.classList.add('wrong');
+      b.classList.remove('hovered');
     });
 
     showNotes(current);
     setNextBtnState(false);
   }
 
-  function showNotes(q){
-    els.notes.classList.remove('hidden');
-    els.notes.textContent = q.notes || '(No notes provided)';
-  }
-
   function next(){
     if(idx < order.length-1){
-      idx += 1; render();
+      idx += 1; hoverIndex = 0; render();
     } else {
       // finished
       els.bar.style.width = '100%';
       const total = QUESTIONS.length;
       const correctCount = [...answered.values()].filter(v=>v.correct).length;
-      const msg = wrong>=3
-        ? '❌ Failed (auto-restart triggered earlier)'
-        : (wrong>2 ? '❌ Failed' : '✅ Passed');
+      const passed = wrong < maxWrong; // pass if you did NOT hit the limit
+      const msg = passed ? '✅ Passed' : '❌ Failed';
       alert(`${msg}\nCorrect: ${correctCount}/${total}\nWrong: ${wrong}`);
-      if(wrong>2){ restart(); } else {
+      if(!passed){ restart(); } else {
         if(confirm('Run the set again (reshuffle)?')){ restart(true); }
       }
     }
   }
 
-  function prev(){ if(idx>0){ idx -= 1; render(); } }
+  function prev(){ if(idx>0){ idx -= 1; hoverIndex = 0; render(); } }
 
   function restart(reshuffle=false){
-    idx = 0; answered.clear(); wrong = 0; els.wrongCount.textContent = wrong;
+    idx = 0; answered.clear(); wrong = 0; hoverIndex = 0; els.wrongCount.textContent = wrong;
     if(reshuffle){ shuffle(order); }
     render();
   }
 
-  // ==========================
-  // IndexedDB Helpers (tiny)
-  // ==========================
-  function idb(){
-    return new Promise((resolve, reject)=>{
-      const open = indexedDB.open(DB_NAME, DB_VERSION);
-      open.onupgradeneeded = ()=>{
-        const db = open.result;
-        if(!db.objectStoreNames.contains(STORE_SETS)){
-          db.createObjectStore(STORE_SETS, { keyPath: 'name' });
-        }
-        if(!db.objectStoreNames.contains(STORE_FS)){
-          db.createObjectStore(STORE_FS, { keyPath: 'key' });
-        }
-      };
-      open.onsuccess = ()=> resolve(open.result);
-      open.onerror = ()=> reject(open.error);
-    });
-  }
+  // --- Events: Tabs / Nav ---
+  // load sets index on boot
+  window.addEventListener('DOMContentLoaded', loadIndex);
 
-  function tx(store, mode='readonly'){ return idb().then(db=>db.transaction(store, mode)); }
+  // change set from dropdown
+  els.setSelect && els.setSelect.addEventListener('change', (e)=> applySet(e.target.value));
 
-  async function idbPut(store, value){
-    const t = await tx(store, 'readwrite');
-    await new Promise((res,rej)=>{ const r = t.objectStore(store).put(value); r.onsuccess=()=>res(); r.onerror=()=>rej(r.error); });
-    await new Promise((res,rej)=>{ t.oncomplete=()=>res(); t.onerror=()=>rej(t.error); });
-  }
-  async function idbGet(store, key){
-    const t = await tx(store, 'readonly');
-    return await new Promise((res,rej)=>{ const r = t.objectStore(store).get(key); r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); });
-  }
-  async function idbDelete(store, key){
-    const t = await tx(store, 'readwrite');
-    await new Promise((res,rej)=>{ const r = t.objectStore(store).delete(key); r.onsuccess=()=>res(); r.onerror=()=>rej(r.error); });
-    await new Promise((res,rej)=>{ t.oncomplete=()=>res(); t.onerror=()=>rej(t.error); });
-  }
-  async function idbAll(store){
-    const t = await tx(store, 'readonly');
-    return await new Promise((res,rej)=>{ const r = t.objectStore(store).getAll(); r.onsuccess=()=>res(r.result||[]); r.onerror=()=>rej(r.error); });
-  }
-
-  // ==========================
-  // Library (IndexedDB)
-  // ==========================
-  async function refreshLibrary(filter=''){
-    const sets = await idbAll(STORE_SETS);
-    const q = filter.trim().toLowerCase();
-    const list = (q? sets.filter(s=>s.name.toLowerCase().includes(q)) : sets)
-      .sort((a,b)=> (b.updatedAt||0)-(a.updatedAt||0));
-    els.libraryList.innerHTML = '';
-    if(list.length===0){
-      const empty = document.createElement('div'); empty.className='muted small'; empty.textContent='No saved sets yet.'; els.libraryList.appendChild(empty); return;
-    }
-    list.forEach(s=>{
-      const item = document.createElement('div'); item.className='list-item';
-      const left = document.createElement('div');
-      const title = document.createElement('div'); title.style.fontWeight='700'; title.textContent=s.name;
-      const meta = document.createElement('div'); meta.className='meta'; meta.textContent=`${(s.questions||[]).length} items • ${new Date(s.updatedAt||Date.now()).toLocaleString()}`;
-      left.appendChild(title); left.appendChild(meta);
-
-      const row = document.createElement('div'); row.className='row';
-      const loadBtn = document.createElement('button'); loadBtn.className='ok'; loadBtn.textContent='Load';
-      loadBtn.addEventListener('click', ()=> loadFromLibrary(s.name));
-
-      const renameBtn = document.createElement('button'); renameBtn.className='soft'; renameBtn.textContent='Rename';
-      renameBtn.addEventListener('click', async ()=>{
-        const nn = prompt('Rename set to:', s.name);
-        if(!nn || nn===s.name) return;
-        const exists = await idbGet(STORE_SETS, nn);
-        if(exists){ alert('A set with that name already exists.'); return; }
-        await idbDelete(STORE_SETS, s.name);
-        await idbPut(STORE_SETS, {name: nn, questions: s.questions, updatedAt: s.updatedAt});
-        refreshLibrary(els.searchLibrary.value);
-      });
-
-      const delBtn = document.createElement('button'); delBtn.className='danger'; delBtn.textContent='Delete';
-      delBtn.addEventListener('click', async ()=>{
-        if(confirm(`Delete "${s.name}"?`)){
-          await idbDelete(STORE_SETS, s.name); refreshLibrary(els.searchLibrary.value);
-        }
-      });
-
-      row.appendChild(loadBtn); row.appendChild(renameBtn); row.appendChild(delBtn);
-      item.appendChild(left); item.appendChild(row);
-      els.libraryList.appendChild(item);
-    });
-  }
-
-  async function saveToLibrary(){
-    const name = (els.setName.value||'').trim();
-    if(!name){ alert('Please enter a set name (e.g., NBME 11).'); return; }
-    if(!Array.isArray(QUESTIONS) || QUESTIONS.length===0){ alert('Load questions first before saving.'); return; }
-    await idbPut(STORE_SETS, { name, questions: QUESTIONS, updatedAt: Date.now() });
-    refreshLibrary(els.searchLibrary.value);
-    alert(`Saved "${name}" to Library.`);
-  }
-
-
-  // LOAD FROM LIBRARY
-  async function loadFromLibrary(name){
-    const rec = await idbGet(STORE_SETS, name);
-    if(!rec){ alert('Set not found.'); return; }
-  
-    // shuffle options even for saved sets
-    QUESTIONS = shuffleOptionsOnLoad(rec.questions || []);
-  
-    order = [...Array(QUESTIONS.length).keys()];
-    shuffle(order);
-    idx = 0; answered.clear(); wrong = 0; els.wrongCount.textContent = wrong;
-    els.emptyState.classList.add('hidden');
-    els.quizBox.classList.remove('hidden');
-    render();
-    setActiveView('drill');
-  }
-  // ==========================
-  // Export / Import Files
-  // ==========================
-  function exportToFile(){
-    if(!QUESTIONS.length){ alert('Nothing to export. Load questions first.'); return; }
-    const name = (els.setName.value||'MCQ_Set') + '.json';
-    const blob = new Blob([JSON.stringify(QUESTIONS, null, 2)], {type:'application/json'});
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; a.click();
-    setTimeout(()=> URL.revokeObjectURL(a.href), 2000);
-  }
-
-  function importFromFile(){ els.filePicker.click(); }
-  els.filePicker.addEventListener('change', async (e)=>{
-    const f = e.target.files && e.target.files[0]; if(!f) return;
-    const text = await f.text();
-    loadQuestions(text);
-    const base = f.name.replace(/\.json$/i,'');
-    if(base && !els.setName.value) els.setName.value = base;
-    e.target.value = '';
-  });
-
-  // ==========================
-  // Optional: Local Folder (File System Access API)
-  // ==========================
-  function fsSupported(){ return 'showDirectoryPicker' in window; }
-
-  async function connectFolder(){
-    if(!fsSupported()){ alert('Your browser does not support the File System Access API. Use Export/Import instead.'); return; }
-    try{
-      const dir = await window.showDirectoryPicker({ mode: 'readwrite' });
-      await idbPut(STORE_FS, { key: 'dir', handle: dir });
-      els.folderStatus.textContent = 'Folder connected';
-      await refreshFolderList();
-    }catch(err){ if(err?.name!=='AbortError') console.error(err); }
-  }
-
-  async function getDir(){ const rec = await idbGet(STORE_FS,'dir'); return rec?.handle; }
-
-  async function refreshFolderList(){
-    const dir = await getDir();
-    els.folderList.innerHTML = '';
-    if(!dir){ els.folderStatus.textContent = 'No folder connected'; return; }
-    els.folderStatus.textContent = 'Folder connected';
-    try{
-      for await (const [name, handle] of dir.entries()){
-        if(!name.toLowerCase().endsWith('.json')) continue;
-        const file = await handle.getFile();
-        const item = document.createElement('div'); item.className='list-item';
-        const left = document.createElement('div');
-        const title = document.createElement('div'); title.style.fontWeight='700'; title.textContent = name;
-        const meta = document.createElement('div'); meta.className='meta'; meta.textContent = `${(file.size/1024).toFixed(1)} KB • ${new Date(file.lastModified).toLocaleString()}`;
-        left.appendChild(title); left.appendChild(meta);
-        const row = document.createElement('div'); row.className='row';
-        const openBtn = document.createElement('button'); openBtn.className='ok'; openBtn.textContent='Open';
-        openBtn.addEventListener('click', async ()=>{
-          const t = await file.text();
-          loadQuestions(t);
-          const base = name.replace(/\.json$/i,''); if(base) els.setName.value = base;
-        });
-        row.appendChild(openBtn); item.appendChild(left); item.appendChild(row);
-        els.folderList.appendChild(item);
-      }
-    }catch(e){
-      console.error(e); els.folderStatus.textContent = 'Folder permission lost — click Connect Folder again.';
-    }
-  }
-
-  async function saveToFolder(){
-    if(!QUESTIONS.length){ alert('Load questions first.'); return; }
-    const dir = await getDir(); if(!dir){ alert('Connect a folder first.'); return; }
-    let fname = (els.fileName.value||'').trim(); if(!fname) fname = ((els.setName.value||'MCQ_Set') + '.json');
-    if(!/\.json$/i.test(fname)) fname += '.json';
-    const handle = await dir.getFileHandle(fname, { create:true });
-    const w = await handle.createWritable();
-    await w.write(JSON.stringify(QUESTIONS, null, 2));
-    await w.close();
-    els.folderStatus.textContent = `Saved ${fname}`;
-    await refreshFolderList();
-  }
-
-  // ==========================
-  // Events: Tabs / Nav
-  // ==========================
+  // (existing)
   els.tabImport.addEventListener('click', ()=> setActiveView('import'));
   els.tabDrill.addEventListener('click', ()=> setActiveView('drill'));
   els.goDrillBtn.addEventListener('click', ()=> setActiveView('drill'));
 
-  // Import
+  // --- Events: Import ---
   els.loadBtn.addEventListener('click', ()=> loadQuestions(els.inputArea.value.trim()));
   els.demoBtn.addEventListener('click', ()=>{
     const demo = [
@@ -665,36 +471,42 @@
     els.inputArea.value = JSON.stringify(demo, null, 2);
     loadQuestions(els.inputArea.value);
   });
+
   els.downloadTemplateBtn.addEventListener('click', ()=>{
-    const tmpl = [ {id:'unique-id-1', stem:'Your question here', options:['A','B','C','D'], answer:0, notes:'Paste the relevant notes/explanation here.'} ];
+    const tmpl = [
+      {id:'unique-id-1', stem:'Your question here', options:['A','B','C','D'], answer:0, notes:'Paste the relevant notes/explanation here.'}
+    ];
     const blob = new Blob([JSON.stringify(tmpl,null,2)], {type:'application/json'});
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'mcq_template.json'; a.click();
-    setTimeout(()=> URL.revokeObjectURL(a.href), 2000);
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'mcq_template.json';
+    a.click();
   });
 
-  // Library
-  els.saveToLibraryBtn.addEventListener('click', saveToLibrary);
-  els.refreshLibraryBtn.addEventListener('click', ()=> refreshLibrary(els.searchLibrary.value));
-  els.searchLibrary.addEventListener('input', (e)=> refreshLibrary(e.target.value));
-  els.exportBtn.addEventListener('click', exportToFile);
-  els.importFileBtn.addEventListener('click', importFromFile);
+  // save wrong limit
+  function saveLimit(){
+    const v = parseInt(els.wrongLimitInput.value, 10);
+    if(Number.isNaN(v) || v < 1){ els.saveHint.textContent = 'Enter a number ≥ 1'; return; }
+    maxWrong = v; localStorage.setItem(LS_KEY, String(v));
+    els.wrongLimitLabel.textContent = maxWrong;
+    els.saveHint.textContent = 'Saved!';
+    setTimeout(()=> els.saveHint.textContent = '', 1200);
+  }
+  els.saveWrongLimitBtn.addEventListener('click', saveLimit);
+  els.wrongLimitInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter') saveLimit(); });
 
-  // Folder
-  els.connectFolderBtn.addEventListener('click', connectFolder);
-  els.refreshFolderBtn.addEventListener('click', refreshFolderList);
-  els.saveToFolderBtn.addEventListener('click', saveToFolder);
-
-  // Drill
+  // --- Events: Drill ---
   els.nextBtn.addEventListener('click', next);
   els.prevBtn.addEventListener('click', prev);
   els.resetBtn.addEventListener('click', ()=> restart(true));
 
-  // Keyboard shortcuts
+  // --- Keyboard shortcuts ---
   document.addEventListener('keydown', (e)=>{
-    if(e.key.toLowerCase()==='i') setActiveView && setActiveView('import');
-    if(e.key.toLowerCase()==='d') setActiveView && setActiveView('drill');
+    const key = e.key.toLowerCase();
+    if(key==='i') setActiveView('import');
+    if(key==='d') setActiveView('drill');
 
-    if(e.key==='ArrowRight'){ if(!els.nextBtn.disabled) next(); }
+    if(e.key==='ArrowRight' && !els.nextBtn.disabled) next();
     if(e.key==='ArrowLeft') prev();
 
     if(['1','2','3','4'].includes(e.key)){
@@ -702,23 +514,98 @@
       const current = QUESTIONS[order[idx]];
       if(current && !answered.get(current.id)) choose(n);
     }
-    if(e.key.toLowerCase()==='r') restart(true);
+
+    if(e.key==='ArrowUp') moveHover(-1);
+    if(e.key==='ArrowDown') moveHover(1);
+    if(e.key==='enter'){
+      const current = QUESTIONS[order[idx]];
+      if(current && !answered.get(current.id)) choose(hoverIndex);
+    }
+    if(key==='r') restart(true);
   });
 
-  // Boot: populate library list & folder status
-  refreshLibrary();
-  (async ()=>{
-    if(fsSupported()){
-      const dir = await getDir();
-      els.folderStatus.textContent = dir ? 'Folder connected' : 'No folder connected';
-      if(dir) refreshFolderList();
-    } else {
-      els.connectFolderBtn.classList.add('disabled');
-      els.refreshFolderBtn.classList.add('disabled');
-      els.saveToFolderBtn.classList.add('disabled');
-      els.folderStatus.textContent = 'File System Access API not supported';
+  function moveHover(delta){
+    const current = QUESTIONS[order[idx]];
+    if(!current) return; // nothing loaded
+    if(answered.get(current.id)) return; // already answered, ignore
+    hoverIndex = (hoverIndex + delta + 4) % 4;
+    [...els.options.children].forEach((b, k)=>{
+      b.classList.toggle('hovered', k === hoverIndex);
+    });
+  }
+
+  // --- Gamepad support ---
+  let gpRAF = null;
+  let prevButtons = [];
+  let axisCooldown = 0; // debounce stick/D-pad axes
+
+  function startGamepadLoop(){
+    if(gpRAF) return;
+    const loop = (ts)=>{
+      const pads = navigator.getGamepads ? navigator.getGamepads() : [];
+      const gp = pads && pads[0]; // use first connected controller
+      if(gp){
+        handleGamepad(gp, ts);
+      }
+      gpRAF = requestAnimationFrame(loop);
+    };
+    gpRAF = requestAnimationFrame(loop);
+  }
+
+  function stopGamepadLoop(){ if(gpRAF){ cancelAnimationFrame(gpRAF); gpRAF = null; } }
+
+  window.addEventListener('gamepadconnected', (e)=>{ startGamepadLoop(); console.log('Gamepad connected', e.gamepad); });
+  window.addEventListener('gamepaddisconnected', (e)=>{ console.log('Gamepad disconnected', e.gamepad); if(!navigator.getGamepads().some(g=>g)) stopGamepadLoop(); });
+
+  function pressedEdge(i, buttons){ return buttons[i] && buttons[i].pressed && !(prevButtons[i] && prevButtons[i].pressed); }
+
+  function handleGamepad(gp, ts){
+    const btn = gp.buttons;
+
+    // Axes: use D-pad axes when exposed as axes (rare) or sticks for navigation
+    // debounce axes to avoid rapid repeats
+    axisCooldown = axisCooldown - 1;
+    const axY = (gp.axes && gp.axes.length>1) ? gp.axes[1] : 0; // left stick vertical
+    if(axisCooldown <= 0){
+      if(axY < -0.5){ moveHover(-1); axisCooldown = 8; }
+      else if(axY > 0.5){ moveHover(1); axisCooldown = 8; }
     }
-  })();
+
+    // D-pad buttons (standard mapping 12..15)
+    if(pressedEdge(12, btn)) moveHover(-1); // up
+    if(pressedEdge(13, btn)) moveHover(1);  // down
+
+    // A (0) choose
+    if(pressedEdge(0, btn)){
+      const current = QUESTIONS[order[idx]];
+      if(current && !answered.get(current.id)) choose(hoverIndex);
+    }
+
+    // B (1) or Start (9) -> Next
+    if(pressedEdge(1, btn) || pressedEdge(9, btn)){
+      if(!els.nextBtn.disabled) next();
+    }
+
+    // X (2) or L (4) -> Prev
+    if(pressedEdge(2, btn) || pressedEdge(4, btn)) prev();
+
+    // R (5) -> Next
+    if(pressedEdge(5, btn)) if(!els.nextBtn.disabled) next();
+
+    // Select/Minus (8) -> Restart
+    if(pressedEdge(8, btn)) restart(true);
+
+    // Plus (9) already mapped to Next; use Home (16) to toggle Drill
+    if(btn[16] && pressedEdge(16, btn)) setActiveView('drill');
+
+    // Capture (17) -> Import
+    if(btn[17] && pressedEdge(17, btn)) setActiveView('import');
+
+    prevButtons = btn.map(b=>({pressed:b.pressed}));
+  }
+
+  // kick off polling immediately (for browsers that don't fire gamepadconnected until a button is pressed)
+  startGamepadLoop();
 
   </script>
 </body>
